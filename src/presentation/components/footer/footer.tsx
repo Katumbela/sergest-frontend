@@ -91,7 +91,7 @@ export function Footer() {
                   <FaPhone className="my-auto text-sm" />{" "}
                   <span className="text-sm my-auto"> +244 944 836 119</span>
                 </a>
-              </li>r
+              </li>
               <li>
                 <a href="tel:244923395846" className="flex gap-2">
                   <FaPhone className="my-auto text-sm" />{" "}
