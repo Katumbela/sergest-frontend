@@ -17,7 +17,7 @@ export function SubHero() {
         className="absolute w-[12rem] bottom-[-8rem]  border-[8px] rounded-xl rotate-6 shadow-2xl border-primary left-[20%] z-10"
         alt=""
       />
-      <div className="flex clip mt-[6rem] rounded-2xl gradient-sergest h-[450px]">
+      <div className="flex clip mt-[5rem] rounded-2xl gradient-sergest h-[450px]">
         <div className="w-6/12  ">
           <div className=" "></div>
         </div>
