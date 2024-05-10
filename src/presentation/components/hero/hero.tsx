@@ -1,3 +1,4 @@
+import { FaPlay } from "react-icons/fa6";
 import { bgs } from "../../../utils";
 import { ButtonSecondary } from "../button-secondary/button-secondary";
 import { ColoredText } from "../colored-text/colored-text";
@@ -16,7 +17,12 @@ export function Hero() {
             Factura pelo computador, tablet ou telemóvel a qualquer hora.
           </p>
           <br />
-          <ButtonSecondary>Começar a usar</ButtonSecondary>
+          <div className="flex gap-3">
+            <ButtonSecondary>Começar a usar</ButtonSecondary>
+            <button className="bg border-2 flex border-red-500 text-red-500 font-bold rounded-md  px-4">
+              Como usar <FaPlay className="my-auto" />
+            </button>
+          </div>
         </div>
       </div>
       <div className="w-6/12 grid relative">

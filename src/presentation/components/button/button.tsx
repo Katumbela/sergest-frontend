@@ -6,5 +6,11 @@ interface CTProps {
 }
 
 export function Button({ children, className }: CTProps) {
-  return <button className={` bg-primary text-white py-2 px-4 rounded-md ${className} `}>{children}</button>;
+  return (
+    <button
+      className={` bg-primary click text-white py-2 px-4 rounded-md ${className} `}
+    >
+      {children}
+    </button>
+  );
 }
