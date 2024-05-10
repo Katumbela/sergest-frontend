@@ -23,6 +23,9 @@ export function NavBar() {
           <a href="#prices" className="text-md font-semibold">
             Preços e Planos
           </a>
+          <a href="#" className="text-md font-semibold">
+            Blog
+          </a>
         </div>
         <Button click={LoginNow} className="my-auto flex gap-2">
           Entrar agora <FaArrowRight className="my-auto" />
