@@ -5,6 +5,12 @@ import { ColoredText } from "../colored-text/colored-text";
 import { Overlay } from "../overlay/overlay";
 
 export function Hero() {
+  const handleClick = () => {
+    window.open(
+      "https://youtube.com/@sergestoficial1640?si=z22ZmasRfQ5LV9Wy",
+      "_blank"
+    );
+  };
   return (
     <div className="flex h-[400px]">
       <div className="w-6/12 grid text-start">
@@ -19,8 +25,12 @@ export function Hero() {
           <br />
           <div className="flex gap-3">
             <ButtonSecondary>Começar a usar</ButtonSecondary>
-            <button className="bg border-2 flex gap-2 border-red-500 text-red-500 font-bold rounded-md  px-4">
-              <span className="my-auto">Como usar</span> <FaPlay className="my-auto" />
+            <button
+              onClick={handleClick}
+              className="bg border-2 flex gap-2 border-red-500 text-red-500 font-bold rounded-md  px-4"
+            >
+              <span className="my-auto">Como usar</span>{" "}
+              <FaPlay className="my-auto" />
             </button>
           </div>
         </div>
