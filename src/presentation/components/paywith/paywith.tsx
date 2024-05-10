@@ -5,7 +5,7 @@ import { Overlay } from "../overlay/overlay";
 
 export function PayWith() {
   return (
-    <div className="gradient-sergest border-b-[8px] border-primary mx-auto overflow-hidden h-[600px] grid items-center pt-[6rem]">
+    <div className="gradient-sergest border-b-[8px] border-primary mx-auto overflow-hidden h-[550px] grid items-center pt-[1rem] 2xl:pt-[2rem]">
       <div className="flex container">
         <div className=" w-6/12 items-center grid">
           <div className="text-end my-auto  ">
