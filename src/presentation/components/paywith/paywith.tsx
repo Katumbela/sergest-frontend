@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { screens } from "../../../utils";
 import { ButtonSecondary } from "../button-secondary/button-secondary";
 import { Overlay } from "../overlay/overlay";
-import { handleClick } from "../../../utils/functions";
+import { handleClick, startUse } from "../../../utils/functions";
 import { FaPlay } from "react-icons/fa6";
 
 export function PayWith() {
@@ -22,7 +22,7 @@ export function PayWith() {
             </p>
             <br />
             <div className="flex gap-4 justify-end">
-              <ButtonSecondary>Começar a usar</ButtonSecondary>
+              <ButtonSecondary click={startUse}>Começar a usar</ButtonSecondary>
               <button
                 onClick={handleClick}
                 className="bg border-2 flex gap-2 border-white text-white font-bold rounded-md  px-4"

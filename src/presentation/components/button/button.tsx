@@ -4,7 +4,7 @@ import {} from "../../../utils/functions";
 interface CTProps {
   children: ReactNode;
   className?: string;
-  click: () => void;
+  click?: () => void;
 }
 
 export function Button({ click, children, className }: CTProps) {

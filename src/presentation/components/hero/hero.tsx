@@ -3,6 +3,7 @@ import { bgs } from "../../../utils";
 import { ButtonSecondary } from "../button-secondary/button-secondary";
 import { ColoredText } from "../colored-text/colored-text";
 import { Overlay } from "../overlay/overlay";
+import { startUse } from "../../../utils/functions";
 
 export function Hero() {
   const handleClick = () => {
@@ -24,7 +25,7 @@ export function Hero() {
           </p>
           <br />
           <div className="flex gap-3">
-            <ButtonSecondary>Começar a usar</ButtonSecondary>
+            <ButtonSecondary click={startUse}>Começar a usar</ButtonSecondary>
             <button
               onClick={handleClick}
               className="bg border-2 flex gap-2 border-red-500 text-red-500 font-bold rounded-md  px-4"

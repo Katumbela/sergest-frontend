@@ -1,6 +1,6 @@
 import { FaPlay } from "react-icons/fa6";
 import { screens } from "../../../utils";
-import { handleClick } from "../../../utils/functions";
+import { handleClick, startUse } from "../../../utils/functions";
 import { ButtonSecondary } from "../button-secondary/button-secondary";
 
 export function SubHero() {
@@ -34,7 +34,7 @@ export function SubHero() {
             </p>
             <br />
             <div className="flex gap-4">
-              <ButtonSecondary>Começar a usar</ButtonSecondary>
+              <ButtonSecondary click={startUse}>Começar a usar</ButtonSecondary>
               <button
                 onClick={handleClick}
                 className="bg border-2 flex gap-2 border-white text-white font-bold rounded-md  px-4"
