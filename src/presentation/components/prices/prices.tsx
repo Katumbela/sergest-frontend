@@ -2,6 +2,7 @@ import { FaArrowRight } from "react-icons/fa6";
 import { plans_dummies } from "../../../infra/plans_dummies";
 import { ColoredText } from "../colored-text/colored-text";
 import { Overlay } from "../overlay/overlay";
+import { LoginNow } from "../../../utils/functions";
 
 export function Prices() {
   return (
@@ -63,6 +64,7 @@ export function Prices() {
 
                 <br />
                 <button
+                  onClick={LoginNow}
                   className={`border-2 ${
                     plan.id !== 2 ? "bg-primary border-primary" : ""
                   } py-4 click px-6 rounded-md font-semibold text-white`}
