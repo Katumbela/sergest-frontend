@@ -24,8 +24,8 @@ export function NavBar() {
             Preços e Planos
           </LinkTo>
         </div>
-        <Button className="my-auto">
-          Entrar agora <FaArrowRight />
+        <Button className="my-auto flex gap-2">
+          Entrar agora <FaArrowRight className="my-auto" />
         </Button>
       </div>
     </div>
