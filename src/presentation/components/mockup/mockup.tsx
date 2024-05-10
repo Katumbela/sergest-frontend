@@ -4,7 +4,7 @@ import { Overlay } from "../overlay/overlay";
 
 export function MockUp() {
   return (
-    <div className="w-full relative -16 -z-10">
+    <div className="w-full relative mt-[7rem] -z-10">
       <Overlay />
       <motion.img
         initial={{ opacity: 0 }}

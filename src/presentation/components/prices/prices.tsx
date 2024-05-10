@@ -47,6 +47,20 @@ export function Prices() {
                 <br />
                 <b className="text-secondary">{plan.invest}</b>
                 <br />
+
+                {plan.id != 2 ? (
+                  <>
+                    <br />
+                    <ColoredText className={`text-5xl font-bold mt-2`}>
+                      {" "}
+                      {plan.price}
+                    </ColoredText>
+                    <br />
+                  </>
+                ) : (
+                  <h1 className={`text-5xl font-bold mt-2`}>{plan.price}</h1>
+                )}
+
                 <br />
                 <button
                   className={`border-2 ${

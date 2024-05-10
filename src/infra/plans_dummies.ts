@@ -28,7 +28,7 @@ export const plans_dummies: PProps[] = [
     plan: "Avançado",
     desc: "Ideal para quem já possui um grande volume de transações e clientes.",
     logo: logos.logo_avancado,
-    price: "4.000 AOA",
+    price: "24.000 AOA",
     btn: "Subscrever agora",
     invest: "Investimento | 6 MÊS",
     benefits:
@@ -38,7 +38,7 @@ export const plans_dummies: PProps[] = [
     id: 3,
     plan: "Expert",
     logo: logos.logo_expert,
-    price: "4.000 AOA",
+    price: "48.000 AOA",
     btn: "Subscrever agora",
     invest: "Investimento | 1 ANO",
     desc: "Ideal para quem já possui um negócio com grandes volumes de transições e muito ativo.",
