@@ -21,12 +21,16 @@ html {
   }
 }
 
+.anim {
+  animation: animateIt 1s ease infinite ;
+}
+
 @keyframes animateIt {
   0% {
     transform: translateY(4px);
   }
   50% {
-    transform: translateY(-4px);
+    transform: translateY(-8px);
   }
   100% {
     transform: translateY(4px);
@@ -48,21 +52,20 @@ html {
   overflow: visible !important; /* Altera o overflow para visible */
 }
 
-
 ::selection {
-  background-color: #033e85;  
+  background-color: #033e85;
   color: white;
 }
 
 .z-500 {
-  z-index: 99999!important;
+  z-index: 99999 !important;
 }
 .z-20 {
-  z-index: 99999!important;
+  z-index: 99999 !important;
 }
 .zz-10 {
-  z-index: -9!important;
-} 
+  z-index: -9 !important;
+}
 
 ::-webkit-scrollbar {
   width: 15px; /* Largura da barra de rolagem */
