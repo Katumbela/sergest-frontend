@@ -20,7 +20,7 @@ export function Testimonials() {
           A vida dessas <ColoredText>pessoas</ColoredText> já não é a mesma!
         </h1>
         <p className="2xl:w-3/12 md:w-5/12 mt-[1rem] text-xl mx-auto">
-          Factura pelo computador, tablete ou telemóvel a qualquer hora.
+          Factura pelo computador, tablet ou telemóvel a qualquer hora.
         </p>
       </div>
       <br />
