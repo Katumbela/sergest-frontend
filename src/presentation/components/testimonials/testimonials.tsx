@@ -14,7 +14,6 @@ export function Testimonials() {
           alt=""
         />
       </div>
-
       <div className="text-center">
         <h1 className="text-[56px] lg:w-8/12 mx-auto font-bold">
           A vida dessas <ColoredText>pessoas</ColoredText> já não é a mesma!
@@ -25,7 +24,6 @@ export function Testimonials() {
       </div>
       <br />
       <br />
-
       <div className="cards z-10 2xl:mt-[2rem]">
         <div className="grid gap-8 grid-cols-3">
           {testimonials_dummy.map((test) => (
@@ -37,14 +35,12 @@ export function Testimonials() {
             />
           ))}
         </div>
-
         <br />
         <br />
         <br />
         <center>
           <Button className="mx-auto ">Mostrar mais</Button>
         </center>
-
         <br />
         <br />
       </div>

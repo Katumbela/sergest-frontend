@@ -1,4 +1,6 @@
-import { screens } from "../../../utils"; 
+import { FaPlay } from "react-icons/fa6";
+import { screens } from "../../../utils";
+import { handleClick } from "../../../utils/functions";
 import { ButtonSecondary } from "../button-secondary/button-secondary";
 
 export function SubHero() {
@@ -31,7 +33,16 @@ export function SubHero() {
               estiver, através da nossa plataforma.
             </p>
             <br />
-            <ButtonSecondary>Começar a usar</ButtonSecondary>
+            <div className="flex gap-4">
+              <ButtonSecondary>Começar a usar</ButtonSecondary>
+              <button
+                onClick={handleClick}
+                className="bg border-2 flex gap-2 border-white text-white font-bold rounded-md  px-4"
+              >
+                <span className="my-auto">Como usar</span>{" "}
+                <FaPlay className="my-auto" />
+              </button>
+            </div>
           </div>
         </div>
       </div>
