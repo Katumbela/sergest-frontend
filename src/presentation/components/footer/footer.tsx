@@ -32,16 +32,24 @@ export function Footer() {
             <br />
             <ul className="footer-link">
               <li>
-                <a href="/">Início</a>
+                <a target="__blank" href="/">
+                  Início
+                </a>
               </li>
               <li>
-                <a href="/">Sobre</a>
+                <a target="__blank" href="/">
+                  Sobre
+                </a>
               </li>
               <li>
-                <a href="/">Funcionalidades</a>
+                <a target="__blank" href="/">
+                  Funcionalidades
+                </a>
               </li>
               <li>
-                <a href="/">Preços & Planos</a>
+                <a target="__blank" href="/">
+                  Preços & Planos
+                </a>
               </li>
             </ul>
           </div>
@@ -57,19 +65,23 @@ export function Footer() {
             <br />
             <ul className="footer-link">
               <li>
-                <a href="/" className="flex gap-2">
+                <a target="__blank" href="/" className="flex gap-2">
                   <FaPhone className="my-auto text-sm" />{" "}
                   <span className="text-sm my-auto"> +244 944 836 119</span>
                 </a>
               </li>
               <li>
-                <a href="/" className="flex gap-2">
+                <a target="__blank" href="/" className="flex gap-2">
                   <FaPhone className="my-auto text-sm" />{" "}
                   <span className="text-sm my-auto"> +244 923 395 846</span>
                 </a>
               </li>
               <li>
-                <a href="mailto:comercial@sergest.com" className="flex gap-2">
+                <a
+                  target="__blank"
+                  href="mailto:comercial@sergest.com"
+                  className="flex gap-2"
+                >
                   <FaEnvelope className="my-auto text-sm" />{" "}
                   <span className="text-sm my-auto">
                     {" "}
@@ -86,22 +98,34 @@ export function Footer() {
             <br />
             <ul className="flex gap-6">
               <li>
-                <a href="/">
+                <a
+                  target="__blank"
+                  href="https://www.facebook.com/share/nvfGuLZgAywUdq95/?mibextid=LQQJ4d"
+                >
                   <FaFacebook className="text-3xl" />
                 </a>
               </li>
               <li>
-                <a href="/">
+                <a
+                  target="__blank"
+                  href="https://www.linkedin.com/company/sermar-sistemas-tecnol-gicos/"
+                >
                   <FaLinkedin className="text-3xl" />
                 </a>
               </li>
               <li>
-                <a href="/">
+                <a
+                  target="__blank"
+                  href="https://www.instagram.com/sergest.angola?igsh=cmNrcmZ5b216ZW5l&utm_source=qr"
+                >
                   <FaInstagram className="text-3xl" />
                 </a>
               </li>
               <li>
-                <a href="/">
+                <a
+                  target="__blank"
+                  href="https://youtube.com/@sergestoficial1640?si=z22ZmasRfQ5LV9Wy"
+                >
                   <FaYoutube className="text-3xl" />
                 </a>
               </li>
