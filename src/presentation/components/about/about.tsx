@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import { bgs } from "../../../utils";
 import { ColoredText } from "../colored-text/colored-text";
 import { Overlay } from "../overlay/overlay";
@@ -8,7 +9,14 @@ export function AboutUs() {
       <div className="flex gap-8 container">
         <div className="w-6/12 text-end relative flex justify-center">
           <Overlay />
-          <img src={bgs.bg_about} className=" md:w-[120%]" alt="" />
+          <motion.img
+            initial={{ opacity: 0.1, x: -10 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.2, delay: 0.2 }}
+            src={bgs.bg_about}
+            className=" md:w-[120%]"
+            alt=""
+          />
         </div>
         <div className="w-6/12 grid ">
           <div className="my-auto">
@@ -17,21 +25,31 @@ export function AboutUs() {
             </h1>
             <br />
             <br />
-            <p className="text-grayser">
+            <motion.p
+              initial={{ y: 70, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1 }}
+              transition={{ duration: 0.2 }}
+              className="text-grayser"
+            >
               A Sergest é um software de gestão e faturação especializado em
               oferecer soluções abrangentes e intuitivas para a otimização de
               processos empresariais, trabalhamos no mercado nacional desde
               2016, atuamos no ramo das Tics, Marca Sergest é propriedade da
               empresa Sermar.
-            </p>
+            </motion.p>
             <br />
-            <p className="text-grayser">
+            <motion.p
+              initial={{ y: 70, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1 }}
+              transition={{ duration: 0.2, delay: 0.2 }}
+              className="text-grayser"
+            >
               Decidimos criar o Sergest com intuito de apresentar ao nosso
               mercado que soluções nacionais agregam valor, estabilidade,
               confiabilidade e escalabilidade para as empresas que desejam
               crescer de forma organizada e produtiva, a organização no processo
               de gestão faz o crescimento.
-            </p>
+            </motion.p>
           </div>
         </div>
       </div>

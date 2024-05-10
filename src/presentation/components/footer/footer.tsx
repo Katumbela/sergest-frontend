@@ -10,7 +10,7 @@ import { logos } from "../../../utils";
 
 export function Footer() {
   return (
-    <div className="gradient-sergest py-8 mt-20">
+    <div className="gradient-sergest border-t-[6px] border-primary py-8 2xl:pt-[7rem] 2xl:pb-[6rem] mt-[10rem]">
       <div className="container">
         <div className="grid gap-4 md:grid-cols-5">
           <div className="w-full col-span-2 md:pe-5">
@@ -108,6 +108,13 @@ export function Footer() {
             </ul>
           </div>
         </div>
+        <hr className="my-10" />
+        <center>
+          <span className="text-white text-sm">
+            © SERGEST 2024 - Todos os direitos reservados | Política de
+            Privacidade
+          </span>
+        </center>
       </div>
     </div>
   );

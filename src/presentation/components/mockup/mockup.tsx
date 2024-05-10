@@ -1,11 +1,19 @@
+import { motion } from "framer-motion";
 import { bgs } from "../../../utils";
 import { Overlay } from "../overlay/overlay";
 
 export function MockUp() {
   return (
-    <div className="w-full relative">
+    <div className="w-full relative -16 -z-10">
       <Overlay />
-      <img src={bgs.bg_mockup} className="w-[60%] mx-auto" alt="" />
+      <motion.img
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 0.2 }}
+        src={bgs.bg_mockup}
+        className="w-[60%] mx-auto"
+        alt=""
+      />
     </div>
   );
 }

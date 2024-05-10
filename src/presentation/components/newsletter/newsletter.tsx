@@ -5,8 +5,8 @@ import { Button } from "../button/button";
 export function Newsletter() {
   return (
     <div>
-      <div className="text-center my-20">
-        <h1 className="text-5xl text-grayser 2xl:text-6xl mx-auto  md:w-6/12  2xl:w-8/12 font-bold">
+      <div className="text-center mt-[6rem] mb-20">
+        <h1 className="text-5xl text-grayser 2xl:text-6xl mx-auto  md:w-7/12  2xl:w-8/12 font-bold">
           Para ficar sempre informado ative a nossa{" "}
           <ColoredText>Newsletter</ColoredText>!
         </h1>

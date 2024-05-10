@@ -5,20 +5,18 @@ import { Button } from "../button/button";
 
 export function Testimonials() {
   return (
-    <div className=" mt-[15rem] h-[400px]">
+    <div className=" 2xl:mt-[15rem]  mt-[5rem] h-[400px]">
       <div className="text-center">
         <h1 className="text-[56px] lg:w-8/12 mx-auto font-bold">
           A vida dessas <ColoredText>pessoas</ColoredText> já não é a mesma!
         </h1>
-        <p className="w-3/12 mx-auto">
+        <p className="2xl:w-3/12 md:w-5/12 mt-[1rem] text-xl mx-auto">
           Factura pelo computador, tablete ou telemóvel a qualquer hora.
         </p>
       </div>
       <br />
-      <br />
-      <br />
-      <br />
-      <div className="cards">
+      <br /> 
+      <div className="cards  2xl:mt-[2rem]">
         <div className="grid gap-8 grid-cols-3">
           {testimonials_dummy.map((test) => (
             <Cardtestimonial

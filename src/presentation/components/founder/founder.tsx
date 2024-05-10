@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import { bgs } from "../../../utils";
 import { ColoredText } from "../colored-text/colored-text";
 import { Overlay } from "../overlay/overlay";
@@ -8,7 +9,14 @@ export function Founder() {
       <div className="flex md:gap-24 ">
         <div className="w-full text-end relative flex justify-start">
           <Overlay />
-          <img src={bgs.bg_founder} className="  " alt="" />
+          <motion.img
+            initial={{ x: -190, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            transition={{ duration: 0.6 }}
+            src={bgs.bg_founder}
+            className="  "
+            alt=""
+          />
         </div>
         <div className="w-full text-start grid relative  ">
           <div className="my-auto md:px-4">
@@ -16,22 +24,34 @@ export function Founder() {
               Sérgio Mateus <ColoredText>Founder</ColoredText> da Sergest
             </h1>
             <br />
-            <p>
+            <motion.p
+              initial={{ y: 80, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1 }}
+              transition={{ duration: 0.2, delay: 0.2 }}
+            >
               Sérgio Mateus é um Empreendedor e Inovador em Gestão Empresarial,
               Estrategista de Marketing e BenchMarking.
-            </p>
+            </motion.p>
             <br />
 
-            <p>
+            <motion.p
+              initial={{ y: 80, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1 }}
+              transition={{ duration: 0.2, delay: 0.4 }}
+            >
               Apaixonado por simplificar processos e impulsionar negócios,
               Fundador e CEO do SERGEST, vem Transformando a forma como as
               empresas lidam com a faturação.
-            </p>
+            </motion.p>
             <br />
-            <p>
+            <motion.p
+              initial={{ y: 80, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1 }}
+              transition={{ duration: 0.2, delay: 0.5 }}
+            >
               Sérgio Mateus Formado em Gestão de Empresas, possui uma Base
               sólida para inovar e liderar no mundo dos negócios.
-            </p>
+            </motion.p>
           </div>
         </div>
       </div>

@@ -37,10 +37,10 @@ export function Action() {
             <div className="flex gap-6 relative">
               <Overlay />
               <img src={logos.logo_shield} className="w-[4em]" alt="" />
-              <h1 className="text-3xl my-auto font-bold">Segura</h1>
+              <h1 className="text-3xl my-auto font-bold text-white">Segura</h1>
             </div>
             <div className="mt-4 text-start">
-              <p className="text-grayser">
+              <p className="text-white">
                 Com a Nossa plataforma, tudo é mais fácil! Oferecemos uma ampla
                 gama de serviços que você pode acessar confortavelmente de onde
                 estiver, através do nosso site ou aplicativo.

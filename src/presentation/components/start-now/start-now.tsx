@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import { bgs } from "../../../utils";
 import { Button } from "../button/button";
 import { ColoredText } from "../colored-text/colored-text";
@@ -6,9 +7,9 @@ import { Overlay } from "../overlay/overlay";
 export function StartNow() {
   return (
     <div className=" mx-auto  grid items-center mt-[45rem]  pt-[6rem]">
-      <div className="flex xl:ps-[200px] ">
+      <div className="flex 2xl:ps-[200px] ">
         <div className="w-8/12 items-center grid">
-          <div className="text-start my-auto px-14">
+          <div className="text-start my-auto ps-14 2xl:px-14">
             <h1 className="text-5xl font-bold  ">
               Com um <ColoredText>clique</ColoredText> apenas comece a usar
               <ColoredText>agora</ColoredText> mesmo!
@@ -23,7 +24,14 @@ export function StartNow() {
         </div>
         <div className="w-full text-end relative flex justify-end">
           <Overlay />
-          <img src={bgs.bg_start} className=" md:w-[100%]" alt="" />
+          <motion.img
+            initial={{ x: 80, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            transition={{ duration: 0.3, delay: 0.2 }}
+            src={bgs.bg_start}
+            className=" md:w-[100%]"
+            alt=""
+          />
         </div>
       </div>
     </div>
