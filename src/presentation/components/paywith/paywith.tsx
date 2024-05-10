@@ -2,6 +2,8 @@ import { motion } from "framer-motion";
 import { screens } from "../../../utils";
 import { ButtonSecondary } from "../button-secondary/button-secondary";
 import { Overlay } from "../overlay/overlay";
+import { handleClick } from "../../../utils/functions";
+import { FaPlay } from "react-icons/fa6";
 
 export function PayWith() {
   return (
@@ -19,7 +21,16 @@ export function PayWith() {
               o Express.
             </p>
             <br />
-            <ButtonSecondary>Começar a usar</ButtonSecondary>
+            <div className="flex gap-4 justify-end">
+              <ButtonSecondary>Começar a usar</ButtonSecondary>
+              <button
+                onClick={handleClick}
+                className="bg border-2 flex gap-2 border-white text-white font-bold rounded-md  px-4"
+              >
+                <span className="my-auto">Como usar</span>{" "}
+                <FaPlay className="my-auto" />
+              </button>
+            </div>
           </div>
         </div>
         <div className="w-6/12 relative text-end flex justify-end">

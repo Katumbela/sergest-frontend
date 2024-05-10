@@ -1,9 +1,9 @@
 import { FaArrowRight } from "react-icons/fa6";
 import { logos } from "../../../utils";
 import { Button } from "../button/button";
+import { LoginNow } from "../../../utils/functions";
 
 export function NavBar() {
- 
   return (
     <div>
       <div className="flex pb-3 pt-6  justify-between">
@@ -24,7 +24,7 @@ export function NavBar() {
             Preços e Planos
           </a>
         </div>
-        <Button className="my-auto flex gap-2">
+        <Button click={LoginNow} className="my-auto flex gap-2">
           Entrar agora <FaArrowRight className="my-auto" />
         </Button>
       </div>

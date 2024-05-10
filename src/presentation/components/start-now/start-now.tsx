@@ -3,7 +3,7 @@ import { bgs, circles } from "../../../utils";
 import { Button } from "../button/button";
 import { ColoredText } from "../colored-text/colored-text";
 import { Overlay } from "../overlay/overlay";
-import { handleClick } from "../../../utils/functions";
+import { handleClick, startUse } from "../../../utils/functions";
 import { FaPlay } from "react-icons/fa6";
 
 export function StartNow() {
@@ -22,13 +22,13 @@ export function StartNow() {
               <ColoredText> agora</ColoredText> mesmo!
             </h1>
             <br />
-            <p className="text-white">
+            <p className="text-grayser">
               Não perca mais tempo comece agora mesmo a sua jornada para o
               futuro com a Sargest.
             </p>
 
             <div className="flex gap-4">
-              <Button>Começar a usar</Button>
+              <Button click={startUse}>Começar a usar</Button>
               <button
                 onClick={handleClick}
                 className="bg border-2 flex gap-2 border-red-600 text-red-600 font-bold rounded-md  px-4"

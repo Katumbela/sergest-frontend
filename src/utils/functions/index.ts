@@ -4,3 +4,11 @@ export const handleClick = () => {
     "_blank"
   );
 };
+
+export const startUse = () => {
+  window.open("https://app.softsergest.com/register", "_blank");
+};
+
+export const LoginNow = () => {
+  window.open("https://app.softsergest.com/login", "_blank");
+};
