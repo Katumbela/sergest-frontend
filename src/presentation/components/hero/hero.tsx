@@ -19,8 +19,8 @@ export function Hero() {
           <br />
           <div className="flex gap-3">
             <ButtonSecondary>Começar a usar</ButtonSecondary>
-            <button className="bg border-2 flex border-red-500 text-red-500 font-bold rounded-md  px-4">
-              Como usar <FaPlay className="my-auto" />
+            <button className="bg border-2 flex gap-2 border-red-500 text-red-500 font-bold rounded-md  px-4">
+              <span className="my-auto">Como usar</span> <FaPlay className="my-auto" />
             </button>
           </div>
         </div>
