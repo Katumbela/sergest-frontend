@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { bgs } from "../../../utils";
 import { ButtonSecondary } from "../button-secondary/button-secondary";
 import { Overlay } from "../overlay/overlay";
-import { handleClick } from "../../../utils/functions";
+import { handleClick, startUse } from "../../../utils/functions";
 import { FaPlay } from "react-icons/fa6";
 
 export function SystemComponent() {
@@ -21,7 +21,7 @@ export function SystemComponent() {
             </p>
             <br />
             <div className="flex gap-4">
-              <ButtonSecondary>Começar a usar</ButtonSecondary>
+              <ButtonSecondary click={startUse}>Começar a usar</ButtonSecondary>
               <button
                 onClick={handleClick}
                 className="bg border-2 flex gap-2 border-white text-white font-bold rounded-md  px-4"
@@ -43,7 +43,6 @@ export function SystemComponent() {
             className=" md:w-[120%]"
             alt=""
           />
-          
         </div>
       </div>
     </div>

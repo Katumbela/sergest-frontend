@@ -1,7 +1,7 @@
 import { users } from "../utils";
 
 interface TDProps {
-  id: number; // Adicionando a propriedade id
+  id: number; 
   nome: string;
   pic: string;
   desc: string;
