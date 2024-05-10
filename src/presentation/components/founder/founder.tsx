@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { bgs } from "../../../utils";
+import { bgs, circles } from "../../../utils";
 import { ColoredText } from "../colored-text/colored-text";
 import { Overlay } from "../overlay/overlay";
 
@@ -9,6 +9,11 @@ export function Founder() {
       <div className="flex md:gap-24 ">
         <div className="w-full text-end relative flex justify-start">
           <Overlay />
+          <img
+            src={circles.circle_3}
+            className="absolute -z-10 2xl:-left-[20rem] md:-left-[15rem]  md:-bottom-[8rem] 2xl:-bottom-[12rem]"
+            alt=""
+          />
           <motion.img
             initial={{ x: -190, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}

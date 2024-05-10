@@ -16,6 +16,12 @@ import bg_founder from "../../assets/bgs/image 12.png";
 import bg_mockup from "../../assets/bgs/BG_MOCKUP.png";
 import bg_system from "../../assets/bgs/Captura de ecrã 2024-05-10 111116.png";
 
+//import extras
+
+import circle_3 from "../../assets/extras/Captura de ecrã 2024-05-10 172141.png";
+import circle_2 from "../../assets/extras/Captura de ecrã 2024-05-10 172006.png";
+import circle_2_line from "../../assets/extras/cl2.png";
+
 //import the screens images
 import screen_login from "../../assets/screens/image 13.png";
 import screen_pay_exp from "../../assets/screens/image 26.png";
@@ -65,4 +71,10 @@ export const users = {
   user_4,
   user_5,
   user_6,
+};
+
+export const circles = {
+  circle_2,
+  circle_2_line,
+  circle_3,
 };
