@@ -12,7 +12,7 @@ export function StartNow() {
           <div className="text-start relative my-auto ps-14 2xl:px-14"> 
             <img
               src={circles.circle_2_line}
-              className="absolute -z-10 md:w-[70%] 2xl:w-[90%] 2xl:-left-[20rem] md:-left-[10rem]  md:-bottom-[22rem] 2xl:-bottom-[35rem]"
+              className="absolute -z-10 md:w-[80%] 2xl:w-[90%] 2xl:-left-[20rem] md:-left-[10rem]  md:-bottom-[22rem] 2xl:-bottom-[35rem]"
               alt=""
             />
             <h1 className="text-5xl font-bold  ">

@@ -9,6 +9,7 @@ import {
   Newsletter,
   PayWith,
   Prices,
+  Proccess,
   StartNow,
   SubHero,
   SystemComponent,
@@ -41,9 +42,8 @@ export function HomePage() {
         <SystemComponent />
       </LayoutBody>
       <div className="container">
-      
-          <AboutUs />
-        
+        <AboutUs />
+
         <LayoutBody>
           <Testimonials />
         </LayoutBody>
@@ -56,6 +56,7 @@ export function HomePage() {
       </div>
       <PayWith />
       <div className="container">
+        <Proccess />
         <Newsletter />
       </div>
       <Footer />

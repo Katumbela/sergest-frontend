@@ -22,12 +22,16 @@ import circle_3 from "../../assets/extras/Captura de ecrã 2024-05-10 172141.png
 import circle_3_test from "../../assets/extras/line-3-test.png";
 import circle_2 from "../../assets/extras/Group 1000001470.png";
 import circle_2_line from "../../assets/extras/cl2.png";
+import ceta from "../../assets/extras/Vector 8.png";
 
 //import the screens images
 import screen_login from "../../assets/screens/image 13.png";
 import screen_pay_exp from "../../assets/screens/image 26.png";
 import screen_pay from "../../assets/screens/image 25.png";
 import screen_dash from "../../assets/screens/image 14.png";
+import screen_proccess_1 from "../../assets/screens/image 19.png";
+import screen_proccess_2 from "../../assets/screens/image 16.png";
+import screen_proccess_3 from "../../assets/screens/image 20.png";
 
 //importar as fotos dos usuarios
 
@@ -63,6 +67,9 @@ export const screens = {
   screen_login,
   screen_pay,
   screen_pay_exp,
+  screen_proccess_1,
+  screen_proccess_2,
+  screen_proccess_3,
 };
 
 export const users = {
@@ -79,4 +86,5 @@ export const circles = {
   circle_2_line,
   circle_3_test,
   circle_3,
+  ceta
 };
