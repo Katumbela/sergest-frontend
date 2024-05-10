@@ -3,13 +3,15 @@ import { bgs, circles } from "../../../utils";
 import { Button } from "../button/button";
 import { ColoredText } from "../colored-text/colored-text";
 import { Overlay } from "../overlay/overlay";
+import { handleClick } from "../../../utils/functions";
+import { FaPlay } from "react-icons/fa6";
 
 export function StartNow() {
   return (
     <div className=" mx-auto  grid items-center mt-[45rem]  pt-[6rem]">
       <div className="flex 2xl:ps-[200px] ">
         <div className="w-8/12  items-center grid">
-          <div className="text-start relative my-auto ps-14 2xl:px-14"> 
+          <div className="text-start relative my-auto ps-14 2xl:px-14">
             <img
               src={circles.circle_2_line}
               className="absolute -z-10 md:w-[80%] 2xl:w-[90%] 2xl:-left-[20rem] md:-left-[10rem]  md:-bottom-[22rem] 2xl:-bottom-[35rem]"
@@ -17,14 +19,24 @@ export function StartNow() {
             />
             <h1 className="text-5xl font-bold  ">
               Com um <ColoredText>clique</ColoredText> apenas comece a usar
-              <ColoredText>agora</ColoredText> mesmo!
+              <ColoredText> agora</ColoredText> mesmo!
             </h1>
             <br />
             <p className="text-white">
               Não perca mais tempo comece agora mesmo a sua jornada para o
               futuro com a Sargest.
             </p>
-            <Button>Começar a usar</Button>
+
+            <div className="flex gap-4">
+              <Button>Começar a usar</Button>
+              <button
+                onClick={handleClick}
+                className="bg border-2 flex gap-2 border-red-600 text-red-600 font-bold rounded-md  px-4"
+              >
+                <span className="my-auto">Como usar</span>{" "}
+                <FaPlay className="my-auto" />
+              </button>
+            </div>
           </div>
         </div>
         <div className="w-full text-end relative flex justify-end">

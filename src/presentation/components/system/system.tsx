@@ -43,6 +43,7 @@ export function SystemComponent() {
             className=" md:w-[120%]"
             alt=""
           />
+          
         </div>
       </div>
     </div>
