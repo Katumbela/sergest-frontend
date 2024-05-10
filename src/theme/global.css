@@ -48,8 +48,14 @@ html {
   overflow: visible !important; /* Altera o overflow para visible */
 }
 
-.z-50 {
-  z-index: 99999 !important;
+
+::selection {
+  background-color: #033e85;  
+  color: white;
+}
+
+.z-500 {
+  z-index: 99999!important;
 }
 .z-20 {
   z-index: 99999!important;

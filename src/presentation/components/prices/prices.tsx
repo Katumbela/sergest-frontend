@@ -50,7 +50,7 @@ export function Prices() {
                 <button
                   className={`border-2 ${
                     plan.id !== 2 ? "bg-primary border-primary" : ""
-                  } py-4 px-6 rounded-md font-semibold text-white`}
+                  } py-4 click px-6 rounded-md font-semibold text-white`}
                 >
                   {plan.btn}
                 </button>

@@ -41,9 +41,9 @@ export function HomePage() {
         <SystemComponent />
       </LayoutBody>
       <div className="container">
-        <LayoutBody>
+      
           <AboutUs />
-        </LayoutBody>
+        
         <LayoutBody>
           <Testimonials />
         </LayoutBody>

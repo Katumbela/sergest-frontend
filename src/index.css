@@ -6,11 +6,14 @@
   @apply bg-gradient-to-r from-sky-700 via-sky-300 to-green-400 text-transparent bg-clip-text animate-gradient;
 }
 
-
 .gradient-sergest {
-  @apply  bg-gradient-to-r from-[#00CDDF] to-[#033E85] 
+  @apply bg-gradient-to-r from-[#00CDDF] to-[#033E85];
 }
 
 .footer-link li a {
-  @apply hover:font-bold transition-all 
+  @apply hover:font-bold transition-all;
+}
+
+.click {
+  @apply active:scale-95 transition-all active:shadow-lg;
 }

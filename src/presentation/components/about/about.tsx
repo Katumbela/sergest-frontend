@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { bgs } from "../../../utils";
+import { bgs, circles } from "../../../utils";
 import { ColoredText } from "../colored-text/colored-text";
 import { Overlay } from "../overlay/overlay";
 
@@ -8,6 +8,12 @@ export function AboutUs() {
     <div className="   mx-auto  items-center mt-[12rem]   ">
       <div className="flex gap-8 container">
         <div className="w-6/12 text-end relative flex justify-center">
+          <img
+            src={circles.circle_2}
+            style={{zIndex: '-999999'}}
+            className="absolute -z-20 md:w-[80%] 2xl:w-[90%] 2xl:-left-[20rem] md:-left-[8rem]  md:-top-[14rem] 2xl:-top-[20rem]"
+            alt=""
+          />
           <Overlay />
           <motion.img
             initial={{ opacity: 0.1, x: -10 }}

@@ -5,7 +5,7 @@ import { Overlay } from "../overlay/overlay";
 
 export function SystemComponent() {
   return (
-    <div className="gradient-sergest mx-auto  grid items-center mt-[14rem]  pt-[6rem]">
+    <div className="gradient-sergest mx-auto z-500 grid items-center mt-[14rem]  pt-[6rem]">
       <div className="flex container">
         <div className="w-6/12 items-center grid">
           <div className="text-start md:-mt-10 px-14">

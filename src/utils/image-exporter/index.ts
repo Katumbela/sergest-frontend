@@ -19,7 +19,8 @@ import bg_system from "../../assets/bgs/Captura de ecrã 2024-05-10 111116.png";
 //import extras
 
 import circle_3 from "../../assets/extras/Captura de ecrã 2024-05-10 172141.png";
-import circle_2 from "../../assets/extras/Captura de ecrã 2024-05-10 172006.png";
+import circle_3_test from "../../assets/extras/line-3-test.png";
+import circle_2 from "../../assets/extras/Group 1000001470.png";
 import circle_2_line from "../../assets/extras/cl2.png";
 
 //import the screens images
@@ -76,5 +77,6 @@ export const users = {
 export const circles = {
   circle_2,
   circle_2_line,
+  circle_3_test,
   circle_3,
 };

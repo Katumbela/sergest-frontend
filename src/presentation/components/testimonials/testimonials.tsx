@@ -7,7 +7,7 @@ import { circles } from "../../../utils";
 export function Testimonials() {
   return (
     <div className=" 2xl:mt-[15rem] relative mt-[5rem] h-[400px]">
-      <div className="absolute -z-20 md:w-[80%] 2xl:w-[50%] 2xl:-right-[20rem] md:-right-[35rem]  md:-bottom-[4rem] 2xl:-bottom-[12rem]">
+      <div className="absolute -z-20 md:w-[80%] 2xl:w-[85%] 2xl:-right-[50rem] md:-right-[35rem]  md:-bottom-[4rem] 2xl:-bottom-[6rem]">
         <img
           src={circles.circle_2}
           className=" md:w-[50%] 2xl:w-[50%] "
