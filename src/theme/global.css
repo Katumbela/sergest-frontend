@@ -1,0 +1,71 @@
+.animate-gradient {
+  background-size: 300%;
+  -webkit-animation: animatedgradient 4s ease infinite alternate;
+  -moz-animation: animatedgradient 4s ease infinite alternate;
+  animation: animatedgradient 4s ease infinite alternate;
+}
+
+@keyframes animatedgradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes animateIt {
+  0% {
+    transform: translateY(4px);
+  }
+  50% {
+    transform: translateY(-4px);
+  }
+  100% {
+    transform: translateY(4px);
+  }
+}
+
+.clip {
+  clip-path: polygon(
+    100% 0,
+    100% 20%,
+    99% 100%,
+    80% 100%,
+    52% 100%,
+    0 62%,
+    0 0
+  );
+  border-radius: 70px;
+  overflow: auto !important;
+  overflow: visible !important; /* Altera o overflow para visible */
+}
+
+.z-50 {
+  z-index: 99999 !important;
+}
+
+::-webkit-scrollbar {
+  width: 15px; /* Largura da barra de rolagem */
+}
+
+::-webkit-scrollbar-track {
+  background: #fff; /* Cor de fundo da faixa da barra de rolagem */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888; /* Cor do thumb */
+  border-radius: 100px!important; /* Borda do thumb */
+}
+
+/* Para navegadores Firefox */
+/* Este é um exemplo básico, o Firefox tem menos flexibilidade de estilização */
+/* Note que pode haver variações dependendo da versão do Firefox */
+/* Você pode precisar usar vendor prefixes específicos do Firefox para versões mais antigas */
+* {
+  scrollbar-width: thin; /* Largura da barra de rolagem */
+  scrollbar-color: #033E85 #fff; /* Cor da barra de rolagem e do thumb */
+}
