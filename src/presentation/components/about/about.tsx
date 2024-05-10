@@ -5,7 +5,7 @@ import { Overlay } from "../overlay/overlay";
 
 export function AboutUs() {
   return (
-    <div className="   mx-auto  items-center mt-[12rem]   ">
+    <div id="about" className="   mx-auto  items-center mt-[12rem]   ">
       <div className="flex gap-8 container">
         <div className="w-6/12 text-end relative flex justify-center">
           <img

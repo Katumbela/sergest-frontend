@@ -27,7 +27,7 @@ import ceta from "../../assets/extras/Vector 8.png";
 //import the screens images
 import screen_login from "../../assets/screens/image 13.png";
 import screen_pay_exp from "../../assets/screens/image 26.png";
-import screen_pay from "../../assets/screens/image 25.png";
+import screen_pay from "../../assets/screens/Mask group.png";
 import screen_dash from "../../assets/screens/image 14.png";
 import screen_proccess_1 from "../../assets/screens/image 19.png";
 import screen_proccess_2 from "../../assets/screens/image 16.png";

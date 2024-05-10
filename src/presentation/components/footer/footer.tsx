@@ -1,4 +1,5 @@
 import {
+  FaArrowUp,
   FaEnvelope,
   FaFacebook,
   FaInstagram,
@@ -7,8 +8,34 @@ import {
   FaYoutube,
 } from "react-icons/fa6";
 import { logos } from "../../../utils";
+import { useEffect, useState } from "react";
 
 export function Footer() {
+  const [showScrollButton, setShowScrollButton] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 200) {
+        setShowScrollButton(true);
+      } else {
+        setShowScrollButton(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  const handleScrollTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <div className="gradient-sergest border-t-[6px] border-primary py-8 2xl:pt-[7rem] 2xl:pb-[6rem] mt-[10rem]">
       <div className="container">
@@ -32,24 +59,16 @@ export function Footer() {
             <br />
             <ul className="footer-link">
               <li>
-                <a target="__blank" href="/">
-                  Início
-                </a>
+                <a href="/">Início</a>
               </li>
               <li>
-                <a target="__blank" href="/">
-                  Sobre
-                </a>
+                <a href="#about">Sobre</a>
               </li>
               <li>
-                <a target="__blank" href="/">
-                  Funcionalidades
-                </a>
+                <a href="#functionalities">Funcionalidades</a>
               </li>
               <li>
-                <a target="__blank" href="/">
-                  Preços & Planos
-                </a>
+                <a href="#prices">Preços & Planos</a>
               </li>
             </ul>
           </div>
@@ -65,13 +84,13 @@ export function Footer() {
             <br />
             <ul className="footer-link">
               <li>
-                <a target="__blank" href="/" className="flex gap-2">
+                <a href="tel:244944836119" className="flex gap-2">
                   <FaPhone className="my-auto text-sm" />{" "}
                   <span className="text-sm my-auto"> +244 944 836 119</span>
                 </a>
               </li>
               <li>
-                <a target="__blank" href="/" className="flex gap-2">
+                <a href="tel:244923395846" className="flex gap-2">
                   <FaPhone className="my-auto text-sm" />{" "}
                   <span className="text-sm my-auto"> +244 923 395 846</span>
                 </a>
@@ -140,6 +159,15 @@ export function Footer() {
           </span>
         </center>
       </div>
+
+      {showScrollButton && (
+        <button
+          onClick={handleScrollTop}
+          className="fixed flex items-center gap-2 px-4 py-4 text-center text-white rounded-full shadow-lg md:px-4 click bg-primary place-content-center bottom-4 right-4 "
+        >
+          <FaArrowUp className="text-3xl" />
+        </button>
+      )}
     </div>
   );
 }

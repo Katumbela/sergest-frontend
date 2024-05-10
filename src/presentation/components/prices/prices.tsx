@@ -1,10 +1,11 @@
+import { FaArrowRight } from "react-icons/fa6";
 import { plans_dummies } from "../../../infra/plans_dummies";
 import { ColoredText } from "../colored-text/colored-text";
 import { Overlay } from "../overlay/overlay";
 
 export function Prices() {
   return (
-    <div className=" ] h-[400px]">
+    <div id="prices" className=" h-[400px]">
       <div className="text-center">
         <h1 className="text-[56px] font-bold">
           Preços & Planos da <ColoredText>Plataforma !</ColoredText>{" "}
@@ -58,6 +59,19 @@ export function Prices() {
             </div>
           ))}
         </div>
+        <br />
+        <br />
+        <br />
+        <button className="click flex gap-3 mx-auto bg-secondary py-3 px-9 rounded-lg text-white font-bold">
+          <span className="my-auto">Blog</span>
+          <FaArrowRight className="my-auto " />
+        </button>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
       </div>
     </div>
   );

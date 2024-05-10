@@ -9,6 +9,10 @@ html {
   overflow-x: hidden !important;
 }
 
+html, body {
+  scroll-behavior: smooth;
+}
+
 @keyframes animatedgradient {
   0% {
     background-position: 0% 50%;

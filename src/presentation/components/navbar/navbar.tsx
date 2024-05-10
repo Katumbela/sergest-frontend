@@ -14,13 +14,13 @@ export function NavBar() {
           <a href="#" className="text-md font-semibold">
             Início
           </a>
-          <a href="#" className="text-md font-semibold">
+          <a href="#about" className="text-md font-semibold">
             Sobre
           </a>
-          <a href="#" className="text-md font-semibold">
+          <a href="#functionalities" className="text-md font-semibold">
             Funcionalidades
           </a>
-          <a href="#" className="text-md font-semibold">
+          <a href="#prices" className="text-md font-semibold">
             Preços e Planos
           </a>
         </div>
