@@ -38,7 +38,7 @@ export function Prices() {
                 </h1>
               </div>
               <p
-                className={`text-sm sm:text-lg mt-4 ${
+                className={`text-sm sm:text-sm 2xl:text-lg mt-4 ${
                   plan.id == 2 ? "  text-white" : "text-grayser"
                 } `}
               >
