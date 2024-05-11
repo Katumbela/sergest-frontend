@@ -46,6 +46,12 @@ import user_MARIA from "../../assets/users/Mask groupe-5 maria.png";
 import user_ARMANDO from "../../assets/users/Mask groupe-3 armando.png";
 import user_ALFREDO from "../../assets/users/Mask groupe-2 alfredo.png";
 
+import user_PATRICIO from "../../assets/users/patricio vieira.jpg";
+
+
+import user_ADILSON from "../../assets/users/adilson_manuel.jpg";
+
+
 export const logos = {
   logo,
   logo_lamp,
@@ -86,7 +92,9 @@ export const users = {
   user_MARIA,
   user_ALFREDO,
   user_ARMANDO,
-  user_INACIO
+  user_INACIO,
+  user_ADILSON,
+  user_PATRICIO
 };
 
 export const circles = {
