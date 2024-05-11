@@ -34,7 +34,7 @@ export function InNumbers() {
                 {({ isVisible }: PropVisible) => (
                   <div className="sm:h-[2.5rem] h-[2.6rem] lg:h-[4rem]">
                     {isVisible ? (
-                      <CountUp duration={4} className="counter" end={12406} />
+                      <CountUp duration={4} className="counter" end={1849} />
                     ) : <CountUp duration={4} className="counter" end={0} />}
                   </div>
                 )}
@@ -61,7 +61,7 @@ export function InNumbers() {
                 {({ isVisible }: PropVisible) => (
                   <div className="sm:h-[2.5rem] h-[2.6rem] lg:h-[4rem]">
                     {isVisible ? (
-                      <CountUp duration={4} className="counter" end={812} />
+                      <CountUp duration={4} className="counter" end={334} />
                     ) : <CountUp duration={4} className="counter" end={0} />}
                   </div>
                 )}
@@ -119,7 +119,7 @@ export function InNumbers() {
                 {({ isVisible }: PropVisible) => (
                   <div className="sm:h-[2.5rem] h-[2.6rem] lg:h-[4rem]">
                     {isVisible ? (
-                      <CountUp duration={4} className="counter" end={1512} />
+                      <CountUp duration={4} className="counter" end={812} />
                     ) : <CountUp duration={4} className="counter" end={0} />}
                   </div>
                 )}
