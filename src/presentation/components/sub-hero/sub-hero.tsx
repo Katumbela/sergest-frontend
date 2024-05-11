@@ -22,7 +22,7 @@ export function SubHero() {
         <div className="sm:w-6/12  "></div>
         <div className="lg:w-6/12 sm:w-8/12 sm:text-start mt-6 sm:mt-[4rem] lg:my-auto">
           <div className="sm:pe-6 text-center sm:text-start lg:px-20">
-            <h1 className="text-white text-xl px-4 font-semibold sm:text-3xl">
+            <h1 className="text-white text-xl md:px-0 px-4 font-semibold sm:text-3xl">
               Sem preocupações, onde estiveres estamos também.
             </h1>
             <p className="text-white mt-2 sm:mt-8 text-xs w-10/12 mx-auto sm:mx-0 sm:w-auto sm:text-sm sm:ps-14 lg:ps-0 lg:text-md 2xl:text-lg">
@@ -30,8 +30,7 @@ export function SubHero() {
               gama de serviços que você pode acessar confortavelmente de onde
               estiver, através da nossa plataforma.
             </p>
-            <br />
-            <div className="flex justify-center  w-full sm:justify-end sm:pe-6 lg:pe-0 lg:justify-start gap-4">
+            <div className="flex mt-4 mb-3 justify-center  w-full sm:justify-end sm:pe-6 lg:pe-0 lg:justify-start gap-4">
               <ButtonSecondary click={startUse}>Começar a usar</ButtonSecondary>
               <button
                 onClick={handleClick}
@@ -41,6 +40,9 @@ export function SubHero() {
                 <FaPlay className="my-auto" />
               </button>
             </div>
+            <span className="font-bold text-white mt-[1rem] ">
+            Teste o SERGEST gratuitamente durante 15 dias.
+            </span>
           </div>
         </div>
       </div>
