@@ -1,4 +1,3 @@
-import { ColoredText } from "../colored-text/colored-text";
 import { testimonials_dummy } from "../../../infra/ddummies";
 import { Cardtestimonial } from "../card-testimonial/card-testimonial";
 import { circles } from "../../../utils";
@@ -17,7 +16,7 @@ export function Testimonials() {
       <div className="text-center">
         <h1 className="sm:text-[45px] text-[35px] leading-none lg:w-9/12 mx-auto font-bold">
           Descubra o que nossos clientes têm a dizer. Experiências que inspiram
-          sucesso  
+          sucesso
         </h1>
 
         <p className="2xl:w-3/12 md:w-5/12 text-primary mt-[1rem] sm:text-xl mx-auto">
