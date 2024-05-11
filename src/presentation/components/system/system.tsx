@@ -7,11 +7,11 @@ import { FaPlay } from "react-icons/fa6";
 
 export function SystemComponent() {
   return (
-    <div className="gradient-sergest mx-auto z-500 grid items-center lg:mt-[14rem] mt-[48rem] md:mt-[32rem]  pt-[6rem]">
+    <div className="gradient-sergest mx-auto z-500 grid items-center lg:mt-[14rem] 2xl:pt-[9rem] mt-[48rem] md:mt-[32rem]  pt-[6rem]">
       <div className="flex lg:flex-row flex-col container">
-        <div className="lg:w-6/12 items-center grid">
+        <div className="lg:w-6/12 2xl:w-7/12 items-center grid">
           <div className="text-center mt-[-2rem] lg:text-start md:-mt-10 sm:px-14">
-            <h1 className="sm:text-5xl text-2xl sm:mt-[2rem] lg:mt-2 font-bold text-white ">
+            <h1 className="sm:text-5xl 2xl:text-6xl text-2xl sm:mt-[2rem] lg:mt-2  font-bold text-white ">
               O sistema ideal para a sua empresa!
             </h1>
             <br />

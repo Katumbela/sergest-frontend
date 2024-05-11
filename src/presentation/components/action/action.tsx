@@ -17,7 +17,7 @@ export function Action() {
       <br />
       <br />
       <div className="cards lg:mt-[2rem] 2xl:mt-[3rem]">
-        <div className="flex-col flex md:grid lg:gap-8 md:gap-6 gap-9 lg:grid-cols-3 grid-cols-1 grid-rows-3 md:grid-cols-2">
+        <div className="flex-col flex md:grid lg:gap-8 2xl:gap-16 md:gap-6 gap-9 lg:grid-cols-3 grid-cols-1 grid-rows-3 md:grid-cols-2">
           <motion.div
             viewport={{ once: true }}
             initial={{ y: 180, opacity: 0 }}
