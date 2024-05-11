@@ -64,15 +64,17 @@ export function Action() {
             <div className="flex gap-6 relative">
               <Overlay />
               <img src={logos.logo_shield} className="w-[4em]" alt="" />
-              <h1 className="text-3xl my-auto font-bold text-white">Segura</h1>
+              <h1 className="text-3xl my-auto font-bold text-white">
+                Fácil & Segura
+              </h1>
             </div>
             <div className="mt-4 text-start">
               <p className="text-white text-sm">
-                Pagamentos Integrados com o Multicaixa Express! Medidas de
-                segurança robustas para proteger os dados sensíveis dos
-                usuários, como criptografia de ponta a ponta, autenticação em
-                duas etapas e conformidade com regulamentações de proteção de
-                dados.
+                Pagamentos Integrados com o Multicaixa Express! Segurança
+                robustas para proteger os dados sensíveis dos usuários, com uma
+                interface do usuário simples e fácil de usar, recursos
+                intuitivos que permitam aos usuários navegar facilmente pelo
+                software.
               </p>
             </div>
           </motion.div>
@@ -114,9 +116,9 @@ export function Action() {
             </div>
             <div className="mt-4 text-start">
               <p className="text-grayser">
-                Software em conformidade com as leis e regulamentações fiscais
-                angolanas, incluindo requisitos de faturação eletrônica e
-                relatórios fiscais Certificado pela AGT n•310.
+                Angolano: Software em conformidade com as leis e regulamentações
+                fiscais angolanas, incluindo requisitos de faturação eletrônica
+                e relatórios fiscais Certificado pela AGT n•310
               </p>
             </div>
           </motion.div>
