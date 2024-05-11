@@ -30,7 +30,7 @@ export function SystemComponent() {
             </div>
             
             <p className="font-bold mt-3 text-white  ">
-            Teste o SERGEST gratuitamente durante 15 dias.
+            Teste o SERGEST <span className="underline">gratuitamente</span>  durante 15 dias.
             </p>
           </div>
         </div>
