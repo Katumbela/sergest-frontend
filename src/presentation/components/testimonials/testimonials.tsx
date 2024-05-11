@@ -4,7 +4,7 @@ import { Cardtestimonial } from "../card-testimonial/card-testimonial";
 import { Button } from "../button/button";
 import { circles } from "../../../utils";
 import { motion } from "framer-motion";
-import TestimonialCarousel from "../testimonials-carousel/test-carousel";
+
 
 export function Testimonials() {
   return (
