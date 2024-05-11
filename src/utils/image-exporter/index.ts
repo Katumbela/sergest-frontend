@@ -3,6 +3,7 @@ import logo_lamp from "../../assets/logos/Captura de ecrã 2024-05-10 073101.png
 import logo_angola from "../../assets/logos/Captura de ecrã 2024-05-10 073120.png";
 import logo_shield from "../../assets/logos/Captura de ecrã 2024-05-10 073154.png";
 import logo_essencial from "../../assets/logos/plans/Captura de ecrã 2024-05-10 134231.png";
+import logo_agt from "../../assets/logos/agt -logop.jpeg";
 import logo_avancado from "../../assets/logos/plans/Captura de ecrã 2024-05-10 134242.png";
 import logo_expert from "../../assets/logos/plans/Captura de ecrã 2024-05-10 134252.png";
 
@@ -45,10 +46,7 @@ import user_INACIO from "../../assets/users/Mask groupe inacio.png";
 import user_MARIA from "../../assets/users/Mask groupe-5 maria.png";
 import user_ARMANDO from "../../assets/users/Mask groupe-3 armando.png";
 import user_ALFREDO from "../../assets/users/Mask groupe-2 alfredo.png";
-
 import user_PATRICIO from "../../assets/users/patricio vieira.jpg";
-
-
 import user_ADILSON from "../../assets/users/adilson_manuel.jpg";
 
 
@@ -58,6 +56,7 @@ export const logos = {
   logo_angola,
   logo_shield,
   logo_essencial,
+  logo_agt,
   logo_avancado,
   logo_expert,
 };

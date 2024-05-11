@@ -2,13 +2,14 @@ import { motion } from "framer-motion";
 import { logos } from "../../../utils";
 import { ColoredText } from "../colored-text/colored-text";
 import { Overlay } from "../overlay/overlay";
+import { FaCheckCircle } from "react-icons/fa";
 
 export function Action() {
   return (
     <div className=" lg:mt-[20rem] md:mt-[16rem]  mt-[29rem] h-[400px]">
       <div className="text-center">
         <h1 className="md:text-[56px] leading-tight text-4xl font-bold">
-          Três Palavras & uma <ColoredText>Plataforma</ColoredText>{" "}
+          Quatro Palavras & uma <ColoredText>Plataforma</ColoredText>{" "}
         </h1>
         <p className="lg:w-3/12 px-1 mt-3 md:mt-0 md:px-0 md:w-5/12 mx-auto">
           Factura pelo computador, tablet ou telemóvel a qualquer hora.
@@ -22,27 +23,42 @@ export function Action() {
             viewport={{ once: true }}
             initial={{ y: 180, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
-            transition={{ delay: 0.1}}
+            transition={{ delay: 0.1 }}
             className="card hover:shadow-primary/20 transition-all hover:translate-y-[-1px] border rounded-xl shadow-xl py-8 px-6"
           >
-            <div className="flex gap-6 relative">
+            <div className="flex flex-col  gap-1 relative">
               <Overlay />
-              <img src={logos.logo_lamp} className="w-[4em]" alt="" />
-              <h1 className="text-3xl my-auto font-bold">Fácil</h1>
+              <img src={logos.logo_agt} className="w-[11em]" alt="" />
+              <h1 className="text-2xl my-auto font-bold">
+                Certificado pela AGT
+              </h1>
             </div>
-            <div className="mt-4 text-start">
-              <p className="text-grayser">
-                Com a Nossa plataforma, tudo é mais fácil! Oferecemos uma ampla
-                gama de serviços que você pode acessar confortavelmente de onde
-                estiver, através do nosso site ou aplicativo.
-              </p>
+            <div className="mt-2 text-start">
+              <ul>
+                <li className="flex gap-2 ">
+                  <FaCheckCircle className="my-auto text-primary" />
+                  Documentos aceites pela AGT;
+                </li>
+                <li className="flex gap-2 ">
+                  <FaCheckCircle className="my-auto text-primary" />
+                  Cálculo automático de impostos;
+                </li>
+                <li className="flex gap-2 ">
+                  <FaCheckCircle className="my-auto text-primary" />
+                  Exportação do ficheiro SAF-T AO;
+                </li>
+                <li className="flex gap-2 ">
+                  <FaCheckCircle className="my-auto text-primary" />
+                  Software Certificado nº310
+                </li>
+              </ul>
             </div>
           </motion.div>
           <motion.div
             viewport={{ once: true }}
             initial={{ y: 180, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
-            transition={{ delay: 0.2}}
+            transition={{ delay: 0.2 }}
             className="card hover:shadow-primary/20 transition-all hover:translate-y-[-1px] border gradient-sergest rounded-xl shadow-xl py-8 px-6"
           >
             <div className="flex gap-6 relative">
@@ -58,12 +74,35 @@ export function Action() {
               </p>
             </div>
           </motion.div>
+          {/*
 
+
+   <motion.div
+            viewport={{ once: true }}
+            initial={{ y: 180, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            transition={{ delay: 0.1 }}
+            className="card hover:shadow-primary/20 transition-all hover:translate-y-[-1px] border rounded-xl shadow-xl py-8 px-6"
+          >
+            <div className="flex gap-6 relative">
+              <Overlay />
+              <img src={logos.logo_lamp} className="w-[4em]" alt="" />
+              <h1 className="text-3xl my-auto font-bold">Fácil</h1>
+            </div>
+            <div className="mt-4 text-start">
+              <p className="text-grayser">
+                Com a Nossa plataforma, tudo é mais fácil! Oferecemos uma ampla
+                gama de serviços que você pode acessar confortavelmente de onde
+                estiver, através do nosso site ou aplicativo.
+              </p>
+            </div>
+          </motion.div>
+  */}
           <motion.div
             viewport={{ once: true }}
             initial={{ y: 180, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
-            transition={{ delay: 0.3}}
+            transition={{ delay: 0.3 }}
             className="card mx-auto col-span-2 lg:col-span-1 sm:w-6/12 lg:w-full hover:shadow-primary/20 transition-all hover:translate-y-[-1px] border rounded-xl shadow-xl py-8 px-6"
           >
             <div className="flex gap-6 relative">
