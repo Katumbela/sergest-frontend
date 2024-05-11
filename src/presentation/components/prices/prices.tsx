@@ -50,15 +50,39 @@ export function Prices() {
                 <ul className="text-sm sm:text-md lg:text-md list-disc pl-2">
                   {plan.benefits.split("|").map((benefit, index) => (
                     <li key={index} className="flex">
-                      <FiCheckCircle className={`text- ${ plan.id != 2 ?  'text-primary ' : ''} my-auto`} />
-                      <span className={`ml-2  ${ plan.id != 2 ?  'text-grayser ' : ''}`}>{benefit.trim()}</span>
+                      <FiCheckCircle
+                        className={`text- ${
+                          plan.id != 2 ? "text-primary " : ""
+                        } my-auto`}
+                      />
+                      <span
+                        className={`ml-2  ${
+                          plan.id != 2 ? "text-grayser " : ""
+                        }`}
+                      >
+                        {benefit.trim()}
+                      </span>
                     </li>
                   ))}
                 </ul>
 
                 <br />
                 <b className="text-secondary">{plan.invest}</b>
-                <p className="font-bold">Teste grátis por 15 dias</p>
+                <p
+                  className={`  ${
+                    plan.id != 2 ? " font-normal " : "font-bold"
+                  }`}
+                >
+                  Teste{" "}
+                  {plan.id != 2 ? (
+                    <ColoredText className="font-semibold underline">
+                      <span className="underline text-underline">grátis </span>
+                    </ColoredText>
+                  ) : (
+                    <span className="font-bold">grátis </span>
+                  )}
+                  por 15 dias
+                </p>
 
                 {plan.id != 2 ? (
                   <>
