@@ -5,7 +5,7 @@ import { Overlay } from "../overlay/overlay";
 
 export function Founder() {
   return (
-    <div className="  lg:mt-[58rem]  2xl:mt-[47rem] mt-[130rem] sm:mt-[85rem]  pt-[13rem]">
+    <div className="resp-founder  lg:mt-[58rem]  2xl:mt-[47rem] mt-[130rem] sm:mt-[85rem]  pt-[13rem]">
       <div className="flex lg:flex-row flex-col md:gap-24 ">
         <div className="w-full text-end relative flex justify-start">
           <Overlay />

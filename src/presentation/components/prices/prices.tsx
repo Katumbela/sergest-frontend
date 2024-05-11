@@ -56,14 +56,14 @@ export function Prices() {
                 {plan.id != 2 ? (
                   <>
                     <br />
-                    <ColoredText className={`text-5xl font-bold mt-2`}>
+                    <ColoredText className={`text-5xl h2 font-bold mt-2`}>
                       {" "}
                       {plan.price}
                     </ColoredText>
                     <br />
                   </>
                 ) : (
-                  <h1 className={`text-5xl font-bold mt-2`}>{plan.price}</h1>
+                  <h2 className={`text-5xl h2 font-bold mt-2`}>{plan.price}</h2>
                 )}
 
                 <br />

@@ -4,6 +4,7 @@ import { ButtonSecondary } from "../button-secondary/button-secondary";
 import { ColoredText } from "../colored-text/colored-text";
 import { Overlay } from "../overlay/overlay";
 import { startUse } from "../../../utils/functions";
+import { useState, useEffect } from "react";
 
 export function Hero() {
   const handleClick = () => {
@@ -12,11 +13,26 @@ export function Hero() {
       "_blank"
     );
   };
+
+  const [width, setWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWidth(window.innerWidth);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
     <div className="flex flex-col md:flex-row mt-[3rem] -z-10 sm:-mt-8 lg:mt-20 2xl:mt-[3rem] h-[400px]">
       <div className="lg:w-6/12 md:w-8/12 grid text-start">
         <div className="my-auto text-center md:text-start">
-          <h1 className="lg:text-7xl md:text-5xl text-4xl w-11/12 mx-auto md:mx-0 md:w-full lg:mt-10 text-grayser font-bold">
+          <h1 className="lg:text-7xl resp-h1 md:text-5xl text-4xl w-11/12 mx-auto md:mx-0 md:w-full lg:mt-10 text-grayser font-bold">
             Software de <ColoredText>Faturação</ColoredText> online
           </h1>
           <p className="lg:w-6/12 mt-[.5rem] lg:mt-[1rem] md:w-8/12 md:text-sm lg:text-lg">
@@ -36,7 +52,11 @@ export function Hero() {
       </div>
       <div className="lg:w-6/12 md:w-6/12 -z-10 grid relative">
         <Overlay />
-        <img src={bgs.bg_hero} className="md:my-auto mt-6 -z-10 w-full" alt="" />
+        <img
+          src={bgs.bg_hero}
+          className="md:my-auto mt-6 -z-10 w-full"
+          alt=""
+        />
       </div>
     </div>
   );

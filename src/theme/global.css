@@ -46,6 +46,39 @@ html, body {
     margin-top: 8.5rem!important;
   }
 }
+
+
+/* onde o tailwind css não pega */
+
+@media (min-width: 1024px) and (max-width: 1199px) {
+  .mt-t {
+    margin-top: -1rem!important;
+  }
+
+  #prices .card p {
+    font-size: 12px;
+  }
+  #prices .card .h2 {
+    font-size: 38px;
+  }
+  .resp-h1 {
+    font-size: 55px ;
+    margin-top: -3rem;
+  }
+  .resp-founder {
+    margin-top: 68rem;
+  }
+
+  .resp-founder p {
+    font-size: 14px;
+  }
+
+  .resp-founder h1 {
+    font-size: 35px;
+  }
+}
+
+
 @media (min-width: 430px) {
 
   nav {
