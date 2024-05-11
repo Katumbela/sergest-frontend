@@ -8,34 +8,32 @@ export function Prices() {
   return (
     <div id="prices" className=" h-[400px]">
       <div className="text-center">
-        <h1 className="text-[56px] font-bold">
+        <h1 className="sm:text-[56px] text-[30px] leading-none font-bold">
           Preços & Planos da <ColoredText>Plataforma !</ColoredText>{" "}
         </h1>
-        <p className="w-3/12 mx-auto">
+        <p className="lg:w-3/12 lg:text-lg sm:w-6/12 text-grayser mt-4 mx-auto">
           Factura pelo computador, tablet ou telemóvel a qualquer hora.
         </p>
       </div>
       <br />
-      <br />
-      <br />
-      <br />
+      <br /> 
       <div className="cards">
-        <div className="grid gap-8 grid-cols-3">
+        <div className="grid mt-[1rem] lg:mt-[3rem] lg:gap-8 gap-6  lg:grid-cols-3 sm:grid-cols-2">
           {plans_dummies.map((plan) => (
             <div
               key={plan.id}
               className={`card ${
-                plan.id == 2 &&
-                "gradient-sergest shadow-2xl shadow-primary text-white"
+                plan.id == 2 ?
+                "gradient-sergest shadow-2xl lg:shadow-primary text-white" : 'hover:bg-primary/5'
               }  transition-all hover:-translate-y-2 border rounded-xl shadow-xl py-8 px-6`}
             >
               <div className="flex gap-6 relative">
                 <Overlay />
                 <img src={plan.logo} className="w-[4em]" alt="" />
-                <h1 className={`text-3xl my-auto font-bold`}>{plan.plan}</h1>
+                <h1 className={`sm:text-3xl text-2xl  my-auto font-bold`}>{plan.plan}</h1>
               </div>
               <p
-                className={` mt-4 ${
+                className={`text-sm sm:text-lg mt-4 ${
                   plan.id == 2 ? "  text-white" : "text-grayser"
                 } `}
               >
@@ -44,7 +42,7 @@ export function Prices() {
               <div className="mt-4 text-start">
                 <b className="text-secondary">Benefícios</b>
                 <br />
-                <p className=" ">{plan.benefits}</p>
+                <p className="text-sm sm:text-md lg:text-lg  ">{plan.benefits}</p>
                 <br />
                 <b className="text-secondary">{plan.invest}</b>
                 <br />

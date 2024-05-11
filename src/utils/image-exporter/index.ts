@@ -41,6 +41,10 @@ import user_3 from "../../assets/users/Ellipse 2-3.png";
 import user_4 from "../../assets/users/Ellipse 2-4.png";
 import user_5 from "../../assets/users/Ellipse 2-5.png";
 import user_6 from "../../assets/users/Ellipse 2.png";
+import user_INACIO from "../../assets/users/Mask groupe inacio.png";
+import user_MARIA from "../../assets/users/Mask groupe-5 maria.png";
+import user_ARMANDO from "../../assets/users/Mask groupe-3 armando.png";
+import user_ALFREDO from "../../assets/users/Mask groupe-2 alfredo.png";
 
 export const logos = {
   logo,
@@ -79,6 +83,10 @@ export const users = {
   user_4,
   user_5,
   user_6,
+  user_MARIA,
+  user_ALFREDO,
+  user_ARMANDO,
+  user_INACIO
 };
 
 export const circles = {

@@ -21,9 +21,9 @@ export function HomePage() {
   return (
     <>
       <div className="container">
-        <LayoutBody>
+         
           <NavBar />
-        </LayoutBody>
+        
 
         <LayoutBody>
           <Hero />

@@ -18,8 +18,8 @@ export function Proccess() {
           className="top-0 animate-ping left-0 right-0 bottom-0 -z-10 2xl:w-[60%] md:w-[70%] mx-auto absolute "
           alt=""
         />
-        <div className="grid grid-cols-3 gap-5">
-          <div>
+        <div className="grid md:grid-cols-3 gap-5">
+          <div className="mt-[2rem] sm:mt-[1rem]">
             <h1 className="font-bold text-4xl text-grayser">
               <ColoredText>Facturação</ColoredText>
             </h1>
@@ -51,7 +51,7 @@ export function Proccess() {
               alt=""
             />
           </div>
-          <div>
+          <div className="mt-[2rem] sm:mt-[1rem]">
             <h1 className="font-bold text-4xl text-grayser">
               <ColoredText>Cliente</ColoredText>
             </h1>

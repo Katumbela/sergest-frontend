@@ -8,21 +8,20 @@ import { FaPlay } from "react-icons/fa6";
 
 export function StartNow() {
   return (
-    <div className=" mx-auto  grid items-center mt-[45rem]  pt-[6rem]">
-      <div className="flex 2xl:ps-[200px] ">
-        <div className="w-8/12  items-center grid">
-          <div className="text-start relative my-auto ps-14 2xl:px-14">
+    <div className=" mx-auto  grid items-center lg:mt-[45rem] mt-[140rem] sm:mt-[68rem] pt-[6rem]">
+      <div className="flex flex-col md:flex-row  2xl:ps-[200px] ">
+        <div className="lg:w-8/12  items-center grid">
+          <div className="text-start relative my-auto px-6 sm:ps-14 2xl:px-14">
             <img
               src={circles.circle_2_line}
               className="absolute -z-10 md:w-[80%] 2xl:w-[90%] 2xl:-left-[20rem] md:-left-[10rem]  md:-bottom-[22rem] 2xl:-bottom-[35rem]"
               alt=""
             />
-            <h1 className="text-5xl font-bold  ">
+            <h1 className="sm:text-3xl text-3xl -mt-1 sm:-mt-12 lg:-mt-[5rem] lg:text-5xl font-bold  ">
               Com um <ColoredText>clique</ColoredText> apenas comece a usar
               <ColoredText> agora</ColoredText> mesmo!
-            </h1>
-            <br />
-            <p className="text-grayser">
+            </h1> 
+            <p className="text-grayser sm:my-[.5rem] my-[1rem]">
               Não perca mais tempo comece agora mesmo a sua jornada para o
               futuro com a Sargest.
             </p>

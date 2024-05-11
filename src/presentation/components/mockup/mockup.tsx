@@ -4,14 +4,14 @@ import { Overlay } from "../overlay/overlay";
 
 export function MockUp() {
   return (
-    <div className="w-full relative mt-[7rem] -z-10">
+    <div className="w-full relative lg:mt-[7rem] mt-[5rem] -z-10">
       <Overlay />
       <motion.img
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 0.2 }}
         src={bgs.bg_mockup}
-        className="w-[60%] mx-auto"
+        className="lg:w-[60%] mx-auto"
         alt=""
       />
     </div>

@@ -34,7 +34,7 @@ export function LayoutBody({ children }: Omit<LayoutProps, "animateBg">) {
       initial={initial[index]}
       animate={animate[index]}
       transition={{ duration: 0.8, type: "spring", damping: 13 }}
-      className="      "
+      className="     -z-10 "
     >
       {children}
     </motion.div>

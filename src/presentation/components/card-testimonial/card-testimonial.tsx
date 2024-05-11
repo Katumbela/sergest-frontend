@@ -1,15 +1,17 @@
 import { FaStar } from "react-icons/fa6";
 import { Overlay } from "../overlay/overlay";
+import { ReactPropTypes } from "react";
 
 interface CTProps {
   pic: string;
   nome: string;
+  props?: ReactPropTypes;
   desc: string;
 }
 
-export function Cardtestimonial({ nome, desc, pic }: CTProps) {
+export function Cardtestimonial({ props, nome, desc, pic }: CTProps) {
   return (
-    <div className="    bg-white transition-all hover:border-gray-200 border border-white  rounded-xl shadow-xl py-14 px-6">
+    <div {...props} className="    bg-white transition-all hover:border-gray-200 border border-white  rounded-xl shadow-xl py-14 px-6">
       <div className="text-center gap-6 relative">
         <Overlay />
         <img

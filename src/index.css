@@ -11,7 +11,7 @@
 }
 
 .footer-link li a {
-  @apply hover:font-bold transition-all;
+  @apply hover:font-bold transition-all text-sm md:text-[16px];
 }
 
 .click {

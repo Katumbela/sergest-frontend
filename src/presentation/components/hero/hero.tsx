@@ -13,18 +13,16 @@ export function Hero() {
     );
   };
   return (
-    <div className="flex h-[400px]">
-      <div className="w-6/12 grid text-start">
-        <div className="my-auto">
-          <h1 className="text-7xl mt-10 text-grayser font-bold">
+    <div className="flex flex-col md:flex-row mt-[3rem] -z-10 sm:-mt-8 lg:mt-20 2xl:mt-[3rem] h-[400px]">
+      <div className="lg:w-6/12 md:w-8/12 grid text-start">
+        <div className="my-auto text-center md:text-start">
+          <h1 className="lg:text-7xl md:text-5xl text-4xl w-11/12 mx-auto md:mx-0 md:w-full lg:mt-10 text-grayser font-bold">
             Software de <ColoredText>Faturação</ColoredText> online
           </h1>
-          <br />
-          <p className="w-6/12 text-lg">
+          <p className="lg:w-6/12 mt-[.5rem] lg:mt-[1rem] md:w-8/12 md:text-sm lg:text-lg">
             Factura pelo computador, tablet ou telemóvel a qualquer hora.
           </p>
-          <br />
-          <div className="flex gap-3">
+          <div className="flex justify-center md:justify-start mt-[1.5rem] gap-3 md:mt-[.8rem] lg:mt-[1rem]">
             <ButtonSecondary click={startUse}>Começar a usar</ButtonSecondary>
             <button
               onClick={handleClick}
@@ -36,9 +34,9 @@ export function Hero() {
           </div>
         </div>
       </div>
-      <div className="w-6/12 grid relative">
+      <div className="lg:w-6/12 md:w-6/12 -z-10 grid relative">
         <Overlay />
-        <img src={bgs.bg_hero} className="my-auto" alt="" />
+        <img src={bgs.bg_hero} className="md:my-auto mt-6 -z-10 w-full" alt="" />
       </div>
     </div>
   );

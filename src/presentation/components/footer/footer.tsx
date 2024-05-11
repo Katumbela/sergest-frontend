@@ -39,7 +39,7 @@ export function Footer() {
   return (
     <div className="gradient-sergest border-t-[6px] border-primary py-8 2xl:pt-[7rem] 2xl:pb-[6rem] mt-[10rem]">
       <div className="container">
-        <div className="grid gap-4 md:grid-cols-5">
+        <div className="sm:grid gap-4 lg:grid-cols-5 md:grid-cols-4 sm:grid-cols-3 grid-cols-1">
           <div className="w-full col-span-2 md:pe-5">
             {" "}
             <img
@@ -47,13 +47,13 @@ export function Footer() {
               className="h-[3em] bg-white rounded-lg py-2 px-4 "
               alt=""
             />
-            <p className="text-white text-sm mt-4">
+            <p className="text-white text-xs sm:text-sm mt-4">
               Com a Nossa plataforma, tudo é mais fácil! Oferecemos uma ampla
               gama de serviços que você pode acessar confortavelmente de onde
               estiver, através do nosso site ou aplicativo.
             </p>
           </div>
-          <div className="text-white">
+          <div className="text-white mt-8 sm:mt-3">
             <b>Produto</b>
             <br />
             <br />
@@ -75,7 +75,7 @@ export function Footer() {
               </li>
             </ul>
           </div>
-          <div className="text-white">
+          <div className="text-white mt-8 sm:mt-3">
             <b>Info & Serviços</b>
             <br />
             <br />
@@ -114,7 +114,7 @@ export function Footer() {
             </ul>
           </div>
 
-          <div className="text-white">
+          <div className="text-white mt-8 sm:mt-3">
             <b>Acompanhe nossas redes sociais</b>
             <br />
             <br />
@@ -166,9 +166,9 @@ export function Footer() {
       {showScrollButton && (
         <button
           onClick={handleScrollTop}
-          className="fixed flex items-center gap-2 px-4 py-4 text-center text-white rounded-full shadow-lg md:px-4 click bg-primary place-content-center bottom-4 right-4 "
+          className="fixed flex items-center gap-2 sm:px-4 py-3 px-3 sm:py-4 text-center text-white rounded-full shadow-lg md:px-4 click bg-primary place-content-center bottom-4 right-4 "
         >
-          <FaArrowUp className="text-3xl" />
+          <FaArrowUp className="sm:text-3xl" />
         </button>
       )}
     </div>

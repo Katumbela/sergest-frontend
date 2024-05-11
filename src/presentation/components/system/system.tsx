@@ -7,20 +7,20 @@ import { FaPlay } from "react-icons/fa6";
 
 export function SystemComponent() {
   return (
-    <div className="gradient-sergest mx-auto z-500 grid items-center mt-[14rem]  pt-[6rem]">
-      <div className="flex container">
-        <div className="w-6/12 items-center grid">
-          <div className="text-start md:-mt-10 px-14">
-            <h1 className="text-5xl font-bold text-white ">
+    <div className="gradient-sergest mx-auto z-500 grid items-center lg:mt-[14rem] mt-[48rem] md:mt-[32rem]  pt-[6rem]">
+      <div className="flex lg:flex-row flex-col container">
+        <div className="lg:w-6/12 items-center grid">
+          <div className="text-center mt-[-2rem] lg:text-start md:-mt-10 sm:px-14">
+            <h1 className="sm:text-5xl text-2xl sm:mt-[2rem] lg:mt-2 font-bold text-white ">
               O sistema ideal para a sua empresa!
             </h1>
             <br />
-            <p className="text-white">
+            <p className="text-white w-9/12 lg:w-full mx-auto lg:mx-0 mb-[1rem] lg:mb-0">
               Tenha todos os controles essenciais do seu negócio num único
               lugar. Entre a partir de qualquer dispositivo.
             </p>
             <br />
-            <div className="flex gap-4">
+            <div className="flex justify-center lg:justify-start mb-[2rem] lg:mb-0 gap-4">
               <ButtonSecondary click={startUse}>Começar a usar</ButtonSecondary>
               <button
                 onClick={handleClick}
@@ -33,7 +33,7 @@ export function SystemComponent() {
           </div>
         </div>
 
-        <div className="w-6/12 text-end relative flex justify-end">
+        <div className="lg:w-6/12 text-end relative flex justify-end">
           <Overlay />
           <motion.img
             initial={{ x: -180, opacity: 0 }}
