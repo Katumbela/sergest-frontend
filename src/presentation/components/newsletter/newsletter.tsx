@@ -12,6 +12,7 @@ export function Newsletter() {
   const [loading, setLoading] = useState(false);
   const [sent, setSent] = useState(false);
 
+  
   const handleSubmit = async () => {
     if (email === "" || !email.includes("@")) {
       Swal.fire({
