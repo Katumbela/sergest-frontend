@@ -1,4 +1,4 @@
-import { ReactNode } from "react";
+import { Fragment, ReactNode } from "react";
 
 interface CTProps {
   children: ReactNode;
@@ -6,11 +6,11 @@ interface CTProps {
 }
 
 export function ColoredText({ children, className }: CTProps) {
-  return (
-    <span
-      className={`bg-gradient-to-r ${className} from-sky-700 via-sky-300 to-green-400 text-transparent bg-clip-text animate-gradient`}
-    >
-      {children}
-    </span>
+  return ( 
+      <div
+        className={`bg-gradient-to-r ${className} from-sky-700 via-sky-300 to-green-400 text-transparent bg-clip-text animate-gradient`}
+      >
+        {children}
+      </div> 
   );
 }
