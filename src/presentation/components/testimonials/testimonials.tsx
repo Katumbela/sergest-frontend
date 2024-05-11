@@ -45,9 +45,13 @@ export function Testimonials() {
         </div>
         <br />
         <br />
-        <center>
+
+        {/*
+ <center>
           <Button className="mx-auto md:mt-[2rem] ">Mostrar mais</Button>
         </center>
+          */}
+
         <br />
 
         <br />

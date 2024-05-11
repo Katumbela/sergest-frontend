@@ -23,7 +23,7 @@ export function StartNow() {
             </h1> 
             <p className="text-grayser sm:my-[.5rem] my-[1rem]">
               Não perca mais tempo comece agora mesmo a sua jornada para o
-              futuro com a Sargest.
+              futuro com a Sergest.
             </p>
 
             <div className="flex gap-4">
