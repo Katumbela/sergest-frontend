@@ -251,6 +251,10 @@ html, body {
   z-index: -9 !important;
 }
 
+button {
+  box-shadow: none!important;
+}
+
 ::-webkit-scrollbar {
   width: 15px; /* Largura da barra de rolagem */
 }
