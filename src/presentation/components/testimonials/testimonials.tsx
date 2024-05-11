@@ -40,6 +40,7 @@ export function Testimonials() {
                 desc={test.desc}
                 nome={test.nome}
                 pic={test.pic}
+                role={test.role}
               />
             </motion.div>
           ))}
