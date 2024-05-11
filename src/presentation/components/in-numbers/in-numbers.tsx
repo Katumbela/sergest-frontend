@@ -11,7 +11,7 @@ type PropVisible = {
 export function InNumbers() {
   return (
     <div className="mt-[4rem] lg:mt-[5rem]">
-      <h1 className="text-5xl text-center sm:text-start sm:text-4xl h-auto lg:text-6xl font-bold mt-4 mb-[4rem] gap-3 flex-wrap">
+      <h1 className="text-5xl text-center  sm:text-4xl h-auto lg:text-6xl font-bold mt-4 mb-[4rem] gap-3 flex-wrap">
         <span className={`color-text`}>Sergest</span> em números
       </h1>
 
