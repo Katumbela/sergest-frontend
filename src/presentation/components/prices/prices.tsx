@@ -12,8 +12,8 @@ export function Prices() {
         <h1 className="sm:text-[56px] text-[30px] leading-none font-bold">
           Preços & Planos da <ColoredText>Plataforma !</ColoredText>{" "}
         </h1>
-        <p className="lg:w-3/12 lg:text-lg sm:w-6/12 text-grayser mt-4 mx-auto">
-          Factura pelo computador, tablet ou telemóvel a qualquer hora.
+        <p className="lg:w-3/12 lg:text-xl sm:w-6/12 text-grayser mt-4 mx-auto">
+          Escolha o Planos perfeito para a Gestão do seu negócio
         </p>
       </div>
       <br />
@@ -86,11 +86,10 @@ export function Prices() {
           <span className="my-auto">Blog</span>
           <FaArrowRight className="my-auto " />
         </button>
-        <br />  
+        <br />
       </div>
 
-        <InNumbers />
-
+      <InNumbers />
     </div>
   );
 }
