@@ -9,7 +9,7 @@ export function Action() {
     <div className=" lg:mt-[20rem] md:mt-[16rem]  mt-[29rem] h-[400px]">
       <div className="text-center">
         <h1 className="md:text-[56px] leading-tight text-4xl font-bold">
-          Quatro Palavras & uma <ColoredText>Plataforma</ColoredText>{" "}
+          Três Palavras & uma <ColoredText>Plataforma</ColoredText>{" "}
         </h1>
         <p className="lg:w-3/12 px-1 mt-3 md:mt-0 md:px-0 md:w-5/12 mx-auto">
           Factura pelo computador, tablet ou telemóvel a qualquer hora.
