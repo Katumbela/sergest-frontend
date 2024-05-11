@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import { logos } from "../../../utils";
 import { ColoredText } from "../colored-text/colored-text";
 import { Overlay } from "../overlay/overlay";
@@ -14,10 +15,16 @@ export function Action() {
         </p>
       </div>
       <br />
-      <br /> 
+      <br />
       <div className="cards lg:mt-[2rem] 2xl:mt-[3rem]">
         <div className="flex-col flex md:grid lg:gap-8 md:gap-6 gap-9 lg:grid-cols-3 grid-cols-1 grid-rows-3 md:grid-cols-2">
-          <div className="card hover:shadow-primary/20 transition-all hover:translate-y-[-1px] border rounded-xl shadow-xl py-8 px-6">
+          <motion.div
+            viewport={{ once: true }}
+            initial={{ y: 180, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            transition={{ delay: 0.1, duration: 0.2 }}
+            className="card hover:shadow-primary/20 transition-all hover:translate-y-[-1px] border rounded-xl shadow-xl py-8 px-6"
+          >
             <div className="flex gap-6 relative">
               <Overlay />
               <img src={logos.logo_lamp} className="w-[4em]" alt="" />
@@ -30,8 +37,14 @@ export function Action() {
                 estiver, através do nosso site ou aplicativo.
               </p>
             </div>
-          </div>
-          <div className="card hover:shadow-primary/20 transition-all hover:translate-y-[-1px] border gradient-sergest rounded-xl shadow-xl py-8 px-6">
+          </motion.div>
+          <motion.div
+            viewport={{ once: true }}
+            initial={{ y: 180, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            transition={{ delay: 0.2, duration: 0.2 }}
+            className="card hover:shadow-primary/20 transition-all hover:translate-y-[-1px] border gradient-sergest rounded-xl shadow-xl py-8 px-6"
+          >
             <div className="flex gap-6 relative">
               <Overlay />
               <img src={logos.logo_shield} className="w-[4em]" alt="" />
@@ -44,8 +57,15 @@ export function Action() {
                 estiver, através do nosso site ou aplicativo.
               </p>
             </div>
-          </div>
-          <div className="card mx-auto col-span-2 lg:col-span-1 sm:w-6/12 lg:w-full hover:shadow-primary/20 transition-all hover:translate-y-[-1px] border rounded-xl shadow-xl py-8 px-6">
+          </motion.div>
+
+          <motion.div
+            viewport={{ once: true }}
+            initial={{ y: 180, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            transition={{ delay: 0.3, duration: 0.2 }}
+            className="card mx-auto col-span-2 lg:col-span-1 sm:w-6/12 lg:w-full hover:shadow-primary/20 transition-all hover:translate-y-[-1px] border rounded-xl shadow-xl py-8 px-6"
+          >
             <div className="flex gap-6 relative">
               <Overlay />
               <img src={logos.logo_angola} className="w-[4em]" alt="" />
@@ -58,7 +78,7 @@ export function Action() {
                 estiver, através do nosso site ou aplicativo.
               </p>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </div>

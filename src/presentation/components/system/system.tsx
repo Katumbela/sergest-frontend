@@ -36,6 +36,7 @@ export function SystemComponent() {
         <div className="lg:w-6/12 text-end relative flex justify-end">
           <Overlay />
           <motion.img
+            viewport={{ once: true }}
             initial={{ x: -180, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
             transition={{ delay: 0.2 }}
