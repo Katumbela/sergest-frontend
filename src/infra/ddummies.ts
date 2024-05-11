@@ -24,7 +24,7 @@ export const testimonials_dummy: TDProps[] = [
   {
     id: 3,
     nome: "Alfredo Luemba",
-    desc: "Com a nossa plataforma, tudo é mais fácil! Oferecemos uma ampla gama de serviços que você pode acessar confortavelmente de onde estiver.",
+    desc: "Estou impressionado com a facilidade de uso deste software de faturação. Mesmo sem experiência prévia em contabilidade, consegui dominá-lo rapidamente e agora economizo horas no faturamento mensal.",
     pic: users.user_ALFREDO,
   },
   {
