@@ -81,7 +81,7 @@ export function Prices() {
                   ) : (
                     <span className="font-bold">grátis </span>
                   )}
-                  por 15 dias
+                  por <span className="underline">15</span> dias
                 </p>
 
                 {plan.id != 2 ? (

@@ -62,9 +62,10 @@ export function Proccess() {
           </div>
           <div className="mt-[2rem] sm:mt-[1rem]">
             <h1 className="font-bold text-4xl text-grayser">
-              <ColoredText>Cliente</ColoredText>
+              Listagem
             </h1>
-            <h1 className="font-bold text-4xl text-grayser">selecionar</h1>
+            <h1 className="font-bold text-4xl text-grayser">
+              <ColoredText>Produtos </ColoredText></h1>
             <img
               src={circles.ceta}
               className="mx-auto h-[5em] my-4 anim"
@@ -75,7 +76,7 @@ export function Proccess() {
               initial={{ y: 190, opacity: 0 }}
               whileInView={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.3 }}
-              src={screens.screen_proccess_3}
+              src={screens.screen_list_product}
               className="mx-auto shadow-xl bg-white w-[60%] border-[8px] rounded-3xl border-primary"
               alt=""
             />

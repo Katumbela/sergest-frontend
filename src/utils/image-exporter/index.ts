@@ -31,6 +31,7 @@ import screen_pay_exp from "../../assets/screens/image 26.png";
 import screen_pay from "../../assets/screens/Mask group.png";
 import screen_dash from "../../assets/screens/image 14.png";
 import screen_proccess_1 from "../../assets/screens/image 19.png";
+import screen_list_product from "../../assets/screens/list produtos.jpeg";
 import screen_proccess_2 from "../../assets/screens/image 16.png";
 import screen_proccess_3 from "../../assets/screens/image 20.png";
 
@@ -78,6 +79,7 @@ export const screens = {
   screen_pay_exp,
   screen_proccess_1,
   screen_proccess_2,
+  screen_list_product,
   screen_proccess_3,
 };
 
