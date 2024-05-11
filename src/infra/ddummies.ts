@@ -22,7 +22,7 @@ export const testimonials_dummy: TDProps[] = [
     nome: "Patrício Vieira",
     desc: "Este software de faturação simplificou nossas operações financeiras, permitindo-nos concentrar mais tempo em outras áreas do nosso negócio. Ótima solução!",
     pic: users.user_PATRICIO,
-    role: 'CEO, TV Prudencia'
+    role: 'CEO, PV Prudencia'
   },
   {
     id: 3,
