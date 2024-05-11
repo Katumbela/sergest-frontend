@@ -8,7 +8,7 @@ export function SubHero() {
     <div className="relative">
       <img
         src={screens.screen_dash}
-        className="absolute bottom-[-18rem] sm:bottom-[-3rem] shadow-2xl -rotate-6 left-[5%] border-[8px] rounded-xl border-primary w-[13rem] z-10"
+        className="absolute bottom-[-19rem] sm:bottom-[-3rem] shadow-2xl -rotate-6 left-[5%] border-[8px] rounded-xl border-primary w-[13rem] z-10"
         alt=""
       />
 
@@ -18,7 +18,7 @@ export function SubHero() {
         alt=""
       />
 
-      <div className="flex clip mt-[100px] mt-t md:mt-[-4.5rem]   lg:mt-[4rem] rounded-[30px] sm:rounded-[65px] gradient-sergest h-[410px] lg:h-[450px]">
+      <div className="flex clip mt-[170px] mt-t md:mt-[-4.5rem]   lg:mt-[4rem] rounded-[30px] sm:rounded-[65px] gradient-sergest h-[410px] lg:h-[450px]">
         <div className="sm:w-6/12  "></div>
         <div className="lg:w-6/12 sm:w-8/12 sm:text-start mt-6 sm:mt-[4rem] lg:my-auto">
           <div className="sm:pe-6 text-center sm:text-start lg:px-20">
@@ -40,8 +40,8 @@ export function SubHero() {
                 <FaPlay className="my-auto" />
               </button>
             </div>
-            <span className="font-bold text-white mt-[1rem] ">
-            Teste o SERGEST gratuitamente durante 15 dias.
+            <span className="font-bold text-sm sm:text-md text-white mt-[1rem] ">
+              Teste o SERGEST gratuitamente durante 15 dias.
             </span>
           </div>
         </div>
