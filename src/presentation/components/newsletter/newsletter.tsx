@@ -2,7 +2,7 @@ import { FaEnvelope, FaSpinner } from "react-icons/fa6";
 import { ColoredText } from "../colored-text/colored-text";
 import { Button } from "../button/button";
 import { circles } from "../../../utils";
-import { useState } from "react"; 
+import { useState } from "react";
 import { motion } from "framer-motion";
 import axios from "axios";
 import Swal from "sweetalert2";
@@ -13,21 +13,21 @@ export function Newsletter() {
   const [sent, setSent] = useState(false);
 
   const handleSubmit = async () => {
-    setLoading(true);
-
-    if (email =='') {
+    if (email == "") {
       Swal.fire({
         icon: "warning",
         title: "Ups !",
         text: "Por favor, insira o seu email para ativar a newsletter.",
       });
 
-      return
+      return;
     }
+
+    setLoading(true);
 
     const url = "https://email-api-arotec-lilac.vercel.app/api/enviar-email";
     const dadosEmail = {
-      to: "ja3328173@gmail.com",
+      to: "comercial@sergest.com",
       subject: "Novo inscrito na newsletter da Neroo",
       body: `Novo e-mail cadastrado na newsletter Neroo: ${email}`,
       email: "ja3328173@gmail.com",
@@ -96,8 +96,8 @@ export function Newsletter() {
           </div>
           <Button
             click={handleSubmit}
-            disabled={loading && email == ''}
-            className="mx-[4rem] disabled:bg-primary/30 flex justify-center sm:mx-0"
+            disabled={loading || email == ""}
+            className="mx-[4rem] disabled:bg-primary/30 disabled:text-secondary/70 disabled:font-semibold flex justify-center sm:mx-0"
           >
             {loading ? (
               <FaSpinner className="text-2xl my-auto text-white animate-spin animate" />
