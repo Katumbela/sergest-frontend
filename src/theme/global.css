@@ -6,7 +6,7 @@
 }
 
 html , body{
-  overflow-x: hidden !important;
+  overflow-x: hidden!important;
 }
 
 html, body {
@@ -146,6 +146,8 @@ nav .menu-container div:hover {
   position: fixed;
   top: 0;
   left: 0;
+right:0;
+bottom: 0;
   height: 100vh;
   width: 100vw;
   display: flex;
@@ -199,14 +201,3 @@ nav .menu-container div:hover {
   margin-right: 40px;
 }
 
-.img-container {
-  display: flex;
-  justify-content: center;
-  margin-top: 50px;
-  width: 100%;
-}
-
-.img-container img {
-  height: 700px;
-  pointer-events: none;
-}
