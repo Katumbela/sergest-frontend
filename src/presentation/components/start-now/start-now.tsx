@@ -8,7 +8,7 @@ import { FaPlay } from "react-icons/fa6";
 
 export function StartNow() {
   return (
-    <div className=" mx-auto  grid items-center lg:mt-[45rem] 2xl:mt-[40rem] mt-[140rem] sm:mt-[68rem] pt-[6rem]">
+    <div className=" mx-auto  grid items-center lg:mt-[45rem] 2xl:mt-[40rem] mt-[170rem] sm:mt-[80rem]  pt-[6rem]">
       <div className="flex flex-col md:flex-row  2xl:ps-[200px] ">
         <div className="lg:w-8/12  items-center grid">
           <div className="text-start relative my-auto px-6 sm:ps-14 2xl:px-14">
