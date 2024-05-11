@@ -19,7 +19,7 @@ export const plans_dummies: PProps[] = [
     logo: logos.logo_essencial,
     price: "4.000 AOA",
     benefits:
-      "Exportação de ficheiro SAFT-AO | Mapa de vendas | Suporte Técnico | Envio de factura por e-mail | Mapa de vendas  | Apenas 1 utilizador | Documentos ilimitados ( Factura, Factura-Recibo, Orçamento, Proforma, Recibo e Guia de Remessa) Nota de Crédito",
+      "Exportação de ficheiro SAFT-AO | Mapa de vendas | Suporte Técnico | Envio de factura por e-mail | Mapa de vendas  | Apenas 1 utilizador | Conversão de proforma e orçamento em factura | Documentos ilimitados ( Factura, Factura-Recibo, Orçamento, Proforma, Recibo e Guia de Remessa) Nota de Crédito",
     btn: "Subscrever agora",
     invest: " Investimento | 1 MÊS",
   },
@@ -32,7 +32,7 @@ export const plans_dummies: PProps[] = [
     btn: "Subscrever agora",
     invest: "Investimento | 6 MÊS",
     benefits:
-      "Exportação de ficheiro SAFT-AO | Mapa de vendas | Suporte Técnico | Envio de factura por e-mail | Mapa de vendas  | Até 2 utilizadores | Documentos ilimitados ( Factura, Factura-Recibo, Orçamento, Proforma, Recibo e Guia de Remessa) Nota de Crédito",
+      "Exportação de ficheiro SAFT-AO | Mapa de vendas | Suporte Técnico | Envio de factura por e-mail | Mapa de vendas  | Até 2 utilizadores | Conversão de proforma e orçamento em factura | Documentos ilimitados ( Factura, Factura-Recibo, Orçamento, Proforma, Recibo e Guia de Remessa) Nota de Crédito",
   },
   {
     id: 3,
@@ -43,6 +43,6 @@ export const plans_dummies: PProps[] = [
     invest: "Investimento | 1 ANO",
     desc: "Ideal para quem já possui um negócio com grandes volumes de transições e muito ativo.",
     benefits:
-      "Exportação de ficheiro SAFT-AO | Mapa de vendas | Suporte Técnico | Envio de factura por e-mail | Mapa de vendas  | Até 3 utilizadores | Documentos ilimitados ( Factura, Factura-Recibo, Orçamento, Proforma, Recibo e Guia de Remessa) Nota de Crédito",
+      "Exportação de ficheiro SAFT-AO | Mapa de vendas | Suporte Técnico | Envio de factura por e-mail | Mapa de vendas  | Até 3 utilizadores | Conversão de proforma e orçamento em factura | Documentos ilimitados ( Factura, Factura-Recibo, Orçamento, Proforma, Recibo e Guia de Remessa) Nota de Crédito",
   },
 ];

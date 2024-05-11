@@ -49,7 +49,7 @@ export function Prices() {
                 <br />
                 <ul className="text-sm sm:text-md lg:text-md list-disc pl-2">
                   {plan.benefits.split("|").map((benefit, index) => (
-                    <li key={index} className="flex">
+                    <li key={index} className="flex my-[.2rem]">
                       <FiCheckCircle
                         className={`text- ${
                           plan.id != 2 ? "text-primary " : ""
