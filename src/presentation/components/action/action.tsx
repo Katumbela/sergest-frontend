@@ -116,7 +116,7 @@ export function Action() {
             </div>
             <div className="mt-4 text-start">
               <p className="text-grayser">
-                Angolano: Software em conformidade com as leis e regulamentações
+                Software em conformidade com as leis e regulamentações
                 fiscais angolanas, incluindo requisitos de faturação eletrônica
                 e relatórios fiscais Certificado pela AGT n•310
               </p>
