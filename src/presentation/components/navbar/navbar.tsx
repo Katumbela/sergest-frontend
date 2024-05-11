@@ -1,11 +1,5 @@
 import { motion } from "framer-motion";
-import {
-  FaArrowRight,
-  
-  FaEnvelope,
- 
-  FaPhone,
-} from "react-icons/fa6";
+import { FaArrowRight, FaEnvelope, FaPhone } from "react-icons/fa6";
 import { logos } from "../../../utils";
 import { Button } from "../button/button";
 import { LoginNow } from "../../../utils/functions";
@@ -166,10 +160,9 @@ export function NavBar() {
         <Button click={LoginNow} className="my-auto hidden lg:flex gap-2">
           Entrar agora <FaArrowRight className="my-auto" />
         </Button>
-     
 
         <motion.div
-        className="lg:hidden grid items-center py-2 rounded-md click font-seibold text-primary px-5 my-auto border 2 border-primary"
+          className="lg:hidden cursor-pointer grid items-center py-2 rounded-md click font-seibold text-primary px-5 my-auto border 2 border-primary"
           variants={hideNavItemsVariant}
           onClick={() => setMobileNavOpen(true)}
         >
@@ -206,6 +199,26 @@ export function NavBar() {
               </motion.li>
             ))}
           </motion.ul>
+          <div className=" btns gap-0 flex justify-center ps-8">
+            <button
+              style={{
+                borderColor: "white",
+                border: "1px solid white",
+                color: "#033E85",
+              }}
+              onClick={LoginNow}
+              className=" b1  flex md:gap-2 border-2 text-xs  font-semibold  text-red-500 rounded-md border-white flex gap-2"
+            >
+              Entrar agora <FaArrowRight className="my-auto hidden md:block" />
+            </button>
+            <button
+              style={{ background: "white", color: "#033E85" }}
+              onClick={LoginNow}
+              className="  border flex md:gap-2 rounded-md  text-red-500 bg-white  font-semibold text-xs border-white"
+            >
+              Começar a usar <FaArrowRight className="my-auto hidden md:block" />
+            </button>
+          </div>
           <motion.div
             variants={fadeInVariant}
             className="contacts flex justify-center mt-[10vh] flex-wrap gap-6"

@@ -114,7 +114,16 @@
   font-style: italic;
 }
 
-
+.btns  {
+  gap: 0!important; 
+  width: 100%!important;
+}
+.btns .b1 {
+   color: white!important;
+}
+.btns button {
+  padding: .5rem .5rem !important;
+}
 
 .animate-gradient {
   background-size: 300%;

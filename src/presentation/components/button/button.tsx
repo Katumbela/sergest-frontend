@@ -4,7 +4,7 @@ import {} from "../../../utils/functions";
 interface CTProps {
   children: ReactNode;
   className?: string;
-  disabled: boolean;
+  disabled?: boolean;
   click?: () => void;
   props?: React.DetailedHTMLProps<
     React.ButtonHTMLAttributes<HTMLButtonElement>,
