@@ -2,10 +2,10 @@ import logo from "../../assets/logos/logotipo 1.png";
 import logo_lamp from "../../assets/logos/Captura de ecrã 2024-05-10 073101.png";
 import logo_angola from "../../assets/logos/Captura de ecrã 2024-05-10 073120.png";
 import logo_shield from "../../assets/logos/Captura de ecrã 2024-05-10 073154.png";
-import logo_essencial from "../../assets/logos/plans/Captura de ecrã 2024-05-10 134231.png";
+import logo_essencial from "../../assets/logos/plans/essencial.png";
 import logo_agt from "../../assets/logos/agt -logop.jpeg";
-import logo_avancado from "../../assets/logos/plans/Captura de ecrã 2024-05-10 134242.png";
-import logo_expert from "../../assets/logos/plans/Captura de ecrã 2024-05-10 134252.png";
+import logo_avancado from "../../assets/logos/plans/avancado.png";
+import logo_expert from "../../assets/logos/plans/expert.png";
 
 // importacao das  imagens do background
 
