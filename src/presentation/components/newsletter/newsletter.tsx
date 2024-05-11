@@ -18,7 +18,7 @@ export function Newsletter() {
 
     const url = "https://email-api-arotec-lilac.vercel.app/api/enviar-email";
     const dadosEmail = {
-      to: "ja3328173@gmail.com",
+      to: "comercial@sergest.com",
       subject: "Novo inscrito na newsletter da Neroo",
       body: `Novo e-mail cadastrado na newsletter Neroo: ${email}`,
       email: "ja3328173@gmail.com",
@@ -35,6 +35,7 @@ export function Newsletter() {
       });
 
       console.log("Email enviado com sucesso!", resposta);
+      setEmail('')
       setSent(true);
       setLoading(false);
     } catch (erro: unknown) {
@@ -95,7 +96,7 @@ export function Newsletter() {
       </div>
       <motion.div
         initial={{ opacity: 0, y: 90 }}
-        transition={{ duration: 0.1, delay: 0.4 }}
+        transition={{ duration: 0.1, delay: 0.1 }}
         whileInView={{ opacity: 1, y: 0 }}
       >
         {sent && (
