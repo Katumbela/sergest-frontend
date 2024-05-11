@@ -10,7 +10,7 @@ export function Newsletter() {
         <div className="absolute -z-20 md:w-[80%] 2xl:w-[85%] 2xl:-right-[62rem] md:-right-[38rem]  md:-bottom-[25rem] 2xl:-bottom-[26rem]">
           <img
             src={circles.circle_2}
-            className=" md:w-[50%] 2xl:w-[50%] "
+            className=" opacity-[.4] sm:opacity-[1] md:w-[50%] 2xl:w-[50%] "
             alt=""
           />
         </div>

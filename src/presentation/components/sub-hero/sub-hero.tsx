@@ -18,14 +18,13 @@ export function SubHero() {
         alt=""
       />
 
-      <div className="flex clip mt-[6rem] md:mt-[-4.5rem]   lg:mt-[4rem] rounded-[30px] sm:rounded-[65px] gradient-sergest h-[410px] lg:h-[450px]">
-        <div className="sm:w-6/12  "> 
-        </div>
+      <div className="flex clip mt-[100px] mt-t md:mt-[-4.5rem]   lg:mt-[4rem] rounded-[30px] sm:rounded-[65px] gradient-sergest h-[410px] lg:h-[450px]">
+        <div className="sm:w-6/12  "></div>
         <div className="lg:w-6/12 sm:w-8/12 sm:text-start mt-6 sm:mt-[4rem] lg:my-auto">
           <div className="sm:pe-6 text-center sm:text-start lg:px-20">
-            <h1 className="text-white text-xl font-semibold sm:text-3xl">
+            <h1 className="text-white text-xl px-4 font-semibold sm:text-3xl">
               Sem preocupações onde estiver estamos também.
-            </h1> 
+            </h1>
             <p className="text-white mt-2 sm:mt-8 text-xs w-10/12 mx-auto sm:mx-0 sm:w-auto sm:text-sm sm:ps-14 lg:ps-0 lg:text-md 2xl:text-lg">
               Com a Nossa plataforma, tudo é mais fácil! Oferecemos uma ampla
               gama de serviços que você pode acessar confortavelmente de onde
