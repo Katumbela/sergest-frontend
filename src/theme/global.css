@@ -5,7 +5,7 @@
   animation: animatedgradient 4s ease infinite alternate;
 }
 
-html {
+html , body{
   overflow-x: hidden !important;
 }
 
