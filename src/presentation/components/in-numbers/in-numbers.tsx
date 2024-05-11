@@ -21,7 +21,7 @@ export function InNumbers() {
           initial={{ y: 190, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.6 }}
-          className="cardd text-center border border-primary/30 bg-white shadow rounded-e-md pb-7 px-6 "
+          className="cardd text-center border border-primary/30 bg-white shadow rounded-lg pb-7 px-6 "
         >
           <div className="mx-auto border-x border-secondaryy bg-primary/30 w-[3.5em] text-center pt-6 rounded-b-full">
             <div className=" rounded-full  bg-white grid items-center place-content-center text-lg py-2 h-[3em] w-[3em] border border-secondaryy px-2    ">
@@ -48,7 +48,7 @@ export function InNumbers() {
           initial={{ y: 190, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.6, delay: 0.1 }}
-          className="cardd text-center border border-primary/30 bg-white shadow rounded-e-md pb-7 px-6 "
+          className="cardd text-center border border-primary/30 bg-white shadow rounded-lg pb-7 px-6 "
         >
           <div className="mx-auto border-x border-secondaryy bg-primary/30 w-[3.5em] text-center pt-6 rounded-b-full">
             <div className=" rounded-full  bg-white grid items-center place-content-center text-lg py-2 h-[3em] w-[3em] border border-secondaryy px-2    ">
@@ -77,7 +77,7 @@ export function InNumbers() {
           initial={{ y: 190, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.2 }}
-          className="cardd text-center border border-primary/30 bg-white shadow rounded-e-md pb-7 px-6 "
+          className="cardd text-center border border-primary/30 bg-white shadow rounded-lg pb-7 px-6 "
         >
           <div className="mx-auto border-x border-secondaryy bg-primary/30 w-[3.5em] text-center pt-6 rounded-b-full">
             <div className=" rounded-full  bg-white grid items-center place-content-center text-lg py-2 h-[3em] w-[3em] border border-secondaryy px-2    ">
@@ -106,7 +106,7 @@ export function InNumbers() {
           initial={{ y: 190, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.3 }}
-          className="cardd text-center border border-primary/30 bg-white shadow rounded-e-md pb-7 px-6 "
+          className="cardd text-center border border-primary/30 bg-white shadow rounded-lg pb-7 px-6 "
         >
           <div className="mx-auto border-x border-secondaryy bg-primary/30 w-[3.5em] text-center pt-6 rounded-b-full">
             <div className=" rounded-full  bg-white grid items-center place-content-center text-lg py-2 h-[3em] w-[3em] border border-secondaryy px-2    ">
