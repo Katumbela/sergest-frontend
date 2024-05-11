@@ -18,7 +18,7 @@ export const testimonials_dummy: TDProps[] = [
   {
     id: 2,
     nome: "Patrício Vieira",
-    desc: "Com a nossa plataforma, tudo é mais fácil! Oferecemos uma ampla gama de serviços que você pode acessar confortavelmente de onde estiver.",
+    desc: "Este software de faturação simplificou nossas operações financeiras, permitindo-nos concentrar mais tempo em outras áreas do nosso negócio. Ótima solução!",
     pic: users.user_PATRICIO,
   },
   {
