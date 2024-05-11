@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import { circles, screens } from "../../../utils";
 import { ColoredText } from "../colored-text/colored-text";
 
@@ -29,7 +30,11 @@ export function Proccess() {
               className="mx-auto h-[5em] my-4 anim"
               alt=""
             />
-            <img
+            <motion.img
+              viewport={{ once: true }}
+              initial={{ y: 190, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1 }}
+              transition={{ duration: 0.5 }}
               src={screens.screen_proccess_1}
               className="mx-auto shadow-xl bg-white w-[60%] border-[8px] rounded-3xl border-primary"
               alt=""
@@ -45,7 +50,11 @@ export function Proccess() {
               className="mx-auto h-[5em] my-4 anim"
               alt=""
             />
-            <img
+            <motion.img
+              viewport={{ once: true }}
+              initial={{ y: 190, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1 }}
+              transition={{ duration: 0.5, delay: 0.2 }}
               src={screens.screen_proccess_2}
               className="mx-auto shadow-xl bg-white w-[60%] border-[8px] rounded-3xl border-primary"
               alt=""
@@ -61,7 +70,11 @@ export function Proccess() {
               className="mx-auto h-[5em] my-4 anim"
               alt=""
             />
-            <img
+            <motion.img
+              viewport={{ once: true }}
+              initial={{ y: 190, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1 }}
+              transition={{ duration: 0.5, delay: 0.3 }}
               src={screens.screen_proccess_3}
               className="mx-auto shadow-xl bg-white w-[60%] border-[8px] rounded-3xl border-primary"
               alt=""

@@ -11,11 +11,11 @@ type PropVisible = {
 export function InNumbers() {
   return (
     <div className="mt-[4rem] lg:mt-[5rem]">
-      <h1 className="text-4xl h-auto lg:text-6xl font-bold mt-4 mb-[4rem] gap-3 flex-wrap">
+      <h1 className="text-5xl text-center sm:text-start sm:text-4xl h-auto lg:text-6xl font-bold mt-4 mb-[4rem] gap-3 flex-wrap">
         <span className={`color-text`}>Sergest</span> em números
       </h1>
 
-      <div className="grid gap-4 lg:gap-10 2xl:gap-12 grid-cols-4">
+      <div className="grid gap-4 lg:gap-10 2xl:gap-12 grid-cols-2 sm:grid-cols-4">
         <motion.div
           viewport={{ once: true }}
           initial={{ y: 190, opacity: 0 }}
@@ -32,10 +32,10 @@ export function InNumbers() {
             <h1 className={`color-text`}>
               <VisibilitySensor partialVisibility offset={{ bottom: 200 }}>
                 {({ isVisible }: PropVisible) => (
-                  <div className="sm:h-[2.5rem] lg:h-[4rem]">
+                  <div className="sm:h-[2.5rem] h-[2.6rem] lg:h-[4rem]">
                     {isVisible ? (
-                      <CountUp duration={7} className="counter" end={12406} />
-                    ) : null}
+                      <CountUp duration={4} className="counter" end={12406} />
+                    ) : <CountUp duration={4} className="counter" end={0} />}
                   </div>
                 )}
               </VisibilitySensor>
@@ -59,10 +59,10 @@ export function InNumbers() {
             <h1 className={`color-text`}>
               <VisibilitySensor partialVisibility offset={{ bottom: 200 }}>
                 {({ isVisible }: PropVisible) => (
-                  <div className="sm:h-[2.5rem] lg:h-[4rem]">
+                  <div className="sm:h-[2.5rem] h-[2.6rem] lg:h-[4rem]">
                     {isVisible ? (
-                      <CountUp duration={14} className="counter" end={812} />
-                    ) : null}
+                      <CountUp duration={4} className="counter" end={812} />
+                    ) : <CountUp duration={4} className="counter" end={0} />}
                   </div>
                 )}
               </VisibilitySensor>
@@ -88,10 +88,10 @@ export function InNumbers() {
             <h1 className={`color-text`}>
               <VisibilitySensor partialVisibility offset={{ bottom: 200 }}>
                 {({ isVisible }: PropVisible) => (
-                  <div className="sm:h-[2.5rem] lg:h-[4rem]">
+                  <div className="sm:h-[2.5rem] h-[2.6rem] lg:h-[4rem]">
                     {isVisible ? (
-                      <CountUp duration={8} className="counter" end={703} />
-                    ) : null}
+                      <CountUp duration={4} className="counter" end={703} />
+                    ) : <CountUp duration={4} className="counter" end={0} />}
                   </div>
                 )}
               </VisibilitySensor>
@@ -117,10 +117,10 @@ export function InNumbers() {
             <h1 className={`color-text`}>
               <VisibilitySensor partialVisibility offset={{ bottom: 200 }}>
                 {({ isVisible }: PropVisible) => (
-                  <div className="sm:h-[2.5rem] lg:h-[4rem]">
+                  <div className="sm:h-[2.5rem] h-[2.6rem] lg:h-[4rem]">
                     {isVisible ? (
-                      <CountUp duration={9} className="counter" end={1512} />
-                    ) : null}
+                      <CountUp duration={4} className="counter" end={1512} />
+                    ) : <CountUp duration={4} className="counter" end={0} />}
                   </div>
                 )}
               </VisibilitySensor>
