@@ -7,15 +7,22 @@ export function TestimonialCarousel() {
   const [activeIndex, setActiveIndex] = useState(0);
 
   const nextTestimonial = () => {
-    setActiveIndex((prevIndex) => (prevIndex === testimonials_dummy.length - 1 ? 0 : prevIndex + 1));
+    setActiveIndex((prevIndex) =>
+      prevIndex === testimonials_dummy.length - 1 ? 0 : prevIndex + 1
+    );
   };
 
   const prevTestimonial = () => {
-    setActiveIndex((prevIndex) => (prevIndex === 0 ? testimonials_dummy.length - 1 : prevIndex - 1));
+    setActiveIndex((prevIndex) =>
+      prevIndex === 0 ? testimonials_dummy.length - 1 : prevIndex - 1
+    );
   };
 
   return (
-    <div className="carousel-container" style={{ overflowX: "auto", whiteSpace: "nowrap" }}>
+    <div
+      className="carousel-container"
+      style={{ overflowX: "auto", whiteSpace: "nowrap" }}
+    >
       <button onClick={prevTestimonial}>Previous</button>
       <div style={{ display: "flex" }}>
         <AnimatePresence initial={false} custom={activeIndex}>
@@ -31,7 +38,12 @@ export function TestimonialCarousel() {
               exit={{ opacity: 0, x: -100 }}
               transition={{ duration: 0.5 }}
             >
-              <Cardtestimonial desc={test.desc} nome={test.nome} pic={test.pic} />
+              <Cardtestimonial
+                role={test.role}
+                desc={test.desc}
+                nome={test.nome}
+                pic={test.pic}
+              />
             </motion.div>
           ))}
         </AnimatePresence>
