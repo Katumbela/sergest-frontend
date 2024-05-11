@@ -22,7 +22,7 @@ export function Action() {
             viewport={{ once: true }}
             initial={{ y: 180, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
-            transition={{ delay: 0.1, duration: 0.4 }}
+            transition={{ delay: 0.1}}
             className="card hover:shadow-primary/20 transition-all hover:translate-y-[-1px] border rounded-xl shadow-xl py-8 px-6"
           >
             <div className="flex gap-6 relative">
@@ -42,7 +42,7 @@ export function Action() {
             viewport={{ once: true }}
             initial={{ y: 180, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
-            transition={{ delay: 0.2, duration: 0.4 }}
+            transition={{ delay: 0.2}}
             className="card hover:shadow-primary/20 transition-all hover:translate-y-[-1px] border gradient-sergest rounded-xl shadow-xl py-8 px-6"
           >
             <div className="flex gap-6 relative">
@@ -63,7 +63,7 @@ export function Action() {
             viewport={{ once: true }}
             initial={{ y: 180, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
-            transition={{ delay: 0.3, duration: 0.4 }}
+            transition={{ delay: 0.3}}
             className="card mx-auto col-span-2 lg:col-span-1 sm:w-6/12 lg:w-full hover:shadow-primary/20 transition-all hover:translate-y-[-1px] border rounded-xl shadow-xl py-8 px-6"
           >
             <div className="flex gap-6 relative">

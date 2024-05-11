@@ -7,7 +7,7 @@ import { FaPlay } from "react-icons/fa6";
 
 export function PayWith() {
   return (
-    <div className="gradient-sergest border-b-[8px] border-primary mx-auto overflow-hidden lg:h-[550px] sm:h-[500px] h-[700px] grid items-center pt-[1rem] 2xl:pt-[2rem]">
+    <div className="gradient-sergest lg:pt-[4rem] border-b-[8px] border-primary mx-auto overflow-hidden lg:h-[550px] sm:h-[500px] h-[700px] grid items-center pt-[1rem] 2xl:pt-[2rem]">
       <div className="flex flex-col md:flex-row  container">
         <div className=" sm:w-6/12 mb-[4rem] sm:mb-0 items-center grid">
           <div className="sm:text-end text-center my-auto  ">

@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import { logos } from "../../../utils";
-import { ColoredText } from "../colored-text/colored-text";
 import { BsEnvelope } from "react-icons/bs";
 import CountUp from "react-countup";
 import VisibilitySensor from "react-visibility-sensor";
@@ -11,11 +10,12 @@ type PropVisible = {
 
 export function InNumbers() {
   return (
-    <div className="l">
-      <h1 className="text-4xl lg:text-5xl font-bold mt-4 mb-[4rem]">
-        <ColoredText>Sergest</ColoredText> em números
+    <div className="mt-[4rem] lg:mt-[5rem]">
+      <h1 className="text-4xl h-auto lg:text-6xl font-bold mt-4 mb-[4rem] gap-3 flex-wrap">
+        <span className={`color-text`}>Sergest</span> em números
       </h1>
-      <div className="grid gap-4 lg:gap-8 grid-cols-4">
+
+      <div className="grid gap-4 lg:gap-10 2xl:gap-12 grid-cols-4">
         <motion.div
           viewport={{ once: true }}
           initial={{ y: 190, opacity: 0 }}
@@ -29,17 +29,17 @@ export function InNumbers() {
             </div>
           </div>
           <h1 className="lg:text-5xl text-3xl  font-extrabold text-center mt-2">
-            <ColoredText>
+            <h1 className={`color-text`}>
               <VisibilitySensor partialVisibility offset={{ bottom: 200 }}>
                 {({ isVisible }: PropVisible) => (
-                  <div style={{ height: 40 }}>
+                  <div className="sm:h-[2.5rem] lg:h-[4rem]">
                     {isVisible ? (
                       <CountUp duration={7} className="counter" end={12406} />
                     ) : null}
                   </div>
                 )}
               </VisibilitySensor>
-            </ColoredText>
+            </h1>
           </h1>
           <span className="text-grayser text-xs lg:text-sm">+ SUBSCRIÇÔES</span>
         </motion.div>
@@ -56,17 +56,17 @@ export function InNumbers() {
             </div>
           </div>
           <h1 className="lg:text-5xl text-3xl  font-extrabold text-center mt-2">
-            <ColoredText>
+            <h1 className={`color-text`}>
               <VisibilitySensor partialVisibility offset={{ bottom: 200 }}>
                 {({ isVisible }: PropVisible) => (
-                  <div style={{ height: 40 }}>
+                  <div className="sm:h-[2.5rem] lg:h-[4rem]">
                     {isVisible ? (
                       <CountUp duration={14} className="counter" end={812} />
                     ) : null}
                   </div>
                 )}
               </VisibilitySensor>
-            </ColoredText>
+            </h1>
           </h1>
           <span className="text-grayser text-xs lg:text-sm">
             + PLANO ESSENCIAL
@@ -85,23 +85,24 @@ export function InNumbers() {
             </div>
           </div>
           <h1 className="lg:text-5xl text-3xl  font-extrabold text-center mt-2">
-            <ColoredText>
+            <h1 className={`color-text`}>
               <VisibilitySensor partialVisibility offset={{ bottom: 200 }}>
                 {({ isVisible }: PropVisible) => (
-                  <div style={{ height: 40 }}>
+                  <div className="sm:h-[2.5rem] lg:h-[4rem]">
                     {isVisible ? (
                       <CountUp duration={8} className="counter" end={703} />
                     ) : null}
                   </div>
                 )}
               </VisibilitySensor>
-            </ColoredText>
+            </h1>
           </h1>
           <span className="text-grayser text-xs lg:text-sm">
             + PLANO AVANÇAO
           </span>
         </motion.div>
         <motion.div
+          viewport={{ once: true }}
           initial={{ y: 190, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.3 }}
@@ -113,17 +114,17 @@ export function InNumbers() {
             </div>
           </div>
           <h1 className="lg:text-5xl text-3xl  font-extrabold text-center mt-2">
-            <ColoredText>
-            <VisibilitySensor partialVisibility offset={{ bottom: 200 }}>
-                {({ isVisible } : PropVisible) => (
-                  <div style={{ height: 40 }}>
+            <h1 className={`color-text`}>
+              <VisibilitySensor partialVisibility offset={{ bottom: 200 }}>
+                {({ isVisible }: PropVisible) => (
+                  <div className="sm:h-[2.5rem] lg:h-[4rem]">
                     {isVisible ? (
                       <CountUp duration={9} className="counter" end={1512} />
                     ) : null}
                   </div>
                 )}
               </VisibilitySensor>
-            </ColoredText>
+            </h1>
           </h1>
           <span className="text-grayser text-xs lg:text-sm">
             + PLANO EXPERT
