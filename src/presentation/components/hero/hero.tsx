@@ -36,11 +36,14 @@ export function Hero() {
           <h1 className="lg:text-7xl resp-h1 md:text-5xl text-4xl w-11/12 mx-auto md:mx-0 md:w-full lg:mt-10 text-grayser font-bold">
             Software de <ColoredText>Faturação</ColoredText> online
           </h1>
-          <p className="mt-[1rem] font-bold  lg:mt-[.6rem]">
+          <p className="mt-[1rem] text-lg font-bold  lg:mt-[.6rem]">
             Certificado pela AGT Nº <span className="undelrine">310</span>
           </p>
-          <p className="lg:w-6/12 mt-[.5rem] lg:mt-[.5rem] md:w-8/12 md:text-sm lg:text-lg">
-            Factura pelo computador, tablet ou telemóvel a qualquer hora.
+          <p className="   md:w-10/12 md:text-sm 2xl:text-lg">
+            Factura pelo computador, tablet ou telemóvel a qualquer hora. Teste
+            o SERGEST{" "}
+            <span className="color-text font-bold">gratuitamente</span> durante
+            <span className="font-bold"> 15 dias</span>.
           </p>
           <div className="flex justify-center md:justify-start mt-[1.5rem] gap-3 md:mt-[.8rem] lg:mt-[1rem]">
             <ButtonSecondary click={startUse}>Começar a usar</ButtonSecondary>
