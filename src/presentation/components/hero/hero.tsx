@@ -4,7 +4,7 @@ import { ButtonSecondary } from "../button-secondary/button-secondary";
 import { ColoredText } from "../colored-text/colored-text";
 import { Overlay } from "../overlay/overlay";
 import { startUse } from "../../../utils/functions";
-import { useState, useEffect } from "react";
+//import { useState, useEffect } from "react";
 
 export function Hero() {
   const handleClick = () => {
@@ -14,6 +14,8 @@ export function Hero() {
     );
   };
 
+
+  /*
   const [width, setWidth] = useState(window.innerWidth);
 
   useEffect(() => {
@@ -27,7 +29,7 @@ export function Hero() {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
-
+*/
   return (
     <div className="flex flex-col md:flex-row mt-[3rem] -z-10 sm:-mt-8 lg:mt-20 2xl:mt-[3rem] h-[400px]">
       <div className="lg:w-6/12 md:w-8/12 grid text-start">
