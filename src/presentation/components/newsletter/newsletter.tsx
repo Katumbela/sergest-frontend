@@ -29,7 +29,7 @@ export function Newsletter() {
     const dadosEmail = {
       to: "comercial@sergest.com",
       subject: "Novo inscrito na newsletter da Neroo",
-      body: `Novo e-mail cadastrado na newsletter Neroo: ${email}`,
+      body: `Novo e-mail cadastrado na newsletter Sergest: ${email}`,
       email: "ja3328173@gmail.com",
       password: "pmjh fcjp wmrm fwmy",
       emailFrom: "neroo-newsletter@gokside.site",
