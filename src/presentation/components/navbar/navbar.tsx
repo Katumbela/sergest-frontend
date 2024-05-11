@@ -1,17 +1,15 @@
 import { motion } from "framer-motion";
 import {
   FaArrowRight,
-  FaBurger,
+  
   FaEnvelope,
-  FaList,
+ 
   FaPhone,
 } from "react-icons/fa6";
 import { logos } from "../../../utils";
 import { Button } from "../button/button";
 import { LoginNow } from "../../../utils/functions";
-import { FiMenu } from "react-icons/fi";
 import { useState } from "react";
-import { FaTimes } from "react-icons/fa";
 import NumberUtils from "../../../utils/number-utils/number-utils";
 
 const MOBILE_NAV_ITEMS = [
