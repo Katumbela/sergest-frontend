@@ -71,6 +71,7 @@ export function NavBar() {
         ease: [0.74, 0, 0.19, 1.02],
       },
     },
+
     closed: {
       y: "-100%",
       transition: {
@@ -146,22 +147,25 @@ export function NavBar() {
           <img src={logos.logo} alt="" />
         </a>
         <div className="hidden lg:flex gap-7 my-auto">
-          <a href="#" className="text-md font-semibold">
+          <a href="#" className="text-md hover-anim font-semibold">
             Início
           </a>
-          <a href="#about" className="text-md font-semibold">
+          <a href="#about" className="text-md font-semibold hover-anim">
             Sobre
           </a>
-          <a href="#functionalities" className="text-md font-semibold">
+          <a
+            href="#functionalities"
+            className="text-md font-semibold hover-anim"
+          >
             Funcionalidades
           </a>
-          <a href="#prices" className="text-md font-semibold">
+          <a href="#prices" className="text-md font-semibold hover-anim">
             Preços e Planos
           </a>
-          <a href="#testimonials" className="text-md font-semibold">
+          <a href="#testimonials" className="text-md font-semibold hover-anim">
             Testemunhas
           </a>
-          <a href="#" className="text-md font-semibold">
+          <a href="#" className="text-md font-semibold hover-anim">
             Blog
           </a>
         </div>

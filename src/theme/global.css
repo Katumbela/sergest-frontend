@@ -7,6 +7,41 @@
   
   font-family: "Dancing Script", cursive!important;
 } 
+
+
+
+.hover-anim {
+  display: inline-block; 
+  position: relative;
+}
+.hover-anim:hover {
+  color: #033E85!important;
+  transition: all 0.3s ease-in;
+  cursor: pointer;
+}
+
+.hover-anim:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2.5px;
+  bottom: -1px;
+  left: 0;
+  background-color: #00CDDF;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-anim:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+
+
+
+
 .poppins-thin {
   font-family: "Poppins", sans-serif;
   font-weight: 100;
