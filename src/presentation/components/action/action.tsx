@@ -5,7 +5,7 @@ import { Overlay } from "../overlay/overlay";
 
 export function Action() {
   return (
-    <div className=" lg:mt-[15rem] md:mt-[11rem]  mt-[24rem] h-[400px]">
+    <div className=" lg:mt-[20rem] md:mt-[16rem]  mt-[29rem] h-[400px]">
       <div className="text-center">
         <h1 className="md:text-[56px] leading-tight text-4xl font-bold">
           Três Palavras & uma <ColoredText>Plataforma</ColoredText>{" "}
