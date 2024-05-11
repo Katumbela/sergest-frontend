@@ -13,11 +13,11 @@ export function Newsletter() {
   const [sent, setSent] = useState(false);
 
   const handleSubmit = async () => {
-    if (email == "") {
+    if (email === "" || !email.includes("@")) {
       Swal.fire({
         icon: "warning",
-        title: "Ups !",
-        text: "Por favor, insira o seu email para ativar a newsletter.",
+        title: "Ups!",
+        text: "Por favor, insira um email válido para ativar a newsletter ou insira um email válido.",
       });
 
       return;
