@@ -25,9 +25,9 @@ export function Newsletter() {
 
     setLoading(true);
 
-    const url = "https://email-api-arotec-lilac.vercel.app/api/enviar-email";
+    const url = "https:// email-api-katumbela.vercel.app/api/enviar-email";
     const dadosEmail = {
-      to: "comercial@sergest.com",
+      to: "comercial@sergest.ao",
       subject: "Novo inscrito na newsletter da Neroo",
       body: `Novo e-mail cadastrado na newsletter Sergest: ${email}`,
       email: "ja3328173@gmail.com",
