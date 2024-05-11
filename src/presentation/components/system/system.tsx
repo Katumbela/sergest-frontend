@@ -13,14 +13,12 @@ export function SystemComponent() {
           <div className="text-center mt-[-2rem] lg:text-start md:-mt-10 sm:px-14">
             <h1 className="sm:text-5xl 2xl:text-6xl text-2xl sm:mt-[2rem] lg:mt-2  font-bold text-white ">
               O sistema ideal para a sua empresa!
-            </h1>
-            <br />
-            <p className="text-white w-9/12 lg:w-full mx-auto lg:mx-0 mb-[1rem] lg:mb-0">
+            </h1> 
+            <p className="text-white my-3 w-9/12 lg:w-full mx-auto lg:mx-0 mb-[1rem] lg:mb-0">
               Tenha todos os controles essenciais do seu negócio num único
               lugar. Entre a partir de qualquer dispositivo.
-            </p>
-            <br />
-            <div className="flex justify-center lg:justify-start mb-[2rem] lg:mb-0 gap-4">
+            </p> 
+            <div className="flex my-2 justify-center lg:justify-start mb-[2rem] lg:mb-0 gap-4">
               <ButtonSecondary click={startUse}>Começar a usar</ButtonSecondary>
               <button
                 onClick={handleClick}
@@ -30,6 +28,10 @@ export function SystemComponent() {
                 <FaPlay className="my-auto" />
               </button>
             </div>
+            
+            <p className="font-bold mt-3 text-white  ">
+            Teste o SERGEST gratuitamente durante 15 dias.
+            </p>
           </div>
         </div>
 
