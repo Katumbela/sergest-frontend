@@ -2,6 +2,7 @@ import { testimonials_dummy } from "../../../infra/ddummies";
 import { Cardtestimonial } from "../card-testimonial/card-testimonial";
 import { circles } from "../../../utils";
 import { motion } from "framer-motion";
+import { ColoredText } from "../colored-text/colored-text";
 
 export function Testimonials() {
   return (
@@ -15,12 +16,17 @@ export function Testimonials() {
       </div>
       <div className="text-center">
         <h1 className="sm:text-[45px] text-[35px] leading-none lg:w-9/12 mx-auto font-bold">
-          Descubra o que nossos clientes têm a dizer. Experiências que inspiram
-          sucesso
+          Descubra o que nossos clientes têm a dizer.
         </h1>
 
-        <p className="2xl:w-3/12 md:w-5/12 text-primary mt-[1rem] sm:text-xl mx-auto">
-          Experiêcias que inspiram sucesso
+        <p className="2xl:w-3/12 relative whitespace-break-spaces md:w-5/12 text-primary mt-[1rem] sm:text-xl mx-auto">
+          <ColoredText className="text-8xl comma font-bold -mt-3   absolute ms-[-2rem]">
+            <span>"</span>
+          </ColoredText>{" "}
+          <span className="text-xl">Experiêcias que inspiram sucesso</span>
+          <ColoredText className="text-8xl comma font-bold -mt-3   absolute me-[-2rem]">
+            <span>"</span>
+          </ColoredText>{" "}
         </p>
       </div>
       <br />
