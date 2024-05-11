@@ -1,6 +1,6 @@
 import { ColoredText } from "../colored-text/colored-text";
 import { testimonials_dummy } from "../../../infra/ddummies";
-import { Cardtestimonial } from "../card-testimonial/card-testimonial"; 
+import { Cardtestimonial } from "../card-testimonial/card-testimonial";
 import { circles } from "../../../utils";
 import { motion } from "framer-motion";
 
@@ -15,11 +15,13 @@ export function Testimonials() {
         />
       </div>
       <div className="text-center">
-        <h1 className="sm:text-[56px] text-[35px] leading-none lg:w-8/12 mx-auto font-bold">
-          A vida dessas <ColoredText>pessoas</ColoredText> já não é a mesma!
+        <h1 className="sm:text-[45px] text-[35px] leading-none lg:w-9/12 mx-auto font-bold">
+          Descubra o que nossos clientes têm a dizer. Experiências que inspiram
+          sucesso  
         </h1>
-        <p className="2xl:w-3/12 md:w-5/12 text-grayser mt-[1rem] sm:text-xl mx-auto">
-          Factura pelo computador, tablet ou telemóvel a qualquer hora.
+
+        <p className="2xl:w-3/12 md:w-5/12 text-primary mt-[1rem] sm:text-xl mx-auto">
+          Experiêcias que inspiram sucesso
         </p>
       </div>
       <br />
