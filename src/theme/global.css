@@ -47,7 +47,15 @@ html, body {
   }
 }
 @media (min-width: 430px) {
-  
+
+  nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 35px 45px;
+}
+
+
+
 .clip {
   clip-path: polygon(
     100% 0,
@@ -109,7 +117,7 @@ html, body {
 nav {
   display: flex;
   justify-content: space-between;
-  padding: 35px 45px;
+  padding: 25px 15px;
 }
 
 nav .logo-container {
