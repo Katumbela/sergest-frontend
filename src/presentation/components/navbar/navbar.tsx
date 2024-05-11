@@ -199,7 +199,7 @@ export function NavBar() {
               </motion.li>
             ))}
           </motion.ul>
-          <div className=" btns gap-0 flex justify-center ps-8">
+          <div className=" btns gap-0 flex flex-col justify-center ">
             <button
               style={{
                 borderColor: "white",
@@ -209,7 +209,7 @@ export function NavBar() {
               onClick={LoginNow}
               className=" b1  flex md:gap-2 border-2 text-xs  font-semibold  text-red-500 rounded-md border-white flex gap-2"
             >
-              Entrar agora <FaArrowRight className="my-auto hidden md:block" />
+              Entrar agora <FaArrowRight className="my-auto  " />
             </button>
             <button
               style={{ background: "white", color: "#033E85" }}
