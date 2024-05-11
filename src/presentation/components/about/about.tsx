@@ -5,12 +5,15 @@ import { Overlay } from "../overlay/overlay";
 
 export function AboutUs() {
   return (
-    <div id="about" className="   mx-auto  items-center sm:mt-[12rem] mt-[6rem]   ">
+    <div
+      id="about"
+      className="   mx-auto  items-center sm:mt-[12rem] mt-[6rem]   "
+    >
       <div className="flex lg:flex-row flex-col gap-8 container">
         <div className="lg:w-6/12 text-end relative flex justify-center">
           <img
             src={circles.circle_2}
-            style={{zIndex: '-999999'}}
+            style={{ zIndex: "-999999" }}
             className="absolute -z-20 md:w-[80%] 2xl:w-[90%] 2xl:-left-[20rem] md:-left-[8rem]  md:-top-[14rem] 2xl:-top-[20rem]"
             alt=""
           />
@@ -32,6 +35,7 @@ export function AboutUs() {
             <br />
             <br />
             <motion.p
+              viewport={{ once: true }}
               initial={{ y: 70, opacity: 0 }}
               whileInView={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.2 }}
@@ -45,6 +49,7 @@ export function AboutUs() {
             </motion.p>
             <br />
             <motion.p
+              viewport={{ once: true }}
               initial={{ y: 70, opacity: 0 }}
               whileInView={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.2, delay: 0.2 }}

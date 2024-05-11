@@ -37,6 +37,7 @@ export function PayWith() {
           <Overlay />
           <div className="flex gap-8">
             <motion.img
+              viewport={{ once: true }}
               initial={{ y: 190, opacity: 0 }}
               whileInView={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.3, delay: 0.2 }}
@@ -45,6 +46,7 @@ export function PayWith() {
               alt=""
             />
             <motion.img
+              viewport={{ once: true }}
               initial={{ y: 190, opacity: 0 }}
               whileInView={{ y: 0, opacity: 1 }}
               src={screens.screen_pay_exp}

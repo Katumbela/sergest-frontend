@@ -3,6 +3,7 @@ import { plans_dummies } from "../../../infra/plans_dummies";
 import { ColoredText } from "../colored-text/colored-text";
 import { Overlay } from "../overlay/overlay";
 import { LoginNow } from "../../../utils/functions";
+import { InNumbers } from "../in-numbers/in-numbers";
 
 export function Prices() {
   return (
@@ -16,21 +17,24 @@ export function Prices() {
         </p>
       </div>
       <br />
-      <br /> 
+      <br />
       <div className="cards">
         <div className="grid mt-[1rem] lg:mt-[3rem] lg:gap-8 gap-6  lg:grid-cols-3 sm:grid-cols-2">
           {plans_dummies.map((plan) => (
             <div
               key={plan.id}
               className={`card ${
-                plan.id == 2 ?
-                "gradient-sergest shadow-2xl lg:shadow-primary text-white" : 'hover:bg-primary/5'
+                plan.id == 2
+                  ? "gradient-sergest shadow-2xl lg:shadow-primary text-white"
+                  : "hover:bg-primary/5"
               }  transition-all hover:-translate-y-2 border rounded-xl shadow-xl py-8 px-6`}
             >
               <div className="flex gap-6 relative">
                 <Overlay />
                 <img src={plan.logo} className="w-[4em]" alt="" />
-                <h1 className={`sm:text-3xl text-2xl  my-auto font-bold`}>{plan.plan}</h1>
+                <h1 className={`sm:text-3xl text-2xl  my-auto font-bold`}>
+                  {plan.plan}
+                </h1>
               </div>
               <p
                 className={`text-sm sm:text-lg mt-4 ${
@@ -42,7 +46,9 @@ export function Prices() {
               <div className="mt-4 text-start">
                 <b className="text-secondary">Benefícios</b>
                 <br />
-                <p className="text-sm sm:text-md lg:text-lg  ">{plan.benefits}</p>
+                <p className="text-sm sm:text-md lg:text-lg  ">
+                  {plan.benefits}
+                </p>
                 <br />
                 <b className="text-secondary">{plan.invest}</b>
                 <br />
@@ -80,13 +86,11 @@ export function Prices() {
           <span className="my-auto">Blog</span>
           <FaArrowRight className="my-auto " />
         </button>
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
+        <br />  
       </div>
+
+        <InNumbers />
+
     </div>
   );
 }

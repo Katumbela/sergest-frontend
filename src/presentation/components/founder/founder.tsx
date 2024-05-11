@@ -5,7 +5,7 @@ import { Overlay } from "../overlay/overlay";
 
 export function Founder() {
   return (
-    <div className="  lg:mt-[38rem]  2xl:mt-[42rem] mt-[97rem] sm:mt-[70rem]  pt-[6rem]">
+    <div className="  lg:mt-[42rem]  2xl:mt-[46rem] mt-[114rem] sm:mt-[87rem]  pt-[12rem]">
       <div className="flex lg:flex-row flex-col md:gap-24 ">
         <div className="w-full text-end relative flex justify-start">
           <Overlay />
@@ -16,6 +16,7 @@ export function Founder() {
           />
           <motion.img
             initial={{ x: -190, opacity: 0 }}
+            viewport={{ once: true }}
             whileInView={{ x: 0, opacity: 1 }}
             transition={{ duration: 0.6 }}
             src={bgs.bg_founder}
@@ -30,6 +31,7 @@ export function Founder() {
             </h1>
             <br />
             <motion.p
+              viewport={{ once: true }}
               initial={{ y: 80, opacity: 0 }}
               whileInView={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.2, delay: 0.2 }}
@@ -40,6 +42,7 @@ export function Founder() {
             <br />
 
             <motion.p
+              viewport={{ once: true }}
               initial={{ y: 80, opacity: 0 }}
               whileInView={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.2, delay: 0.4 }}
@@ -50,6 +53,7 @@ export function Founder() {
             </motion.p>
             <br />
             <motion.p
+              viewport={{ once: true }}
               initial={{ y: 80, opacity: 0 }}
               whileInView={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.2, delay: 0.5 }}

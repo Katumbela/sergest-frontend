@@ -5,7 +5,6 @@ import { Button } from "../button/button";
 import { circles } from "../../../utils";
 import { motion } from "framer-motion";
 
-
 export function Testimonials() {
   return (
     <div className=" 2xl:mt-[15rem] relative sm:mt-[5rem] mt-[4rem] h-[400px]">
@@ -30,6 +29,7 @@ export function Testimonials() {
         <div className="grid gap-8 place-content-center mx-auto items-center lg:grid-cols-3 sm:grid-cols-2">
           {testimonials_dummy.map((test) => (
             <motion.div
+              viewport={{ once: true }}
               initial={{ y: 180, opacity: 0 }}
               whileInView={{ y: 0, opacity: 1 }}
               transition={{ delay: 0.1 * test.id }} // Correção aqui
