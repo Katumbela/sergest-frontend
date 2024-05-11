@@ -27,7 +27,7 @@ export function Newsletter() {
 
     const url = "https:// email-api-katumbela.vercel.app/api/enviar-email";
     const dadosEmail = {
-      to: "comercial@sergest.ao",
+      to: "comercial@sermar.ao",
       subject: "Novo inscrito na newsletter da Neroo",
       body: `Novo e-mail cadastrado na newsletter Sergest: ${email}`,
       email: "ja3328173@gmail.com",
