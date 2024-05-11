@@ -67,10 +67,12 @@ export function Action() {
               <h1 className="text-3xl my-auto font-bold text-white">Segura</h1>
             </div>
             <div className="mt-4 text-start">
-              <p className="text-white">
-                Com a Nossa plataforma, tudo é mais fácil! Oferecemos uma ampla
-                gama de serviços que você pode acessar confortavelmente de onde
-                estiver, através do nosso site ou aplicativo.
+              <p className="text-white text-sm">
+                Pagamentos Integrados com o Multicaixa Express! Medidas de
+                segurança robustas para proteger os dados sensíveis dos
+                usuários, como criptografia de ponta a ponta, autenticação em
+                duas etapas e conformidade com regulamentações de proteção de
+                dados.
               </p>
             </div>
           </motion.div>
@@ -112,9 +114,9 @@ export function Action() {
             </div>
             <div className="mt-4 text-start">
               <p className="text-grayser">
-                Com a Nossa plataforma, tudo é mais fácil! Oferecemos uma ampla
-                gama de serviços que você pode acessar confortavelmente de onde
-                estiver, através do nosso site ou aplicativo.
+                Software em conformidade com as leis e regulamentações fiscais
+                angolanas, incluindo requisitos de faturação eletrônica e
+                relatórios fiscais Certificado pela AGT n•310.
               </p>
             </div>
           </motion.div>
