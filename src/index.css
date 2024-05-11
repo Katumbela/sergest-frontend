@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-.color-text {
+.color-text , .swal2-title {
   @apply bg-gradient-to-r from-sky-700 via-sky-300 to-green-400 text-transparent bg-clip-text animate-gradient;
 }
 

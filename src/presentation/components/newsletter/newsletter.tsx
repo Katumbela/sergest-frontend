@@ -1,12 +1,11 @@
-import { FaEnvelope } from "react-icons/fa6";
+import { FaEnvelope, FaSpinner } from "react-icons/fa6";
 import { ColoredText } from "../colored-text/colored-text";
 import { Button } from "../button/button";
 import { circles } from "../../../utils";
-import { useState } from "react";
-import { CgSpinner } from "react-icons/cg";
-import { BsSend } from "react-icons/bs";
+import { useState } from "react"; 
 import { motion } from "framer-motion";
 import axios from "axios";
+import Swal from "sweetalert2";
 
 export function Newsletter() {
   const [email, setEmail] = useState("");
@@ -16,9 +15,19 @@ export function Newsletter() {
   const handleSubmit = async () => {
     setLoading(true);
 
+    if (email =='') {
+      Swal.fire({
+        icon: "warning",
+        title: "Ups !",
+        text: "Por favor, insira o seu email para ativar a newsletter.",
+      });
+
+      return
+    }
+
     const url = "https://email-api-arotec-lilac.vercel.app/api/enviar-email";
     const dadosEmail = {
-      to: "comercial@sergest.com",
+      to: "ja3328173@gmail.com",
       subject: "Novo inscrito na newsletter da Neroo",
       body: `Novo e-mail cadastrado na newsletter Neroo: ${email}`,
       email: "ja3328173@gmail.com",
@@ -35,13 +44,22 @@ export function Newsletter() {
       });
 
       console.log("Email enviado com sucesso!", resposta);
-      setEmail('')
-      setSent(true);
+      setEmail("");
       setLoading(false);
-    } catch (erro: unknown) {
-      console.error("Erro ao enviar email:", erro);
 
+      Swal.fire({
+        icon: "success",
+        title: "Sucesso!",
+        text: "Seu email foi adicionado com sucesso na nossa Newsletter",
+      });
+    } catch (erro) {
+      console.error("Erro ao enviar email:", erro);
       setLoading(false);
+      Swal.fire({
+        icon: "error",
+        title: "Erro!",
+        text: "Ocorreu um erro ao enviar seu email. Por favor, tente novamente mais tarde.",
+      });
     }
   };
 
@@ -78,17 +96,14 @@ export function Newsletter() {
           </div>
           <Button
             click={handleSubmit}
-            disabled={loading}
-            className="mx-[4rem] sm:mx-0"
+            disabled={loading && email == ''}
+            className="mx-[4rem] disabled:bg-primary/30 flex justify-center sm:mx-0"
           >
             {loading ? (
-              <CgSpinner className="text-2xl text-white animate-spin animate" />
+              <FaSpinner className="text-2xl my-auto text-white animate-spin animate" />
             ) : (
               <>
-                <span className="hidden md:flex">Ativar Newsletter</span>
-                <span className="text-xl text-white md:hidden">
-                  <BsSend />
-                </span>
+                <span className="my-auto ">Ativar Newsletter</span>
               </>
             )}
           </Button>
@@ -111,7 +126,7 @@ export function Newsletter() {
               Seu email foi adicionado com sucesso na nossa Newsletter
             </div>
           </>
-        )} 
+        )}
       </motion.div>
     </div>
   );
