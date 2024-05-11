@@ -4,6 +4,7 @@ import { ColoredText } from "../colored-text/colored-text";
 import { Overlay } from "../overlay/overlay";
 import { LoginNow } from "../../../utils/functions";
 import { InNumbers } from "../in-numbers/in-numbers";
+import { FiCheckCircle } from "react-icons/fi";
 
 export function Prices() {
   return (
@@ -46,12 +47,18 @@ export function Prices() {
               <div className="mt-4 text-start">
                 <b className="text-secondary">Benefícios</b>
                 <br />
-                <p className="text-sm sm:text-md lg:text-lg  ">
-                  {plan.benefits}
-                </p>
+                <ul className="text-sm sm:text-md lg:text-md list-disc pl-2">
+                  {plan.benefits.split("|").map((benefit, index) => (
+                    <li key={index} className="flex">
+                      <FiCheckCircle className={`text- ${ plan.id != 2 ?  'text-primary ' : ''} my-auto`} />
+                      <span className={`ml-2  ${ plan.id != 2 ?  'text-grayser ' : ''}`}>{benefit.trim()}</span>
+                    </li>
+                  ))}
+                </ul>
+
                 <br />
                 <b className="text-secondary">{plan.invest}</b>
-                <br />
+                <p className="font-bold">Teste grátis por 15 dias</p>
 
                 {plan.id != 2 ? (
                   <>
