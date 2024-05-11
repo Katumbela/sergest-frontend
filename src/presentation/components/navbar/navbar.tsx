@@ -199,7 +199,10 @@ export function NavBar() {
               </motion.li>
             ))}
           </motion.ul>
-          <div className=" btns gap-0 flex flex-col justify-center ">
+          <motion.div
+            variants={fadeInVariant}
+            className=" btns gap-0 flex flex-col justify-center "
+          >
             <button
               style={{
                 borderColor: "white",
@@ -216,9 +219,10 @@ export function NavBar() {
               onClick={LoginNow}
               className="  border flex md:gap-2 rounded-md  text-red-500 bg-white  font-semibold text-xs border-white"
             >
-              Começar a usar <FaArrowRight className="my-auto hidden md:block" />
+              Começar a usar{" "}
+              <FaArrowRight className="my-auto hidden md:block" />
             </button>
-          </div>
+          </motion.div>
           <motion.div
             variants={fadeInVariant}
             className="contacts flex justify-center mt-[10vh] flex-wrap gap-6"
