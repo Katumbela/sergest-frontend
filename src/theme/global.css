@@ -43,7 +43,7 @@ html, body {
 
 @media (min-width: 400px) and (max-width: 430px) {
   .mt-t {
-    margin-top: 9rem!important;
+    margin-top: 8.5rem!important;
   }
 }
 @media (min-width: 430px) {
