@@ -4,71 +4,69 @@ import { Button } from "../button/button";
 import { circles } from "../../../utils";
 import { useState } from "react";
 import { motion } from "framer-motion";
-import Swal from "sweetalert2";
-import nodemailer  from "nodemailer";
+import Swal from "sweetalert2"; 
 import axios from "axios";
 
 export function Newsletter() {
   const [email, setEmail] = useState("");
   const [loading, setLoading] = useState(false);
   const [sent, setSent] = useState(false);
-  
-  
-const handleSubmit = async () => {
-  if (email === "" || !email.includes("@")) {
-    Swal.fire({
-      icon: "warning",
-      title: "Ups!",
-      text: "Por favor, insira um email válido para ativar a newsletter.",
-    });
 
-    return;
-  }
+  const handleSubmit = async () => {
+    if (email === "" || !email.includes("@")) {
+      Swal.fire({
+        icon: "warning",
+        title: "Ups!",
+        text: "Por favor, insira um email válido para ativar a newsletter.",
+      });
 
-  setLoading(true);
+      return;
+    }
 
-  const url = "https://email-api-arotec-lilac.vercel.app/api/enviar-email";
+    setLoading(true);
+
+    const url = "https://email-api-arotec-lilac.vercel.app/api/enviar-email";
     const dadosEmail = {
-    to: "comercial@sermar.ao",
-    subject: "Novo Cadstro na newsletter da Sergest",
-    body: `Novo e-mail cadastrado na newsletter Sergest: ${email}`,
-    smtp: {
-      host: "mail.sermar.ao",
-      port: 465,
-    },
-    email: "comercial@sermar.ao",
-    nameRemetent: "Sergest Faturação",
-    password: "noemia@#2020!",
-    emailFrom: "comercial@sermar.ao",
-    key: "Angola2020*",
-  };
-
-  try {
-    const resposta = await axios.post(url, dadosEmail, {
-      headers: {
-        "Content-Type": "application/json",
+      to: "comercial@sermar.ao",
+      subject: "Novo Cadstro na newsletter da Sergest",
+      body: `Novo e-mail cadastrado na newsletter Sergest: ${email}`,
+      smtp: {
+        host: "mail.sermar.ao",
+        port: 465,
       },
-    });
+      email: "comercial@sermar.ao",
+      nameRemetent: "Sergest Faturação",
+      password: "noemia@#2020!",
+      emailFrom: "comercial@sermar.ao",
+      key: "Angola2020*",
+    };
 
-    console.log("Email enviado com sucesso!", resposta);
-    setEmail("");
-    setLoading(false);
+    try {
+      await axios.post(url, dadosEmail, {
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
 
-    Swal.fire({
-      icon: "success",
-      title: "Sucesso!",
-      text: "Seu email foi adicionado com sucesso na nossa Newsletter",
-    });
-  } catch (erro) {
-    console.error("Erro ao enviar email:", erro);
-    setLoading(false);
-    Swal.fire({
-      icon: "error",
-      title: "Erro!",
-      text: "Ocorreu um erro ao enviar seu email. Por favor, tente novamente mais tarde.",
-    });
-  }
-}; 
+      //console.log("Email enviado com sucesso!", resposta);
+      setEmail("");
+      setLoading(false);
+
+      Swal.fire({
+        icon: "success",
+        title: "Sucesso!",
+        text: "Seu email foi adicionado com sucesso na nossa Newsletter",
+      });
+    } catch (erro) {
+      console.error("Erro ao enviar email:", erro);
+      setLoading(false);
+      Swal.fire({
+        icon: "error",
+        title: "Erro!",
+        text: "Ocorreu um erro ao enviar seu email. Por favor, tente novamente mais tarde.",
+      });
+    }
+  };
   return (
     <div>
       <div className="text-center relative -mt-[8rem] sm:-mt-[6rem] lg:mt-[6rem] mb-20">

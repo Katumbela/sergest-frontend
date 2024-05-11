@@ -1,7 +1,6 @@
 import { ColoredText } from "../colored-text/colored-text";
 import { testimonials_dummy } from "../../../infra/ddummies";
-import { Cardtestimonial } from "../card-testimonial/card-testimonial";
-import { Button } from "../button/button";
+import { Cardtestimonial } from "../card-testimonial/card-testimonial"; 
 import { circles } from "../../../utils";
 import { motion } from "framer-motion";
 
