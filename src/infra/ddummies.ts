@@ -30,13 +30,13 @@ export const testimonials_dummy: TDProps[] = [
   {
     id: 4,
     nome: "Maria Mateus",
-    desc: "Como proprietário de uma pequena empresa, encontrar um software de faturação acessível e confiável foi crucial. Este software não só se encaixou no nosso orçamento, mas também superou nossas expectativas em termos de funcionalidade e suporte ao cliente.",
+    desc:  "O suporte técnico deste software de faturação é excepcional. Sempre que tive alguma dúvida ou problema, a equipe de suporte foi rápida em responder e resolver qualquer questão, garantindo que nossa operação nunca fosse interrompida. Uma verdadeira parceria!",
     pic: users.user_MARIA,
   },
   {
     id: 5,
     nome: "Inácio Félix",
-    desc: "Com a nossa plataforma, tudo é mais fácil! Oferecemos uma ampla gama de serviços que você pode acessar confortavelmente de onde estiver.",
+    desc: "Este software de faturação mudou a forma como gerenciamos nossas finanças. A automação de tarefas repetitivas e os relatórios detalhados nos ajudaram a tomar decisões mais informadas e a impulsionar o crescimento do nosso negócio.",
     pic: users.user_INACIO,
   },
   {
