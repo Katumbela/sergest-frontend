@@ -42,7 +42,10 @@ export function Hero() {
           <p className="   md:w-10/12 md:text-sm 2xl:text-lg">
             Factura pelo computador, tablet ou telemóvel a qualquer hora. Teste
             o SERGEST{" "}
-            <span className="color-text font-bold">gratuitamente</span> durante
+            <span className="color-text font-bold text-underline">
+              gratuitamente
+            </span>{" "}
+            durante
             <span className="font-bold"> 15 dias</span>.
           </p>
           <div className="flex justify-center md:justify-start mt-[1.5rem] gap-3 md:mt-[.8rem] lg:mt-[1rem]">
