@@ -28,6 +28,11 @@ const MOBILE_NAV_ITEMS = [
     link: "#prices",
   },
   {
+    id: 3,
+    navTitle: "Testemunhas",
+    link: "#testimonials",
+  },
+  {
     id: 4,
     navTitle: "Blog",
     link: "/",
@@ -152,6 +157,9 @@ export function NavBar() {
           </a>
           <a href="#prices" className="text-md font-semibold">
             Preços e Planos
+          </a>
+          <a href="#testimonials" className="text-md font-semibold">
+            Testemunhas
           </a>
           <a href="#" className="text-md font-semibold">
             Blog

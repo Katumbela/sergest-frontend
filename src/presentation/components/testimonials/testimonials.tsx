@@ -6,7 +6,7 @@ import { ColoredText } from "../colored-text/colored-text";
 
 export function Testimonials() {
   return (
-    <div className=" 2xl:mt-[15rem] relative sm:mt-[5rem] mt-[4rem] h-[400px]">
+    <div id="testimonials" className=" 2xl:mt-[15rem] relative sm:mt-[5rem] mt-[4rem] h-[400px]">
       <div className="absolute -z-20 md:w-[80%] 2xl:w-[85%] 2xl:-right-[50rem] md:-right-[35rem]  md:-bottom-[4rem] 2xl:-bottom-[6rem]">
         <img
           src={circles.circle_2}
