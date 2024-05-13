@@ -1,21 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap");
 
-
-.comma  {
-  
-  font-family: "Dancing Script", cursive!important;
-} 
-
-
+.comma {
+  font-family: "Dancing Script", cursive !important;
+}
 
 .hover-anim {
-  display: inline-block; 
+  display: inline-block;
   position: relative;
 }
 .hover-anim:hover {
-  color: #033E85!important;
+  color: #033e85 !important;
   transition: all 0.3s ease-in;
   cursor: pointer;
 }
@@ -28,7 +24,7 @@
   height: 2.5px;
   bottom: -1px;
   left: 0;
-  background-color: #00CDDF;
+  background-color: #00cddf;
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }
@@ -37,10 +33,6 @@
   transform: scaleX(1);
   transform-origin: bottom left;
 }
-
-
-
-
 
 .poppins-thin {
   font-family: "Poppins", sans-serif;
@@ -151,21 +143,21 @@
 }
 
 .swal2-confirm {
-  background: #033e85!important ;
+  background: #033e85 !important ;
 }
 
-.btns  {
-  gap: 0!important; 
-  justify-content: center!important;
-  width: 100%!important;
+.btns {
+  gap: 0 !important;
+  justify-content: center !important;
+  width: 100% !important;
 }
 .btns .b1 {
-   color: white!important;
+  color: white !important;
 }
 .btns button {
-  padding: .5rem 1rem !important;
-  align-self: center!important;
-  margin: .5rem 0!important;
+  padding: 0.5rem 1rem !important;
+  align-self: center !important;
+  margin: 0.5rem 0 !important;
 }
 
 .animate-gradient {
@@ -175,11 +167,13 @@
   animation: animatedgradient 4s ease infinite alternate;
 }
 
-html , body{
-  overflow-x: hidden!important;
+html,
+body {
+  overflow-x: hidden !important;
 }
 
-html, body {
+html,
+body {
   scroll-behavior: smooth;
 }
 
@@ -196,7 +190,7 @@ html, body {
 }
 
 .anim {
-  animation: animateIt 1s ease infinite ;
+  animation: animateIt 1s ease infinite;
 }
 
 @keyframes animateIt {
@@ -213,16 +207,15 @@ html, body {
 
 @media (min-width: 400px) and (max-width: 430px) {
   .mt-t {
-    margin-top: 8.5rem!important;
+    margin-top: 8.5rem !important;
   }
 }
-
 
 /* onde o tailwind css não pega */
 
 @media (min-width: 1024px) and (max-width: 1199px) {
   .mt-t {
-    margin-top: -1rem!important;
+    margin-top: -1rem !important;
   }
 
   #prices .card p {
@@ -232,7 +225,7 @@ html, body {
     font-size: 38px;
   }
   .resp-h1 {
-    font-size: 55px ;
+    font-size: 55px;
     margin-top: -3rem;
   }
   .resp-founder {
@@ -248,31 +241,26 @@ html, body {
   }
 }
 
-
 @media (min-width: 430px) {
-
   nav {
-  display: flex;
-  justify-content: space-between;
-  padding: 35px 45px;
-}
+    display: flex;
+    justify-content: space-between;
+    padding: 35px 45px;
+  }
 
-
-
-.clip {
-  clip-path: polygon(
-    100% 0,
-    100% 20%,
-    99% 100%,
-    80% 100%,
-    52% 100%,
-    0 62%,
-    0 0
-  ); 
-  overflow: auto !important;
-  overflow: visible !important; /* Altera o overflow para visible */
-}
-
+  .clip {
+    clip-path: polygon(
+      100% 0,
+      100% 20%,
+      99% 100%,
+      80% 100%,
+      52% 100%,
+      0 62%,
+      0 0
+    );
+    overflow: auto !important;
+    overflow: visible !important; /* Altera o overflow para visible */
+  }
 }
 
 ::selection {
@@ -281,7 +269,7 @@ html, body {
 }
 
 .z-500 {
-  z-index: 19999999999999999999999999!important;
+  z-index: 19999999999999999999999999 !important;
 }
 .z-20 {
   z-index: 99999 !important;
@@ -291,7 +279,7 @@ html, body {
 }
 
 button {
-  box-shadow: none!important ;
+  box-shadow: none !important ;
 }
 
 ::-webkit-scrollbar {
@@ -316,8 +304,7 @@ button {
   scrollbar-color: #033e85 #fff; /* Cor da barra de rolagem e do thumb */
 }
 
-  
-.mobile-menu {   
+.mobile-menu {
   color: beige;
 }
 
@@ -353,13 +340,13 @@ nav .menu-container div:hover {
   position: fixed;
   top: 0;
   left: 0;
-right:0;
-bottom: 0;
+  right: 0;
+  bottom: 0;
   height: 100vh;
   width: 100vw;
   display: flex;
   flex-direction: column;
-  align-items: center; 
+  align-items: center;
 }
 
 .mobile-menu button {
@@ -395,7 +382,7 @@ bottom: 0;
   font-size: 30px;
 }
 
-.mobile-menu ul li:hover { 
+.mobile-menu ul li:hover {
   cursor: pointer;
 }
 
@@ -408,47 +395,44 @@ bottom: 0;
   margin-right: 40px;
 }
 
+.bbody {
+  font-family: Arial, sans-serif;
+  background-color: #d3d3d3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
 
+.error-container {
+  text-align: center;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
 
+.bbody h1 {
+  font-size: 5rem;
+  color: #033e85;
+}
 
-.bbody { 
-  font-family: Arial, sans-serif; 
-  background-color: #D3D3D3; 
-  display: flex; 
-  justify-content: center; 
-  align-items: center; 
-  height: 100vh; 
-} 
+.bbody p {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 20px;
+}
 
-.error-container { 
-  text-align: center; 
-  background-color: #fff; 
-  padding: 20px; 
-  border-radius: 5px; 
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
-} 
+.bbody a {
+  text-decoration: none;
+  background-color: #033e85;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 3px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
 
-h1 { 
-  font-size: 5rem; 
-  color: #033E85; 
-} 
-
-p { 
-  font-size: 1.5rem; 
-  color: #333; 
-  margin-bottom: 20px; 
-} 
-
-a { 
-  text-decoration: none; 
-  background-color: #033E85; 
-  color: #fff; 
-  padding: 10px 20px; 
-  border-radius: 3px; 
-  font-weight: bold; 
-  transition: background-color 0.3s ease; 
-} 
-
-a:hover { 
-  background-color: #033E85; 
+.bbody a:hover {
+  background-color: #033e85;
 }
