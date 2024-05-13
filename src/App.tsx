@@ -6,6 +6,8 @@ import "./theme/global.css";
 import { HomePage, NotFound } from "./presentation/pages";
 
 function App() {
+
+  /*
   const redirecionarURL = () => {
     const currentPath = window.location.pathname;
 
@@ -17,12 +19,13 @@ function App() {
   useEffect(() => {
     redirecionarURL();
   }, []);
-
+*/
   return (
     <Router>
       <Routes>
         <Route path="/home" element={<HomePage />} />
-        <Route path="*" element={<NotFound />} />
+        <Route path="/" element={<HomePage />} />
+        <Route path="/*" element={<NotFound />} />
       </Routes>
     </Router>
   );
