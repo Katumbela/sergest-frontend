@@ -15,11 +15,11 @@ import bg_start from "../../assets/bgs/Frame 9.png";
 import bg_about from "../../assets/bgs/IMG_3279 1.png";
 import bg_founder from "../../assets/bgs/image 12.png";
 import bg_mockup from "../../assets/bgs/BG_MOCKUP.png";
-import bg_system from "../../assets/bgs/Captura de ecrã 2024-05-10 111116.png";
+import bg_system from "../../assets/bgs/bg_system.png";
 
 //import extras
 
-import circle_3 from "../../assets/extras/Captura de ecrã 2024-05-10 172141.png";
+import circle_3 from "../../assets/extras/circle_3.png";
 import circle_3_test from "../../assets/extras/line-3-test.png";
 import circle_2 from "../../assets/extras/Group 1000001470.png";
 import circle_2_line from "../../assets/extras/cl2.png";
