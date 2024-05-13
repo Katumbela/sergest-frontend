@@ -10,7 +10,7 @@ function App() {
     const currentPath = window.location.pathname;
 
     if (currentPath === "/") {
-      window.location.pathname = "/home";
+      window.location.pathname = "/home/";
     }
   };
 
