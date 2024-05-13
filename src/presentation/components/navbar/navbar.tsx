@@ -15,22 +15,22 @@ const MOBILE_NAV_ITEMS = [
   {
     id: 1,
     navTitle: "Sobre",
-    link: "#about",
+    link: "/#about",
   },
   {
     id: 2,
     navTitle: "Funcionalidades",
-    link: "#functionalities",
+    link: "/#functionalities",
   },
   {
     id: 3,
     navTitle: "Preços & Planos",
-    link: "#prices",
+    link: "/#prices",
   },
   {
     id: 3,
     navTitle: "Testemunhas",
-    link: "#testimonials",
+    link: "/#testimonials",
   },
   {
     id: 4,
@@ -141,40 +141,41 @@ export function NavBar() {
         initial={initial[index]}
         animate={animate[index]}
         transition={{ duration: 0.8, type: "spring", damping: 13 }}
-        className="flex pb-3 pt-6 justify-between"
+        className="flex justify-between pt-6 pb-3"
       >
         <a href="/">
           <img src={logos.logo} alt="" />
         </a>
-        <div className="hidden lg:flex gap-7 my-auto">
-          <a href="#" className="text-md hover-anim font-semibold">
+        <div className="hidden my-auto lg:flex gap-7">
+          <a href="/" className="font-semibold text-md hover-anim">
             Início
           </a>
-          <a href="#about" className="text-md font-semibold hover-anim">
+          <a href="/#about" className="font-semibold text-md hover-anim">
             Sobre
           </a>
           <a
-            href="#functionalities"
-            className="text-md font-semibold hover-anim"
+            href="/#functionalities"
+            className="font-semibold text-md hover-anim"
           >
             Funcionalidades
           </a>
-          <a href="#prices" className="text-md font-semibold hover-anim">
+
+          <a href="/#prices" className="font-semibold text-md hover-anim">
             Preços e Planos
           </a>
-          <a href="#testimonials" className="text-md font-semibold hover-anim">
+          <a href="/#testimonials" className="font-semibold text-md hover-anim">
             Testemunhas
           </a>
-          <a href="#" className="text-md font-semibold hover-anim">
+          <a href="/" className="font-semibold text-md hover-anim">
             Blog
           </a>
         </div>
-        <Button click={LoginNow} className="my-auto hidden lg:flex gap-2">
+        <Button click={LoginNow} className="hidden gap-2 my-auto lg:flex">
           Entrar agora <FaArrowRight className="my-auto" />
         </Button>
 
         <motion.div
-          className="lg:hidden cursor-pointer grid items-center py-2 rounded-md click font-seibold text-primary px-5 my-auto border 2 border-primary"
+          className="grid items-center px-5 py-2 my-auto border rounded-md cursor-pointer lg:hidden click font-seibold text-primary 2 border-primary"
           variants={hideNavItemsVariant}
           onClick={() => setMobileNavOpen(true)}
         >
@@ -184,7 +185,7 @@ export function NavBar() {
       <motion.nav
         initial="closed"
         animate={mobileNavOpen ? "opened" : "closed"}
-        className="z-50 fixed"
+        className="fixed z-50"
       >
         <motion.div
           variants={mobileMenuVariant}
@@ -213,49 +214,53 @@ export function NavBar() {
           </motion.ul>
           <motion.div
             variants={fadeInVariant}
-            className=" btns gap-0 flex flex-col justify-center "
+            className="flex flex-col justify-center gap-0 btns"
           >
             <button
               style={{
                 borderColor: "white",
                 border: "1px solid white",
-                color: "#033E85",
+                color: "/#033E85",
               }}
               onClick={LoginNow}
-              className=" b1  flex md:gap-2 border-2 text-xs  font-semibold  text-red-500 rounded-md border-white flex gap-2"
+              className="flex gap-2 text-xs font-semibold text-red-500 border-2 border-white rounded-md b1 md:gap-2"
             >
-              Entrar agora <FaArrowRight className="my-auto  " />
+              Entrar agora <FaArrowRight className="my-auto " />
             </button>
             <button
-              style={{ background: "white", color: "#033E85" }}
+              style={{ background: "white", color: "/#033E85" }}
               onClick={LoginNow}
-              className="  border flex md:gap-2 rounded-md  text-red-500 bg-white  font-semibold text-xs border-white"
+              className="flex text-xs font-semibold text-red-500 bg-white border border-white rounded-md md:gap-2"
             >
               Começar a usar{" "}
-              <FaArrowRight className="my-auto hidden md:block" />
+              <FaArrowRight className="hidden my-auto md:block" />
             </button>
           </motion.div>
+         {
+          mobileNavOpen ?
+
           <motion.div
-            variants={fadeInVariant}
-            className="contacts flex justify-center mt-[10vh] flex-wrap gap-6"
-          >
-            <h5>
-              <a href="tel:244944836119" className="flex gap-2">
-                <FaPhone className="my-auto " />{" "}
-                <span className=" my-auto"> +244 944 836 119</span>
-              </a>
-            </h5>
-            <h5>
-              <a
-                target="__blank"
-                href="mailto:comercial@sergest.com"
-                className="flex gap-2"
-              >
-                <FaEnvelope className="my-auto text-sm" />{" "}
-                <span className="text-sm my-auto"> comercial@sergest.com</span>
-              </a>
-            </h5>
-          </motion.div>
+          variants={fadeInVariant}
+          className="contacts flex justify-center mt-[10vh] flex-wrap gap-6"
+        >
+          <h5>
+            <a href="tel:244944836119" className="flex gap-2">
+              <FaPhone className="my-auto " />{" "}
+              <span className="my-auto "> +244 944 836 119</span>
+            </a>
+          </h5>
+          <h5>
+            <a
+              target="__blank"
+              href="mailto:comercial@sergest.com"
+              className="flex gap-2"
+            >
+              <FaEnvelope className="my-auto text-sm" />{" "}
+              <span className="my-auto text-sm"> comercial@sergest.com</span>
+            </a>
+          </h5>
+        </motion.div> : null
+         }
         </motion.div>
       </motion.nav>
     </div>
