@@ -15,51 +15,51 @@ import {
   SystemComponent,
   Testimonials,
 } from "../../components";
-import { LayoutBody } from "../layout/layout";
+import { Layout, LayoutBody } from "../layout/layout";
 
 export function HomePage() {
   return (
     <>
-      <div className="container">
-         
+      <Layout>
+        <div className="container">
           <NavBar />
-        
+
+          <LayoutBody>
+            <Hero />
+          </LayoutBody>
+
+          <LayoutBody>
+            <SubHero />
+          </LayoutBody>
+
+          <LayoutBody>
+            <Action />
+          </LayoutBody>
+        </div>
 
         <LayoutBody>
-          <Hero />
+          <SystemComponent />
         </LayoutBody>
+        <div className="container">
+          <AboutUs />
 
-        <LayoutBody>
-          <SubHero />
-        </LayoutBody>
-
-        <LayoutBody>
-          <Action />
-        </LayoutBody>
-      </div>
-
-      <LayoutBody>
-        <SystemComponent />
-      </LayoutBody>
-      <div className="container">
-        <AboutUs />
-
-        <LayoutBody>
-          <Testimonials />
-        </LayoutBody>
-      </div>
-      <StartNow />
-      <div className="container">
-        <Prices />
-        <Founder />
-        <MockUp />
-      </div>
-      <PayWith />
-      <div className="container">
-        <Proccess />
-        <Newsletter />
-      </div>
-      <Footer />
+          <LayoutBody>
+            <Testimonials />
+          </LayoutBody>
+        </div>
+        <StartNow />
+        <div className="container">
+          <Prices />
+          <Founder />
+          <MockUp />
+        </div>
+        <PayWith />
+        <div className="container">
+          <Proccess />
+          <Newsletter />
+        </div>
+        <Footer />
+      </Layout>
     </>
   );
 }

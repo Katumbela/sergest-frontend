@@ -1,27 +1,30 @@
+import { useEffect } from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "./App.css";
 import "./index.css";
 import "./theme/global.css";
-import { HomePage } from "./presentation/pages";
-import { Layout } from "./presentation/pages";
+import { HomePage, NotFound } from "./presentation/pages";
 
 function App() {
+  const redirecionarURL = () => {
+    const currentPath = window.location.pathname;
+
+    if (currentPath === "/") {
+      window.location.pathname = "/home";
+    }
+  };
+
+  useEffect(() => {
+    redirecionarURL();
+  }, []);
+
   return (
-    <>
-      <Layout>
-        <div className=" ">
-          <HomePage />
-        </div>
-        {/*
-         <div className="h-screen grid md:hidden items-center place-content-center">
-          <h1 className="text-4xl text-center w-[60%] mx-auto font-bold">
-            Ainda não está disponível para este tamanho de tela, extenda o
-            tamanho da sua tela ou use um computador{" "}
-          </h1>
-        </div>
-        */}
-       
-      </Layout>
-    </>
+    <Router>
+      <Routes>
+        <Route path="/home" element={<HomePage />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+    </Router>
   );
 }
 
