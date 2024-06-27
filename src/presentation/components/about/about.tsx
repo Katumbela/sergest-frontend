@@ -7,10 +7,10 @@ export function AboutUs() {
   return (
     <div
       id="about"
-      className="   mx-auto  items-center sm:mt-[12rem] mt-[6rem]   "
+      className="   mx-auto  items-center sm:mt-[12rem]  mt-[6rem]   "
     >
-      <div className="flex lg:flex-row flex-col gap-8 container">
-        <div className="lg:w-6/12 text-end relative flex justify-center">
+      <div className="container flex flex-col gap-8 lg:flex-row">
+        <div className="relative flex justify-center lg:w-6/12 text-end">
           <img
             src={circles.circle_2}
             style={{ zIndex: "-999999" }}
@@ -27,9 +27,9 @@ export function AboutUs() {
             alt=""
           />
         </div>
-        <div className="lg:w-6/12 grid ">
+        <div className="grid lg:w-6/12 ">
           <div className="my-auto">
-            <h1 className="font-bold text-4xl sm:text-5xl">
+            <h1 className="text-4xl font-bold sm:text-5xl">
               <ColoredText>Sobre</ColoredText> Nós
             </h1>
             <br />

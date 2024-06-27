@@ -35,7 +35,7 @@ const MOBILE_NAV_ITEMS = [
   {
     id: 4,
     navTitle: "Blog",
-    link: "/",
+    link: "/blogs",
   },
 ];
 
@@ -166,7 +166,7 @@ export function NavBar() {
           <a href="./#testimonials" className="font-semibold text-md hover-anim">
             Testemunhas
           </a>
-          <a href="/" className="font-semibold text-md hover-anim">
+          <a href="/blogs" className="font-semibold text-md hover-anim">
             Blog
           </a>
         </div>
@@ -189,9 +189,8 @@ export function NavBar() {
       >
         <motion.div
           variants={mobileMenuVariant}
-          className={`${
-            mobileNavOpen ? "w-screen" : " "
-          } mobile-menu gradient-sergest`}
+          className={`${mobileNavOpen ? "w-screen" : " "
+            } mobile-menu gradient-sergest`}
         >
           <motion.button
             variants={fadeInVariant}
@@ -228,39 +227,39 @@ export function NavBar() {
               Entrar agora <FaArrowRight className="my-auto " />
             </button>
             <button
-              style={{ background: "white", color: "./#033E85" }}
+              style={{ border: "1.5px solid white", color: "./#033E85" }}
               onClick={LoginNow}
-              className="flex text-xs font-semibold text-red-500 bg-white border border-white rounded-md md:gap-2"
+              className="flex text-xs font-semibold text-red-500 border border-white rounded-md bg-whitee md:gap-2"
             >
               Começar a usar{" "}
               <FaArrowRight className="hidden my-auto md:block" />
             </button>
           </motion.div>
-         {
-          mobileNavOpen ?
+          {
+            mobileNavOpen ?
 
-          <motion.div
-          variants={fadeInVariant}
-          className="contacts flex justify-center mt-[10vh] flex-wrap gap-6"
-        >
-          <h5>
-            <a href="tel:244944836119" className="flex gap-2">
-              <FaPhone className="my-auto " />{" "}
-              <span className="my-auto "> +244 944 836 119</span>
-            </a>
-          </h5>
-          <h5>
-            <a
-              target="__blank"
-              href="mailto:comercial@sergest.com"
-              className="flex gap-2"
-            >
-              <FaEnvelope className="my-auto text-sm" />{" "}
-              <span className="my-auto text-sm"> comercial@sergest.com</span>
-            </a>
-          </h5>
-        </motion.div> : null
-         }
+              <motion.div
+                variants={fadeInVariant}
+                className="contacts flex justify-center mt-[10vh] flex-wrap gap-6"
+              >
+                <h5>
+                  <a href="tel:244944836119" className="flex gap-2">
+                    <FaPhone className="my-auto " />{" "}
+                    <span className="my-auto "> +244 944 836 119</span>
+                  </a>
+                </h5>
+                <h5>
+                  <a
+                    target="__blank"
+                    href="mailto:comercial@sergest.com"
+                    className="flex gap-2"
+                  >
+                    <FaEnvelope className="my-auto text-sm" />{" "}
+                    <span className="my-auto text-sm"> comercial@sergest.com</span>
+                  </a>
+                </h5>
+              </motion.div> : null
+          }
         </motion.div>
       </motion.nav>
     </div>

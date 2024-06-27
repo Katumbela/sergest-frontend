@@ -436,3 +436,7 @@ nav .menu-container div:hover {
 .bbody a:hover {
   background-color: #033e85;
 }
+
+.tox-statusbar {
+  display: none !important;
+}

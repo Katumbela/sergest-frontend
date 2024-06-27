@@ -1,3 +1,6 @@
 export * from './home/home'
 export * from './layout/layout'
 export * from './not-found/not-found'
+export * from './addBlog/addBlog'
+export * from './blog/blog'
+export * from './blog-post-page/blog-post-page'

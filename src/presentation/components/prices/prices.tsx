@@ -13,7 +13,7 @@ export function Prices() {
         <h1 className="sm:text-[56px] text-[30px] leading-none font-bold">
           Preços & Planos da <ColoredText>Plataforma !</ColoredText>{" "}
         </h1>
-        <p className="lg:w-3/12 lg:text-xl sm:w-6/12 text-grayser mt-4 mx-auto">
+        <p className="mx-auto mt-4 lg:w-3/12 lg:text-xl sm:w-6/12 text-grayser">
           Escolha o Planos perfeito para a Gestão do seu negócio
         </p>
       </div>
@@ -24,13 +24,12 @@ export function Prices() {
           {plans_dummies.map((plan) => (
             <div
               key={plan.id}
-              className={`card ${
-                plan.id == 2
+              className={`card ${plan.id == 2
                   ? "gradient-sergest shadow-2xl lg:shadow-primary text-white"
                   : "hover:bg-primary/5"
-              }  transition-all hover:-translate-y-2 border rounded-xl shadow-xl py-8 px-6`}
+                }  transition-all hover:-translate-y-2 border rounded-xl shadow-xl py-8 px-6`}
             >
-              <div className="flex gap-6 relative">
+              <div className="relative flex gap-6">
                 <Overlay />
                 <img src={plan.logo} className="w-[4em]" alt="" />
                 <h1 className={`sm:text-3xl text-2xl  my-auto font-bold`}>
@@ -38,27 +37,24 @@ export function Prices() {
                 </h1>
               </div>
               <p
-                className={`text-sm sm:text-sm 2xl:text-lg mt-4 ${
-                  plan.id == 2 ? "  text-white" : "text-grayser"
-                } `}
+                className={`text-sm sm:text-sm 2xl:text-lg mt-4 ${plan.id == 2 ? "  text-white" : "text-grayser"
+                  } `}
               >
                 {plan.desc}
               </p>
               <div className="mt-4 text-start">
                 <b className="text-secondary">Benefícios</b>
                 <br />
-                <ul className="text-sm sm:text-md lg:text-md list-disc pl-2">
+                <ul className="pl-2 text-sm list-disc sm:text-md lg:text-md">
                   {plan.benefits.split("|").map((benefit, index) => (
                     <li key={index} className="flex my-[.2rem]">
                       <FiCheckCircle
-                        className={`text- ${
-                          plan.id != 2 ? "text-primary " : ""
-                        } my-auto`}
+                        className={`text- ${plan.id != 2 ? "text-primary " : ""
+                          } my-auto`}
                       />
                       <span
-                        className={`ml-2  ${
-                          plan.id != 2 ? "text-grayser " : ""
-                        }`}
+                        className={`ml-2  ${plan.id != 2 ? "text-grayser " : ""
+                          }`}
                       >
                         {benefit.trim()}
                       </span>
@@ -69,9 +65,8 @@ export function Prices() {
                 <br />
                 <b className="text-secondary">{plan.invest}</b>
                 <p
-                  className={`  ${
-                    plan.id != 2 ? " font-normal " : "font-bold"
-                  }`}
+                  className={`  ${plan.id != 2 ? " font-normal " : "font-bold"
+                    }`}
                 >
                   Teste{" "}
                   {plan.id != 2 ? (
@@ -100,9 +95,8 @@ export function Prices() {
                 <br />
                 <button
                   onClick={LoginNow}
-                  className={`border-2 ${
-                    plan.id !== 2 ? "bg-primary border-primary" : ""
-                  } py-4 click px-6 rounded-md font-semibold text-white`}
+                  className={`border-2 ${plan.id !== 2 ? "bg-primary border-primary" : ""
+                    } py-4 click px-6 rounded-md font-semibold text-white`}
                 >
                   {plan.btn}
                 </button>
@@ -113,7 +107,7 @@ export function Prices() {
         <br />
         <br />
         <br />
-        <button className="click flex gap-3 mx-auto bg-secondary py-3 px-9 rounded-lg text-white font-bold">
+        <button onClick={() => window.location.href = '/blogs'} className="flex gap-3 py-3 mx-auto font-bold text-white rounded-lg click bg-secondary px-9">
           <span className="my-auto">Blog</span>
           <FaArrowRight className="my-auto " />
         </button>

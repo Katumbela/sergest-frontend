@@ -5,9 +5,9 @@ import { Overlay } from "../overlay/overlay";
 
 export function Founder() {
   return (
-    <div className="resp-founder  lg:mt-[58rem]  2xl:mt-[60rem] mt-[162rem] sm:mt-[90rem]  pt-[13rem]">
-      <div className="flex lg:flex-row flex-col md:gap-24 ">
-        <div className="w-full text-end relative flex justify-start">
+    <div className="resp-founder  lg:mt-[58rem] md:pt-[28rem] 2xl:mt-[60rem] mt-[162rem] sm:mt-[90rem]  pt-[13rem] lg:pt-[14rem]">
+      <div className="flex flex-col lg:flex-row md:gap-24 ">
+        <div className="relative flex justify-start w-full text-end">
           <Overlay />
           <img
             src={circles.circle_3}
@@ -24,9 +24,9 @@ export function Founder() {
             alt=""
           />
         </div>
-        <div className="w-full text-start grid relative  ">
+        <div className="relative grid w-full text-start ">
           <div className="my-auto md:px-4">
-            <h1 className="md:text-5xl text-4xl mt-8 sm:mt-0 font-bold">
+            <h1 className="mt-8 text-4xl font-bold md:text-5xl sm:mt-0">
               Sérgio Mateus <ColoredText>Founder</ColoredText> da Sergest
             </h1>
             <br />
