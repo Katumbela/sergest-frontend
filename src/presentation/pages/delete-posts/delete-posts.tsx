@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { NavBar } from "../../components";
 import { db, storage } from "../../../data/firebase";
 import firebase from "firebase/compat/app";
