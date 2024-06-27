@@ -18,6 +18,9 @@ export function DeleteBlog() {
     const [posts, setPosts] = useState<Post[]>([]);
     const [load, setLoad] = useState(true)
 
+    document.title = ' Deletar artigos do blog | Sergest - Software de Faturação'
+
+
     useEffect(() => {
         const fetchPosts = async () => {
             const postsSnapshot = await db.collection('posts').orderBy('createdAt', 'desc').get();

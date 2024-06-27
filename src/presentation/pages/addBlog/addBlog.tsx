@@ -13,6 +13,10 @@ export function AddBlog() {
     const [image, setImage] = useState<File | null>(null);
     const [load, setLoad] = useState(false)
 
+
+    document.title = ' Admin Panel Blog | Sergest - Software de Faturação'
+
+
     const handleImageChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         if (e.target.files && e.target.files[0]) {
             setImage(e.target.files[0]);

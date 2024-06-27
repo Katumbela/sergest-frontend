@@ -66,6 +66,8 @@ export function BlogPostPage() {
     }, []);
 
 
+    document.title = post?.title + ' | Sergest - Software de Faturação'
+
     return (
         <div className="">
             <div className="container">

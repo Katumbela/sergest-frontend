@@ -15,6 +15,9 @@ export interface Post {
 export function BlogPage() {
     const [posts, setPosts] = useState<Post[]>([]);
 
+
+    document.title = ' Blog Sergest | Software de Faturação'
+
     const [load, setLoad] = useState(true)
     useEffect(() => {
         const fetchPosts = async () => {

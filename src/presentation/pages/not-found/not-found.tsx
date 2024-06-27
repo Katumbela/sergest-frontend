@@ -3,7 +3,7 @@ export function NotFound() {
     <div className="bbody">
       <div className="error-container">
         <h1> 404 </h1>
-        <p>Oops! <br /> Ta pagina que procura não foi encontrada .</p>
+        <p>Oops! <br /> A pagina que procura não foi encontrada .</p>
         <a href="https://www.softsrgest.com/">Votar para Home</a>
       </div>
     </div>
