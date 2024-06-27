@@ -4,6 +4,9 @@ import { Footer, NavBar } from "../../components";
 import { db } from "../../../data/firebase";
 import { FaArrowRight, FaEye, FaSpinner } from "react-icons/fa6";
 import { logos } from "../../../utils";
+import firebase from 'firebase/compat/app';
+import 'firebase/compat/firestore'; // Certifique-se de importar o módulo firestore explicitamente
+
 
 interface Post {
     id: string;
@@ -12,6 +15,7 @@ interface Post {
     content: string;
     imageUrl: string;
     views?: number;
+    createdAt: firebase.firestore.Timestamp;
 }
 
 export function BlogPostPage() {
@@ -43,6 +47,14 @@ export function BlogPostPage() {
     };
 
     const [posts, setPosts] = useState<Post[]>([]);
+
+    const formatDate = (timestamp: firebase.firestore.Timestamp) => {
+        const dateObject = timestamp.toDate();
+        const options: Intl.DateTimeFormatOptions = { year: 'numeric', month: 'long', day: 'numeric' };
+        return dateObject.toLocaleDateString('pt-BR', options);
+    };
+
+
 
     useEffect(() => {
         const fetchPosts = async () => {
@@ -86,6 +98,7 @@ export function BlogPostPage() {
 
                             <p className="flex gap-2 my-auto"> <div className="flex gap-2 text-sm"> <FaEye className="my-auto" /> Visualizações:</div> {post.views}</p>
                         </div> <p className="mb-6 tracking-widest border-b">Tempo estimado de leitura: {calculateReadingTime(post.content)} min</p>
+                        <p className="mb-2">Publicado em: {formatDate(post.createdAt)}</p>
 
                         <div className="gap-6 md:flex">
                             <div className="w-full md:w-9/12" dangerouslySetInnerHTML={{ __html: post.content }} />
