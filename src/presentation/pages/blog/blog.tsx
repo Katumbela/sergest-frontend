@@ -55,7 +55,7 @@ export function BlogPage() {
                     {posts.map((post) => (
                         <div key={post.id} className="post">
                             <div className="relative h-[14rem] rounded-lg overflow-hidden">
-                                <div className="absolute inset-0 transition-transform duration-500 transform bg-blue-600 bg-center bg-cover hover:scale-110" style={{ backgroundImage: `url('${post.imageUrl}')` }} />
+                                <div className="absolute inset-0 transition-transform duration-500 transform bg-center bg-cover bg-primary hover:scale-110" style={{ backgroundImage: `url('${post.imageUrl}')` }} />
                             </div>
                             <h3 className="mt-4 font-bold text-primary ">{post.title}</h3>
                             <h4>{post.subtitle}</h4>

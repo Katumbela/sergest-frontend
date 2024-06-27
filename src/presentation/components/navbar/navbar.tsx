@@ -15,27 +15,27 @@ const MOBILE_NAV_ITEMS = [
   {
     id: 1,
     navTitle: "Sobre",
-    link: "./#about",
+    link: "../#about",
   },
   {
     id: 2,
     navTitle: "Funcionalidades",
-    link: "./#functionalities",
+    link: "../#functionalities",
   },
   {
     id: 3,
     navTitle: "Preços & Planos",
-    link: "./#prices",
+    link: "../#prices",
   },
   {
     id: 3,
     navTitle: "Testemunhas",
-    link: "./#testimonials",
+    link: "../#testimonials",
   },
   {
     id: 4,
     navTitle: "Blog",
-    link: "/blogs",
+    link: "./blogs",
   },
 ];
 
@@ -150,17 +150,17 @@ export function NavBar() {
           <a href="/" className="font-semibold text-md hover-anim">
             Início
           </a>
-          <a href="./#about" className="font-semibold text-md hover-anim">
+          <a href="../#about" className="font-semibold text-md hover-anim">
             Sobre
           </a>
           <a
-            href="./#functionalities"
+            href="../#functionalities"
             className="font-semibold text-md hover-anim"
           >
             Funcionalidades
           </a>
 
-          <a href="./#prices" className="font-semibold text-md hover-anim">
+          <a href="../#prices" className="font-semibold text-md hover-anim">
             Preços e Planos
           </a>
           <a href="./#testimonials" className="font-semibold text-md hover-anim">
