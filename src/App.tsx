@@ -27,7 +27,7 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/home" element={<HomePage />} />
-        <Route path="/admin" element={<AddBlog />} />
+        <Route path="/admin-123" element={<AddBlog />} />
         <Route path="/blogs" element={<BlogPage />} />
         <Route path={EDIT_LINK} element={<DeleteBlog />} />
         <Route path="/blogs/:postId" Component={BlogPostPage} />
