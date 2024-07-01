@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet";
 import {
   AboutUs,
   Action,
@@ -18,9 +19,16 @@ import {
 import { Layout, LayoutBody } from "../layout/layout";
 
 export function HomePage() {
-  
+
   return (
     <>
+      <Helmet>
+        <title>Pagina Inicial | Sergest - Software de Faturação</title>
+       
+        <meta property="og:description" content={"Descubra uma solução de faturação online eficiente para o seu negócio. Simplifique sua contabilidade com nosso software de gerenciamento de faturas. Experimente agora!"} />
+        
+        <meta property="og:url" content={window.location.href} /> 
+      </Helmet>
       <Layout>
         <div className="container">
           <NavBar />
