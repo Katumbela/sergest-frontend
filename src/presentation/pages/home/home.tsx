@@ -18,6 +18,7 @@ import {
 import { Layout, LayoutBody } from "../layout/layout";
 
 export function HomePage() {
+  
   return (
     <>
       <Layout>
