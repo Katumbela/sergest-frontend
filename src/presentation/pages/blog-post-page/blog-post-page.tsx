@@ -22,7 +22,6 @@ export function BlogPostPage() {
     const { postId } = useParams<{ postId: string }>();
     const [post, setPost] = useState<Post | null>(null);
     const [load, setLoad] = useState(true);
-    document.title = `${post?.title} | Blog Sergest - Software de Faturação`;
 
     useEffect(() => {
         const fetchPost = async () => {
@@ -64,15 +63,17 @@ export function BlogPostPage() {
         fetchPosts();
     }, []);
 
+
+    document.title = `${post?.title} | Blog Sergest - Software de Faturação`;
     return (
         <div>
             <Helmet>
-                <title>{post?.title} | Sergest - Software de Faturação</title>
-                <meta property="og:title" content={post?.title} />
-                <meta property="og:description" content={post?.subtitle} />
-                <meta property="og:image" content={post?.imageUrl} />
+                <title>{post ? post.title : 'Carregando...'} | Sergest - Software de Faturação</title>
+                <meta property="og:title" content={post ? post.title : 'Carregando...'} />
+                <meta property="og:description" content={post ? post.subtitle : 'Carregando...'} />
+                <meta property="og:image" content={post ? post.imageUrl : ''} />
                 <meta property="og:url" content={window.location.href} />
-                <link rel="icon" href={post?.imageUrl} />
+                <link rel="icon" href={post ? post.imageUrl : ''} />
             </Helmet>
             <div className="container">
                 <NavBar />
