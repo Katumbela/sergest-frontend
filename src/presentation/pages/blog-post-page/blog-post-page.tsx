@@ -5,8 +5,8 @@ import { db } from "../../../data/firebase";
 import { FaArrowRight, FaEye, FaSpinner } from "react-icons/fa6";
 import { logos } from "../../../utils";
 import firebase from 'firebase/compat/app';
-import 'firebase/compat/firestore'; // Certifique-se de importar o módulo firestore explicitamente
-
+import 'firebase/compat/firestore';
+import { Helmet } from "react-helmet";  // Importação do react-helmet
 
 interface Post {
     id: string;
@@ -21,19 +21,19 @@ interface Post {
 export function BlogPostPage() {
     const { postId } = useParams<{ postId: string }>();
     const [post, setPost] = useState<Post | null>(null);
-    const [load, setLoad] = useState(true)
+    const [load, setLoad] = useState(true);
 
     useEffect(() => {
         const fetchPost = async () => {
             const postDoc = await db.collection('posts').doc(postId).get();
             if (postDoc.exists) {
                 const postData = postDoc.data() as Omit<Post, 'id'>;
-                // Increment view count
+                // Incrementar a contagem de visualizações
                 await db.collection('posts').doc(postId).update({
                     views: (postData.views || 0) + 1,
                 });
                 setPost({ id: postDoc.id, ...postData });
-                setLoad(false)
+                setLoad(false);
             }
         };
 
@@ -54,8 +54,6 @@ export function BlogPostPage() {
         return dateObject.toLocaleDateString('pt-BR', options);
     };
 
-
-
     useEffect(() => {
         const fetchPosts = async () => {
             const postsCollection = await db.collection('posts').orderBy('createdAt', 'desc').get();
@@ -65,11 +63,15 @@ export function BlogPostPage() {
         fetchPosts();
     }, []);
 
-
-    document.title = post?.title + ' | Sergest - Software de Faturação'
-
     return (
-        <div className="">
+        <div>
+            <Helmet>
+                <title>{post?.title} | Sergest - Software de Faturação</title>
+                <meta property="og:title" content={post?.title} />
+                <meta property="og:description" content={post?.subtitle} />
+                <meta property="og:image" content={post?.imageUrl} />
+                <meta property="og:url" content={window.location.href} />
+            </Helmet>
             <div className="container">
                 <NavBar />
                 <br />
@@ -77,51 +79,48 @@ export function BlogPostPage() {
                     load &&
                     <div className="grid text-center items-center h-[70vh]">
                         <div>
-                            <span className="gap-2 "><FaSpinner className="m-auto text-7xl text-primary animate-spin" />
-
-
+                            <span className="gap-2 ">
+                                <FaSpinner className="m-auto text-7xl text-primary animate-spin" />
                                 <br />
                                 <span className="mt-6 tracking-wider">
-                                    <i> Carregando Artigo... </i></span></span>
+                                    <i> Carregando Artigo... </i>
+                                </span>
+                            </span>
                         </div>
                     </div>
                 }
                 {post && (
                     <div>
-                        <div className="md:h-[37rem] rounded-lg h-[30rem] " style={{ background: `url('${post.imageUrl}) center center `, backgroundSize: 'cover', backgroundPosition: 'center center' }}>
-
-
-                        </div>
+                        <div className="md:h-[37rem] rounded-lg h-[30rem]" style={{ background: `url('${post.imageUrl}') center center`, backgroundSize: 'cover', backgroundPosition: 'center center' }}></div>
                         <h1 className="mt-4 mb-2 text-3xl font-semibold poppins-regular md:text-5xl">{post.title}</h1>
                         <p className="mb-2 text-sm italic text-gray-400">Publicado em: {formatDate(post.createdAt)}</p>
-
                         <div className="gap-4 my-auto sm:flex">
-                            <h2 className="my-auto text-2xl ">{post.subtitle}</h2>
-
+                            <h2 className="my-auto text-2xl">{post.subtitle}</h2>
                             <span className="hidden my-auto text-4xl sm:block"> &middot;</span>
-
-                            <p className="flex gap-2 my-auto"> <div className="flex gap-2 my-auto text-sm"> <FaEye className="my-auto" /> Visualizações:</div> {post.views}</p>
-                        </div> <p className="mb-6 tracking-widest border-b">Tempo estimado de leitura: {calculateReadingTime(post.content)} min</p>
-
+                            <p className="flex gap-2 my-auto">
+                                <div className="flex gap-2 my-auto text-sm">
+                                    <FaEye className="my-auto" /> Visualizações:
+                                </div> 
+                                {post.views}
+                            </p>
+                        </div> 
+                        <p className="mb-6 tracking-widest border-b">Tempo estimado de leitura: {calculateReadingTime(post.content)} min</p>
                         <div className="gap-6 md:flex">
                             <div className="w-full md:w-9/12" dangerouslySetInnerHTML={{ __html: post.content }} />
                             <div className="w-full mt-14 md:w-3/12 md:mt-0 md:border-l-2 md:ps-10">
                                 <img src={logos.logo} className="mx-auto mt-4 w-100" alt="" />
-
                                 <br />
-                                <p className=" relative whitespace-break-spaces  text-center text-primary mt-[1rem] sm:text-xl mx-auto">
-                                    <ColoredText className="text-8xl comma font-bold -mt-3   absolute ms-[-2rem]">
+                                <p className="relative whitespace-break-spaces text-center text-primary mt-[1rem] sm:text-xl mx-auto">
+                                    <ColoredText className="text-8xl comma font-bold -mt-3 absolute ms-[-2rem]">
                                         <span>"</span>
-                                    </ColoredText>{" "}
+                                    </ColoredText>
                                     <span className="text-xl">A Sergest é um software de gestão e faturação especializado em oferecer soluções abrangentes e intuitivas para a otimização de processos empresariais, trabalhamos no mercado nacional desde 2016, atuamos no ramo das Tics, Marca Sergest é propriedade da empresa Sermar.</span>
-                                    <ColoredText className="text-8xl comma font-bold -mt-3   absolute me-[-2rem]">
+                                    <ColoredText className="text-8xl comma font-bold -mt-3 absolute me-[-2rem]">
                                         <span>"</span>
-                                    </ColoredText>{" "}
+                                    </ColoredText>
                                 </p>
-
                             </div>
                         </div>
-
                         <br />
                         <br />
                         <br />
@@ -130,7 +129,6 @@ export function BlogPostPage() {
                         <br />
                         <br />
                         <h2 className="text-2xl font-semibold sm:text-3xl">Outros Artigos da Sergest</h2>
-
                         <br />
                         <br />
                         <div className="grid sm:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-5">
@@ -139,13 +137,10 @@ export function BlogPostPage() {
                                     <div className="relative h-[14rem] rounded-lg bg-primary overflow-hidden">
                                         <div className="absolute inset-0 transition-transform duration-500 transform bg-center bg-cover hover:scale-110" style={{ backgroundImage: `url('${post.imageUrl}')` }} />
                                     </div>
-                                    <h3 className="mt-4 font-bold text-primary ">{post.title}</h3>
+                                    <h3 className="mt-4 font-bold text-primary">{post.title}</h3>
                                     <h4>{post.subtitle}</h4>
-
                                     <a className="flex justify-between mt-3 text-blue-600" href={`/blogs/${post.id}`}>
-                                        <span className="my-auto hover:underline">
-                                            Ver artigo</span>
-
+                                        <span className="my-auto hover:underline">Ver artigo</span>
                                         <FaArrowRight className="my-auto text-sm" />
                                     </a>
                                 </div>
