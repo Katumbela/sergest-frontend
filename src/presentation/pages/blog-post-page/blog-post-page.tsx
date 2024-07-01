@@ -22,6 +22,7 @@ export function BlogPostPage() {
     const { postId } = useParams<{ postId: string }>();
     const [post, setPost] = useState<Post | null>(null);
     const [load, setLoad] = useState(true);
+    document.title = `${post?.title} | Blog Sergest - Software de Faturação`;
 
     useEffect(() => {
         const fetchPost = async () => {
@@ -101,10 +102,10 @@ export function BlogPostPage() {
                             <p className="flex gap-2 my-auto">
                                 <div className="flex gap-2 my-auto text-sm">
                                     <FaEye className="my-auto" /> Visualizações:
-                                </div> 
+                                </div>
                                 {post.views}
                             </p>
-                        </div> 
+                        </div>
                         <p className="mb-6 tracking-widest border-b">Tempo estimado de leitura: {calculateReadingTime(post.content)} min</p>
                         <div className="gap-6 md:flex">
                             <div className="w-full md:w-9/12" dangerouslySetInnerHTML={{ __html: post.content }} />
