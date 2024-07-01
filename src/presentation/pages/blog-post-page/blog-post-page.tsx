@@ -71,6 +71,7 @@ export function BlogPostPage() {
                 <meta property="og:description" content={post?.subtitle} />
                 <meta property="og:image" content={post?.imageUrl} />
                 <meta property="og:url" content={window.location.href} />
+                <link rel="icon" href={post?.imageUrl} />
             </Helmet>
             <div className="container">
                 <NavBar />
